@@ -28,7 +28,7 @@ export RECURRENT_OUTPUT=experiments/recurrent_filter_sudoku_v1
 export RECURRENT_CODE_COMMIT=$(git rev-parse HEAD)
 ```
 
-Существующая площадка использует read-only bind старого проекта в `/legacy` и новый рабочий каталог в `/workspace`. Служебные значения задаются только в игнорируемом `.cache/site.sh`: `RUN_PROJECT`, `RUN_LEGACY_PROJECT`, `RUN_IMAGE`, `RUN_PYTHON_IN_CONTAINER`, `RUN_DATA_IN_CONTAINER`, `RUN_ACCOUNT`, `RUN_GPU_PARTITION`, `RUN_CPU_PARTITION`, `RUN_GPU_GRES`, `RECURRENT_CODE_COMMIT`. Все значения должны быть экспортированы. Не коммитьте этот файл.
+Существующая площадка использует read-only bind старого проекта в `/legacy` и новый рабочий каталог в `/workspace`. Служебные значения задаются только в игнорируемом `.cache/site.sh`: `RUN_PROJECT`, `RUN_LEGACY_PROJECT`, `RUN_IMAGE`, `RUN_PYTHON_IN_CONTAINER`, `RUN_DATA_IN_CONTAINER`, `RUN_ACCOUNT`, `RUN_GPU_PARTITION`, `RUN_CPU_PARTITION`, `RUN_GPU_GRES`, `RUN_HOST_PYTHON`, `RECURRENT_CODE_COMMIT`. Все значения должны быть экспортированы. `RUN_HOST_PYTHON` должен указывать на Python ≥3.10 с доступным scheduler CLI. Не коммитьте этот файл.
 
 ## Подготовка, проверки и очередь
 
@@ -94,6 +94,8 @@ python -m research.recurrent_filter_sudoku_v1 report
 Графики показывают validation против updates и elapsed, а также test quality против измеренного inference cost. Временные кривые не представляются как отдельно обученные equal-wall-time модели.
 
 Расширения семейства фильтров, gate/fixed mix и deep supervision подготовлены как отключённые спецификации с числом запусков и формулами бюджета. Они требуют отдельного решения на validation и отдельной версии реализации. Точные нормированные exp/geometric коэффициенты r=4 и ошибка совпадения среднего 32/15 сохраняются CPU-проверкой.
+
+При проверке развёртывания обнаружен устаревший системный Python у служебного dispatcher. Он заменён явно заданным современным host interpreter; обучение использует прежний проверенный контейнер. Четыре начальные CPU-overfit проверки были остановлены до их завершения и помещены в приватный preflight-архив, затем запущены с окончательным source hash. Они не считаются пройденными проверками или обучениями основной сетки. GPU при этой корректировке не использовался.
 
 ## Отличия от исходной реализации
 

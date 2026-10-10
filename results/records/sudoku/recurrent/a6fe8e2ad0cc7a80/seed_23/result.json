@@ -1,0 +1,111 @@
+{
+  "best_checkpoint_rule": "maximum validation solved rate; ties minimum validation loss; earliest exact tie",
+  "best_validation_solved_rate": 0.9467777777777778,
+  "checkpoint_seconds": 1.4215351771563292,
+  "commit": null,
+  "config": {
+    "batch_size": 64,
+    "clip": 1.0,
+    "clue_fraction": 0.65,
+    "data_seed": 20261009,
+    "data_source": "rrn",
+    "data_tag": "rrn-official-v1",
+    "device": "cuda",
+    "eval_every": 250,
+    "generator": "dfs",
+    "heads": 4,
+    "hops": 4,
+    "inner_beta": 0.0,
+    "inner_width": 0,
+    "layers": 4,
+    "lr": 0.001,
+    "max_seconds": 4356.1410047113895,
+    "method": "recurrent",
+    "overfit_count": 0,
+    "recurrent_steps": 32,
+    "seed": 23,
+    "size": 9,
+    "stage": "final",
+    "steps": 30000,
+    "support": "graph",
+    "task": "sudoku",
+    "test_count": 5000,
+    "threads": 4,
+    "train_count": 100000,
+    "val_count": 5000,
+    "warmup_fraction": 0.05,
+    "weight_decay": 0.01,
+    "width": 128
+  },
+  "config_hash": "a6fe8e2ad0cc7a80",
+  "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+  "elapsed_seconds": 2443.382773766294,
+  "evaluation_seconds": 902.3237393070012,
+  "examples": 1920000,
+  "failure_reason": null,
+  "filters": [
+    {
+      "coefficients": [
+        1.0
+      ],
+      "mu": 1.0,
+      "nu": 0.0,
+      "tail": [
+        1.0
+      ],
+      "variance": 0.0
+    }
+  ],
+  "gpu_seconds": 2443.3827768731862,
+  "last_validation": {
+    "blank_accuracy": 0.9857127127127127,
+    "buckets": {
+      "clues_10s": {
+        "count": 3000,
+        "solved_rate": 0.7693333333333333
+      },
+      "clues_20s": {
+        "count": 10000,
+        "solved_rate": 0.9728
+      },
+      "clues_30s": {
+        "count": 5000,
+        "solved_rate": 0.9998
+      }
+    },
+    "count": 18000,
+    "evaluation_seconds": 7.721428170800209,
+    "exact_match": 0.9463888888888888,
+    "examples": 1920000,
+    "filters": [
+      {
+        "coefficients": [
+          1.0
+        ],
+        "mu": 1.0,
+        "nu": 0.0,
+        "tail": [
+          1.0
+        ],
+        "variance": 0.0
+      }
+    ],
+    "gradient_norm": 73.61052703857422,
+    "inference_peak_memory_bytes": 1655095296,
+    "inference_seconds_per_example": 0.00024743386471851004,
+    "loss": 0.03704331645038393,
+    "lr": 0.0,
+    "row_column_conflicts_mean": 0.386,
+    "solved_rate": 0.9463888888888888,
+    "step": 30000,
+    "train_loss": 0.024492360651493073,
+    "train_peak_memory_bytes": 1655095296,
+    "training_seconds": 1538.7350727710873
+  },
+  "parameter_count": 204169,
+  "source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "status": "completed",
+  "step": 30000,
+  "train_peak_memory_bytes": 1655095296,
+  "training_seconds": 1538.7350727710873
+}

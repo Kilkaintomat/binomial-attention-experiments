@@ -1,0 +1,175 @@
+{
+  "best_checkpoint_rule": "maximum validation solved rate; ties minimum validation loss; earliest exact tie",
+  "best_validation_solved_rate": 0.0,
+  "checkpoint_seconds": 0.12894460558891296,
+  "commit": null,
+  "config": {
+    "batch_size": 64,
+    "clip": 1.0,
+    "clue_fraction": 0.65,
+    "data_seed": 20261009,
+    "data_source": "generated",
+    "data_tag": "maze-8x8-pilot-v1",
+    "device": "cuda",
+    "eval_every": 250,
+    "generator": "dfs",
+    "heads": 4,
+    "hops": 8,
+    "inner_beta": 0.0,
+    "inner_width": 0,
+    "layers": 4,
+    "lr": 0.0001,
+    "max_seconds": 1800,
+    "method": "onehop",
+    "overfit_count": 0,
+    "recurrent_steps": 32,
+    "seed": 101,
+    "size": 8,
+    "stage": "pilot",
+    "steps": 2000,
+    "support": "graph",
+    "task": "maze",
+    "test_count": 1000,
+    "threads": 4,
+    "train_count": 10000,
+    "val_count": 1000,
+    "warmup_fraction": 0.05,
+    "weight_decay": 0.01,
+    "width": 128
+  },
+  "config_hash": "712be5c35fdbacc9",
+  "data_hash": "cc9d4a77297250f178f77c206e0b7c24254a62689d33b2e53e937d88b9c6a0cb",
+  "elapsed_seconds": 5.03207740187645,
+  "evaluation_seconds": 0.3559752609580755,
+  "examples": 32000,
+  "failure_reason": null,
+  "filters": [
+    {
+      "coefficients": [
+        1.0
+      ],
+      "mu": 1.0,
+      "nu": 0.0,
+      "tail": [
+        1.0
+      ],
+      "variance": 0.0
+    },
+    {
+      "coefficients": [
+        1.0
+      ],
+      "mu": 1.0,
+      "nu": 0.0,
+      "tail": [
+        1.0
+      ],
+      "variance": 0.0
+    },
+    {
+      "coefficients": [
+        1.0
+      ],
+      "mu": 1.0,
+      "nu": 0.0,
+      "tail": [
+        1.0
+      ],
+      "variance": 0.0
+    },
+    {
+      "coefficients": [
+        1.0
+      ],
+      "mu": 1.0,
+      "nu": 0.0,
+      "tail": [
+        1.0
+      ],
+      "variance": 0.0
+    }
+  ],
+  "gpu_seconds": 5.0320807211101055,
+  "last_validation": {
+    "branch_fraction": 0.097,
+    "broken_fraction": 0.903,
+    "buckets": {
+      "long": {
+        "count": 100,
+        "solved_rate": 0.0
+      },
+      "short": {
+        "count": 900,
+        "solved_rate": 0.0
+      }
+    },
+    "count": 1000,
+    "evaluation_seconds": 0.10686361603438854,
+    "exact_match": 0.0,
+    "examples": 32000,
+    "filters": [
+      {
+        "coefficients": [
+          1.0
+        ],
+        "mu": 1.0,
+        "nu": 0.0,
+        "tail": [
+          1.0
+        ],
+        "variance": 0.0
+      },
+      {
+        "coefficients": [
+          1.0
+        ],
+        "mu": 1.0,
+        "nu": 0.0,
+        "tail": [
+          1.0
+        ],
+        "variance": 0.0
+      },
+      {
+        "coefficients": [
+          1.0
+        ],
+        "mu": 1.0,
+        "nu": 0.0,
+        "tail": [
+          1.0
+        ],
+        "variance": 0.0
+      },
+      {
+        "coefficients": [
+          1.0
+        ],
+        "mu": 1.0,
+        "nu": 0.0,
+        "tail": [
+          1.0
+        ],
+        "variance": 0.0
+      }
+    ],
+    "gradient_norm": 19.41098403930664,
+    "inference_peak_memory_bytes": 232901120,
+    "inference_seconds_per_example": 3.924961388111114e-05,
+    "loss": 0.8349221997261047,
+    "lr": 8.945702546981969e-05,
+    "solved_rate": 0.0,
+    "step": 500,
+    "train_loss": 0.8512885570526123,
+    "train_peak_memory_bytes": 232901120,
+    "training_seconds": 4.531466580927372,
+    "vertex_f1": 0.43776316247346625,
+    "vertex_iou": 0.28021561901367664
+  },
+  "parameter_count": 792577,
+  "source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "status": "paused",
+  "step": 500,
+  "train_peak_memory_bytes": 232901120,
+  "training_seconds": 4.531466580927372
+}

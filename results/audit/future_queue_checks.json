@@ -1,0 +1,10 @@
+{
+  "batch_size": 64,
+  "common_parameters_exactly_paired": true,
+  "inner_beta": 0.1,
+  "inner_width": 128,
+  "not_a_parameter_matched_architecture_ablation": true,
+  "protocol_unchanged": true,
+  "runs": 20,
+  "updates": 30000
+}

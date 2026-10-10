@@ -1,0 +1,149 @@
+{
+  "best_checkpoint_rule": "maximum validation solved rate; ties minimum validation loss; earliest exact tie",
+  "best_validation_solved_rate": 0.0,
+  "checkpoint_seconds": 0.019812211394309998,
+  "commit": null,
+  "config": {
+    "batch_size": 8,
+    "clip": 1.0,
+    "clue_fraction": 0.65,
+    "data_seed": 20261009,
+    "data_source": "generated",
+    "data_tag": "cpu-smoke-sudoku-v1",
+    "device": "cpu",
+    "eval_every": 3,
+    "generator": "dfs",
+    "heads": 4,
+    "hops": 4,
+    "inner_beta": 0.0,
+    "inner_width": 0,
+    "layers": 2,
+    "lr": 0.001,
+    "max_seconds": 3600,
+    "method": "binomial",
+    "overfit_count": 0,
+    "recurrent_steps": 8,
+    "seed": 101,
+    "size": 4,
+    "stage": "smoke",
+    "steps": 6,
+    "support": "graph",
+    "task": "sudoku",
+    "test_count": 16,
+    "threads": 2,
+    "train_count": 64,
+    "val_count": 16,
+    "warmup_fraction": 0.05,
+    "weight_decay": 0.01,
+    "width": 32
+  },
+  "config_hash": "31e9e04834e2bece",
+  "data_hash": "d1f5a9589e06b90fd000c93303104a387e00857fbaeee62b45cd636cde8f362e",
+  "elapsed_seconds": 0.07657088339328766,
+  "evaluation_seconds": 0.012320265173912048,
+  "examples": 48,
+  "failure_reason": null,
+  "filters": [
+    {
+      "coefficients": [
+        0.2666666805744171,
+        0.4000000059604645,
+        0.2666666805744171,
+        0.06666667014360428
+      ],
+      "mu": 2.1333334147930145,
+      "nu": 3.200000137090683,
+      "tail": [
+        1.000000037252903,
+        0.7333333566784859,
+        0.3333333507180214,
+        0.06666667014360428
+      ],
+      "variance": 0.7822220932112733
+    },
+    {
+      "coefficients": [
+        0.2666666805744171,
+        0.4000000059604645,
+        0.2666666805744171,
+        0.06666667014360428
+      ],
+      "mu": 2.1333334147930145,
+      "nu": 3.200000137090683,
+      "tail": [
+        1.000000037252903,
+        0.7333333566784859,
+        0.3333333507180214,
+        0.06666667014360428
+      ],
+      "variance": 0.7822220932112733
+    }
+  ],
+  "gpu_seconds": 0,
+  "last_validation": {
+    "blank_accuracy": 0.2708333333333333,
+    "buckets": {
+      "clues_10s": {
+        "count": 16,
+        "solved_rate": 0.0
+      }
+    },
+    "count": 16,
+    "evaluation_seconds": 0.004061803221702576,
+    "exact_match": 0.0,
+    "examples": 48,
+    "filters": [
+      {
+        "coefficients": [
+          0.2666666805744171,
+          0.4000000059604645,
+          0.2666666805744171,
+          0.06666667014360428
+        ],
+        "mu": 2.1333334147930145,
+        "nu": 3.200000137090683,
+        "tail": [
+          1.000000037252903,
+          0.7333333566784859,
+          0.3333333507180214,
+          0.06666667014360428
+        ],
+        "variance": 0.7822220932112733
+      },
+      {
+        "coefficients": [
+          0.2666666805744171,
+          0.4000000059604645,
+          0.2666666805744171,
+          0.06666667014360428
+        ],
+        "mu": 2.1333334147930145,
+        "nu": 3.200000137090683,
+        "tail": [
+          1.000000037252903,
+          0.7333333566784859,
+          0.3333333507180214,
+          0.06666667014360428
+        ],
+        "variance": 0.7822220932112733
+      }
+    ],
+    "gradient_norm": 0.9314845204353333,
+    "inference_peak_memory_bytes": null,
+    "inference_seconds_per_example": 0.0001597246155142784,
+    "loss": 1.371874749660492,
+    "lr": 0.0,
+    "row_column_conflicts_mean": 7.1875,
+    "solved_rate": 0.0,
+    "step": 6,
+    "train_loss": 1.4091957807540894,
+    "train_peak_memory_bytes": null,
+    "training_seconds": 0.039009615778923035
+  },
+  "parameter_count": 25956,
+  "source_sha256": "2b3fdf4aa09ed5481597cec3a1700b59fd96b36b81fa7df665f846adffcd2962",
+  "status": "completed",
+  "step": 6,
+  "train_peak_memory_bytes": null,
+  "training_seconds": 0.039009615778923035
+}

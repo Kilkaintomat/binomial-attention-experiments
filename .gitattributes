@@ -1,0 +1,5 @@
+# Preserve archived CSV bytes, including the csv module's CRLF line endings.
+*.csv -text whitespace=cr-at-eol
+# Matplotlib emits whitespace inside SVG path data.
+*.svg -whitespace linguist-generated=true
+results/** linguist-generated=true

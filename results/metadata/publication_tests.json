@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "pytest": {
+    "tests": 14,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "off_grid_cpu_resume_bitwise": [
+    "maze",
+    "sudoku"
+  ],
+  "portable_dispatcher_mock_test": "passed",
+  "report_builder": "passed",
+  "snapshot_consistency": "passed",
+  "execution": "CPU allocation",
+  "no_new_gpu_training": true,
+  "no_private_data_required": true
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "count": 10000,
+    "path_length_mean": 16.6563,
+    "path_longer_than_final_multihop_radius_64": 0.0,
+    "path_longer_than_onehop_radius_4": 0.866,
+    "path_longer_than_recurrent_radius_32": 0.0961,
+    "split": "train",
+    "task": "maze"
+  },
+  {
+    "count": 1000,
+    "path_length_mean": 16.881,
+    "path_longer_than_final_multihop_radius_64": 0.0,
+    "path_longer_than_onehop_radius_4": 0.874,
+    "path_longer_than_recurrent_radius_32": 0.1,
+    "split": "validation",
+    "task": "maze"
+  },
+  {
+    "count": 1000,
+    "path_length_mean": 16.628,
+    "path_longer_than_final_multihop_radius_64": 0.0,
+    "path_longer_than_onehop_radius_4": 0.868,
+    "path_longer_than_recurrent_radius_32": 0.091,
+    "split": "test",
+    "task": "maze"
+  },
+  {
+    "all_target_grids_valid": true,
+    "count": 180000,
+    "digit_relabeling_cross_split_duplicates": 0,
+    "every_puzzle_unique_solution_certified": false,
+    "full_row_column_transpose_symmetry_certificate": false,
+    "split": "train",
+    "task": "sudoku"
+  },
+  {
+    "all_target_grids_valid": true,
+    "count": 18000,
+    "digit_relabeling_cross_split_duplicates": 0,
+    "every_puzzle_unique_solution_certified": false,
+    "full_row_column_transpose_symmetry_certificate": false,
+    "split": "validation",
+    "task": "sudoku"
+  },
+  {
+    "all_target_grids_valid": true,
+    "count": 18000,
+    "digit_relabeling_cross_split_duplicates": 0,
+    "every_puzzle_unique_solution_certified": false,
+    "full_row_column_transpose_symmetry_certificate": false,
+    "split": "test",
+    "task": "sudoku"
+  }
+]

@@ -1,0 +1,1 @@
+{"configs":["configs/cpu_smoke_maze.json","configs/cpu_smoke_sudoku.json"],"gpu_hours":24,"cpu_seconds":600}

@@ -1,0 +1,1 @@
+{"task":"maze","method":"binomial","stage":"pilot","size":8,"width":128,"heads":4,"layers":4,"hops":8,"recurrent_steps":32,"train_count":10000,"val_count":1000,"test_count":1000,"steps":2000,"eval_every":250,"batch_size":64,"lr":0.0003,"device":"cuda","threads":4,"max_seconds":3600,"data_tag":"maze-8x8-pilot-v1"}

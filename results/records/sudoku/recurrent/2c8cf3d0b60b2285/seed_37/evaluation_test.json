@@ -1,0 +1,29 @@
+{
+  "blank_accuracy": 0.9872352352352353,
+  "buckets": {
+    "clues_10s": {
+      "count": 3000,
+      "solved_rate": 0.8003333333333333
+    },
+    "clues_20s": {
+      "count": 10000,
+      "solved_rate": 0.9761
+    },
+    "clues_30s": {
+      "count": 5000,
+      "solved_rate": 0.9998
+    }
+  },
+  "checkpoint_filename": "checkpoint_best.pt",
+  "checkpoint_step": 28750,
+  "count": 18000,
+  "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+  "evaluation_seconds": 7.936669111251831,
+  "exact_match": 0.9533888888888888,
+  "inference_peak_memory_bytes": 76018176,
+  "inference_seconds_per_example": 0.00025544574960238405,
+  "loss": 0.031730386669036104,
+  "row_column_conflicts_mean": 0.3842777777777778,
+  "solved_rate": 0.9533888888888888,
+  "split": "test"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.0,
+    "method": "binomial",
+    "value_max_error": 0.0
+  },
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.1,
+    "method": "binomial",
+    "value_max_error": 0.0
+  },
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.0,
+    "method": "exponential_truncated",
+    "value_max_error": 0.0
+  },
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.1,
+    "method": "exponential_truncated",
+    "value_max_error": 0.0
+  },
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.0,
+    "method": "finite_geometric",
+    "value_max_error": 0.0
+  },
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.1,
+    "method": "finite_geometric",
+    "value_max_error": 0.0
+  },
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.0,
+    "method": "learned_polynomial",
+    "value_max_error": 0.0
+  },
+  {
+    "gradient_max_error": 0.0,
+    "inner_beta": 0.1,
+    "method": "learned_polynomial",
+    "value_max_error": 0.0
+  }
+]

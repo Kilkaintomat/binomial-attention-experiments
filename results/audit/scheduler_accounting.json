@@ -1,0 +1,17 @@
+{
+  "8488349": {
+    "elapsed_seconds": 28,
+    "gpu_count": 1,
+    "state": "FAILED"
+  },
+  "8488361": {
+    "elapsed_seconds": 52961,
+    "gpu_count": 1,
+    "state": "COMPLETED"
+  },
+  "8490016": {
+    "elapsed_seconds": 147,
+    "gpu_count": 1,
+    "state": "FAILED"
+  }
+}

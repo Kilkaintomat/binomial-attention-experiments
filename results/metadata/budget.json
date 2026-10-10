@@ -1,0 +1,41 @@
+{
+  "allocations": [
+    {
+      "accounting_source": "Slurm ElapsedRaw times allocated GPU count",
+      "actual_seconds": 28,
+      "gpu_count": 1,
+      "job_id": "8488349",
+      "observed_seconds": 20.181972820311785,
+      "python_measured_seconds": 20.18332595936954,
+      "reserved_seconds": 84600.0,
+      "started_utc_epoch": 1791569756.4758387,
+      "status": "finished"
+    },
+    {
+      "accounting_source": "Slurm ElapsedRaw times allocated GPU count",
+      "actual_seconds": 52961,
+      "gpu_count": 1,
+      "job_id": "8488361",
+      "observed_seconds": 52956.23387287557,
+      "python_measured_seconds": 52956.23531102948,
+      "reserved_seconds": 84600.0,
+      "started_utc_epoch": 1791570053.1660864,
+      "status": "finished"
+    },
+    {
+      "accounting_source": "Slurm ElapsedRaw times allocated GPU count",
+      "actual_seconds": 147,
+      "gpu_count": 1,
+      "job_id": "8490016",
+      "observed_seconds": 138.40448406338692,
+      "purpose": "inner_mlp_final_v1",
+      "python_measured_seconds": 138.40680557489395,
+      "reserved_seconds": 33300,
+      "started_utc_epoch": 1791638376.6571913,
+      "status": "finished"
+    }
+  ],
+  "ceiling_gpu_hours": 24,
+  "observed_gpu_seconds": 53136,
+  "used_gpu_seconds": 53136
+}

@@ -1,0 +1,1 @@
+{"task":"sudoku","method":"binomial","stage":"smoke","size":4,"width":32,"heads":4,"layers":2,"hops":4,"train_count":64,"val_count":16,"test_count":16,"steps":6,"eval_every":3,"batch_size":8,"device":"cpu","data_tag":"cpu-smoke-sudoku-v1"}

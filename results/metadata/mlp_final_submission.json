@@ -1,0 +1,35 @@
+{
+  "chunk_index": 1,
+  "chunk_verification_job": 8490155,
+  "execution_mode": "serial_checkpointed_chunks",
+  "gpu_job": 8490117,
+  "independent_audit_job": 8490008,
+  "inner_beta": 0.1,
+  "inner_width": 128,
+  "methods": [
+    "binomial",
+    "exponential_truncated"
+  ],
+  "observation_verification_job": 8490155,
+  "post_job_accounting_job": 8490118,
+  "preflight_job": 8489988,
+  "recorded_utc": "2026-10-10T20:29:39.908090Z",
+  "replaces_cancelled_job": 8489989,
+  "resume_checkpoint_step": 2250,
+  "resumes_failed_job": 8490016,
+  "run_count": 20,
+  "scheduler_walltime_seconds": 7200,
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "series": "inner_mlp_final_v1",
+  "steps": 30000,
+  "tasks": [
+    "maze",
+    "sudoku"
+  ]
+}

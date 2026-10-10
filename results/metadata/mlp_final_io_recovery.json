@@ -1,0 +1,16 @@
+{
+  "failed_allocation_gpu_seconds": 147,
+  "failed_job": 8490016,
+  "failure": "Hard links prohibited by the project filesystem",
+  "final_steps": 30000,
+  "fix": "Streamed copy, fsync, atomic rename",
+  "last_logged_step": 2500,
+  "post_job_accounting_job": 8490118,
+  "recorded_utc": "2026-10-10T18:00:24Z",
+  "regression_checks": "Project-filesystem threshold archives, real 11 MB checkpoint copy, full-state inner-MLP resume on both tasks",
+  "resume_checkpoint_step": 2250,
+  "resumed_gpu_job": 8490117,
+  "runs_expected": 20,
+  "training_source_unchanged": true,
+  "verification_job": 8490116
+}

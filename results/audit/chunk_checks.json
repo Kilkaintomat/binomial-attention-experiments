@@ -1,0 +1,21 @@
+{
+  "actual_runner_receives_shorter_deadline_budget": true,
+  "dispatcher_serial_dependencies_budget_cap_and_idempotency": true,
+  "off_grid_resume_bitwise_equal_including_optimizer_rng_and_best_checkpoint": [
+    "maze",
+    "sudoku"
+  ],
+  "scheduler_job_id": "8490155",
+  "source_hashes": {
+    "scripts/audited_mlp_runtime.py": "2009e72515490814a96864679d3a22fac66da5681323ea1a99f4d74d87154531",
+    "scripts/check_chunked_execution.py": "f8280999ea0aac3f3763b301945ea98fb9cac7cef4ed8699713c44c16948f465",
+    "scripts/chunked_mlp_runtime.py": "c6a8a9318b5c4a71fccec82f732278f59f319bbadad181b6bc02890083b26fa0",
+    "scripts/mlp_chunk_scheduler.py": "b8d54563598fe81edbfbd9af094af2a8705485c22196f069edabfaae75cce6bc",
+    "scripts/reconcile_scheduler_budget.py": "6b2ea3041f672b9fa2fe57de5990d41166e3218a72585fb06949d6ce6ec89877"
+  },
+  "status": "passed",
+  "threshold_pause_archives_verified": true,
+  "unchanged_base_runner_sha256": "6d372ec27a7ab14bc980df09b56c65f3a4411a2d1993db92ad46f42172e1b56d",
+  "unchanged_training_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "validation_grid_unchanged": true
+}

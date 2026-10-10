@@ -1,0 +1,22 @@
+{
+  "backend": "dense_masked_generic_action",
+  "coefficient_sharing": "one vector per block shared across heads",
+  "commit": null,
+  "cuda_available": true,
+  "cuda_build": "12.4",
+  "dtype": "float32",
+  "gpu_memory_bytes": 84974239744,
+  "gpu_model": "NVIDIA A100-SXM4-80GB",
+  "packages": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.2.2",
+    "pytest": "9.1.1",
+    "torch": "2.6.0+cu124"
+  },
+  "platform": "Linux",
+  "python": "3.11.11",
+  "scheduler_job_id": "8488361",
+  "source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "tf32": false,
+  "threads": 4
+}

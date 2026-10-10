@@ -1,0 +1,24 @@
+{
+  "direct_slot_max_error": 1.3877787807814457e-17,
+  "direct_slot_max_gradient_error": 1.6653345369377348e-16,
+  "euler_to_exp_errors_fixed_tau": [
+    2.8836751364087775e-05,
+    1.440477690736454e-05,
+    7.1989959273169404e-06,
+    3.5986507265529017e-06
+  ],
+  "frozen_evaluation_error": 6.947562107041945e-17,
+  "frozen_polynomial_max_error": 5.551115123125783e-17,
+  "nonlinear_to_frozen_error": 3.469446951953614e-18,
+  "relu_gate_flip_fraction": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scope": "small float64 algebra check, not task evidence or GPU speed evidence"
+}

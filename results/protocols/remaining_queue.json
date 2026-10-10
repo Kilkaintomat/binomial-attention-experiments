@@ -1,0 +1,15 @@
+{
+  "deferred": [
+    "mixed-size maze training",
+    "maze 16x16 and Wilson OOD",
+    "dense attention controls",
+    "recurrent T tuning and parameter matching",
+    "trained-checkpoint frozen-FFN audits",
+    "sparsification and approximate evaluation GPU timings",
+    "softmax-memory replacement"
+  ],
+  "final_runs_completed": 60,
+  "final_runs_expected": 60,
+  "reason": "First campaign prioritizes correctness, both task pilots, six primary controls, five seeds and the short MLP pilot.",
+  "unfinished_final_configs": []
+}

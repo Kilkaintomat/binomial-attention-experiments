@@ -1,0 +1,22 @@
+{
+  "backend": "dense_masked_generic_action",
+  "coefficient_sharing": "one vector per block shared across heads",
+  "commit": null,
+  "cuda_available": false,
+  "cuda_build": "12.4",
+  "dtype": "float32",
+  "gpu_memory_bytes": null,
+  "gpu_model": null,
+  "packages": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.2.2",
+    "pytest": "9.1.1",
+    "torch": "2.6.0+cu124"
+  },
+  "platform": "Linux",
+  "python": "3.11.11",
+  "scheduler_job_id": "8488329",
+  "source_sha256": "2b3fdf4aa09ed5481597cec3a1700b59fd96b36b81fa7df665f846adffcd2962",
+  "tf32": false,
+  "threads": 2
+}

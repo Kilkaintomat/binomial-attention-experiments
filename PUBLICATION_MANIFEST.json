@@ -1,0 +1,28 @@
+{
+  "snapshot_utc": "2026-10-10T20:44:53Z",
+  "training_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "training_source_identical_to_executed_runs": true,
+  "public_adapter_changes": [
+    {
+      "file": "scripts/mlp_chunk_scheduler.py",
+      "original_sha256": "b8d54563598fe81edbfbd9af094af2a8705485c22196f069edabfaae75cce6bc",
+      "public_sha256": "fd5d03402f0c7c41b5209855b675d7411c7454beea6dee38468094fde2101f46",
+      "reason": "Replace site-specific scheduler bindings with environment variables; adapt associated metadata test"
+    },
+    {
+      "file": "scripts/check_chunked_execution.py",
+      "original_sha256": "f8280999ea0aac3f3763b301945ea98fb9cac7cef4ed8699713c44c16948f465",
+      "public_sha256": "bdbef195f629e4d35188da51ac68392e8304ce0aee39a99302abd6bda7163a45",
+      "reason": "Replace site-specific scheduler bindings with environment variables; adapt associated metadata test"
+    }
+  ],
+  "private_execution_hashes_in_archived_checks_describe_original_adapters": true,
+  "excluded": [
+    "external PDF draft",
+    "external XLSX workbook",
+    "raw datasets",
+    "checkpoints",
+    "per-puzzle prediction arrays",
+    "private scheduler bindings"
+  ]
+}

@@ -1,0 +1,1 @@
+{"task":"sudoku","method":"binomial","stage":"pilot","size":9,"width":128,"heads":4,"layers":4,"hops":8,"recurrent_steps":32,"data_source":"rrn","train_count":100000,"val_count":5000,"test_count":5000,"steps":2000,"eval_every":250,"batch_size":64,"lr":0.0003,"device":"cuda","threads":4,"max_seconds":3600,"data_tag":"rrn-official-v1"}

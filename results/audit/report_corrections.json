@@ -1,0 +1,194 @@
+[
+  {
+    "config_hash": "9bb63f7202b717f8",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "30f330df88eb7455",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "8f3aeb641d19eac2",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "2bab6e2cc3d69719",
+    "field": "mu",
+    "from": "10.733682065503672",
+    "to": 10.73492888896726
+  },
+  {
+    "config_hash": "2bab6e2cc3d69719",
+    "field": "nu",
+    "from": "111.4408956328407",
+    "to": 111.45884773973376
+  },
+  {
+    "config_hash": "4fb0c3c1ae6aab2a",
+    "field": "mu",
+    "from": "10.915866932889912",
+    "to": 10.961573276668787
+  },
+  {
+    "config_hash": "4fb0c3c1ae6aab2a",
+    "field": "nu",
+    "from": "113.69135368661955",
+    "to": 114.33773236814886
+  },
+  {
+    "config_hash": "5893ad40b287b946",
+    "field": "mu",
+    "from": "11.063845877419226",
+    "to": 11.070073800743558
+  },
+  {
+    "config_hash": "5893ad40b287b946",
+    "field": "nu",
+    "from": "117.2655936172232",
+    "to": 117.3563467185013
+  },
+  {
+    "config_hash": "ae74b07afddc4c7f",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "dad9f315b261e310",
+    "field": "mu",
+    "from": "11.622331414429937",
+    "to": 11.632037186587695
+  },
+  {
+    "config_hash": "dad9f315b261e310",
+    "field": "nu",
+    "from": "127.98967867228203",
+    "to": 128.14002705574967
+  },
+  {
+    "config_hash": "ed8581ccfc61ae7a",
+    "field": "mu",
+    "from": "11.4619347009575",
+    "to": 11.221209896262735
+  },
+  {
+    "config_hash": "ed8581ccfc61ae7a",
+    "field": "nu",
+    "from": "124.98053772654384",
+    "to": 119.39246996352449
+  },
+  {
+    "config_hash": "dfe44f8e8a62ef29",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "a5a45a76ba788df2",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "8bafd4eac0ee5e45",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "b833a8f478638abf",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "ab7f7af9d524bd87",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "4c5de467d80b5bd5",
+    "field": "mu",
+    "from": "1.57039958355017",
+    "to": 1.5703725312487222
+  },
+  {
+    "config_hash": "4c5de467d80b5bd5",
+    "field": "nu",
+    "from": "1.1574763837270439",
+    "to": 1.1574293813901022
+  },
+  {
+    "config_hash": "6b86284f07ae607c",
+    "field": "mu",
+    "from": "1.4771404601633549",
+    "to": 1.4768711593351327
+  },
+  {
+    "config_hash": "6b86284f07ae607c",
+    "field": "nu",
+    "from": "0.9632326900027692",
+    "to": 0.9627525181276724
+  },
+  {
+    "config_hash": "760e34459c8b76fa",
+    "field": "mu",
+    "from": "1.4933993619924877",
+    "to": 1.493650602787966
+  },
+  {
+    "config_hash": "760e34459c8b76fa",
+    "field": "nu",
+    "from": "0.9891733833937906",
+    "to": 0.9897480211802758
+  },
+  {
+    "config_hash": "a03eea1d705e71cf",
+    "field": "mu",
+    "from": "1.205620467371773",
+    "to": 1.2054452734300867
+  },
+  {
+    "config_hash": "a03eea1d705e71cf",
+    "field": "nu",
+    "from": "0.41715552855748683",
+    "to": 0.41686091129668057
+  },
+  {
+    "config_hash": "ace495b2dc92f317",
+    "field": "mu",
+    "from": "1.5648663986939937",
+    "to": 1.5648713986738585
+  },
+  {
+    "config_hash": "ace495b2dc92f317",
+    "field": "nu",
+    "from": "1.1892717056907713",
+    "to": 1.189298644545488
+  },
+  {
+    "config_hash": "c8ada82443d211dd",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "dd15f4a860f27f9a",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  },
+  {
+    "config_hash": "377d98ffd8442e8e",
+    "field": "split",
+    "from": "validation",
+    "to": "train_subset"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "historical_workbook_only": true,
+  "first_recorded_steps": {
+    "binomial": [
+      [
+        11,
+        20
+      ],
+      [
+        23,
+        30
+      ],
+      [
+        37,
+        30
+      ]
+    ],
+    "finite_ppr": [
+      [
+        11,
+        20
+      ],
+      [
+        23,
+        30
+      ],
+      [
+        37,
+        30
+      ]
+    ]
+  },
+  "matches_plan": true
+}

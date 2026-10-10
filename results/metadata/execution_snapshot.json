@@ -1,0 +1,33 @@
+{
+  "accounting_job": {
+    "elapsed_seconds": 0,
+    "exit_code": "0:0",
+    "gpu_count": 0,
+    "reason": "Dependency",
+    "state": "PENDING"
+  },
+  "accounting_job_id": "8490118",
+  "alerts": [],
+  "checked_utc": "2026-10-10T20:44:53.048856Z",
+  "chunk_dispatch_status": "queued",
+  "chunk_index": 1,
+  "completed_runs": 0,
+  "current": null,
+  "execution_mode": "serial_checkpointed_chunks",
+  "expected_runs": 20,
+  "health": "waiting",
+  "ignored_previous_progress_job": "8490016",
+  "job_id": "8490117",
+  "monitor_finished": false,
+  "observed_gpu_hours": 14.76,
+  "progress_matches_job": false,
+  "remaining_gpu_hours": 9.24,
+  "scheduler": {
+    "elapsed_seconds": 0,
+    "exit_code": "0:0",
+    "gpu_count": 0,
+    "reason": "Priority",
+    "state": "PENDING"
+  },
+  "trigger": "manual"
+}

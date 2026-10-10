@@ -1,0 +1,15 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+/experiments/
+/data/
+*.pt
+*.npz
+*.xlsx
+*.log
+machine.env

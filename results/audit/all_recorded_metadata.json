@@ -1,0 +1,14 @@
+{
+  "pointer_bridge_rows": 36,
+  "pointer_training_not_repeated": true,
+  "run_count": 152,
+  "stage_status_counts": {
+    "final/completed": 60,
+    "horizon_pilot/completed": 18,
+    "mlp_pilot/completed": 24,
+    "overfit/completed": 12,
+    "pilot/completed": 12,
+    "pilot/paused": 24,
+    "smoke/completed": 2
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "all_rows_certified": false,
+  "sample": [
+    {
+      "id": "534fbdd21a3dbcfce5ba6529efe1921857592758f45a2b3bedb88c2769a3d978",
+      "solution_count_capped_at_two": 1,
+      "target_valid": true
+    },
+    {
+      "id": "f84b6b0dde794e55e8879c99f8309e579192c92fae0019a1f7eb47b1d5654edc",
+      "solution_count_capped_at_two": 1,
+      "target_valid": true
+    },
+    {
+      "id": "a1ec17ddac4c1b10b60d5d8a633169a512137e62664060f057e9d3b48a83a3b9",
+      "solution_count_capped_at_two": 1,
+      "target_valid": true
+    }
+  ],
+  "selection": "first three official validation rows"
+}

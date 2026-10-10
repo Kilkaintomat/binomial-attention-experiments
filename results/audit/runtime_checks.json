@@ -1,0 +1,25 @@
+{
+  "additional_source_hashes": {
+    "scripts/audited_mlp_runtime.py": "2009e72515490814a96864679d3a22fac66da5681323ea1a99f4d74d87154531",
+    "scripts/revision_reporting.py": "8b1b42b95ff9bc2cf3827b838f864a2e4f3daf70c0719e4ad814db2643ca4b86"
+  },
+  "copied_snapshots_survive_atomic_replacement": true,
+  "inner_mlp_resume_and_observation_hooks_bitwise_equal": [
+    "maze",
+    "sudoku"
+  ],
+  "off_grid_pause_preserves_threshold_bracket": true,
+  "resumable_checkpoints_verified": [
+    {
+      "checkpoint_step": 2250,
+      "config_hash": "c21ef32edbd4900f",
+      "method": "binomial",
+      "seed": 11,
+      "task": "maze"
+    }
+  ],
+  "scheduler_job_id": "8490155",
+  "status": "passed",
+  "tested_on_project_filesystem": true,
+  "threshold_false_start_and_confirmation": true
+}

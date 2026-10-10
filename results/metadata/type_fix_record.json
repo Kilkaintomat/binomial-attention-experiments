@@ -1,0 +1,7 @@
+{
+  "issue": "Official Sudoku compact int8 targets require int64 for cross entropy",
+  "fix": "TaskData.batch explicitly returns long labels and puzzle digits",
+  "regression_test": "test_compact_sudoku_targets_are_long",
+  "previous_gpu_seconds": 20.18332595936954,
+  "maze_profiles_reused": "Maze targets were already int64; unchanged numerical path"
+}

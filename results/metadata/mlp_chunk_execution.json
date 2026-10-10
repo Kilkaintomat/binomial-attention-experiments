@@ -1,0 +1,39 @@
+{
+  "authorization": "User requested splitting the final series into shorter jobs",
+  "checkpoint_note": "Retain the preceding evaluated checkpoint across off-grid pauses; repeated saves at a validation step are idempotent",
+  "chunks": [
+    {
+      "accounting_job": 8490118,
+      "gpu_job": 8490117,
+      "index": 1,
+      "walltime_seconds": 7200
+    }
+  ],
+  "created_utc": "2026-10-10T20:29:39.908090Z",
+  "cumulative_gpu_ceiling_seconds": 86400,
+  "dispatch": "After successful GPU completion and Slurm accounting; one GPU allocation at a time; stop on failures or exhausted budget",
+  "enabled": true,
+  "maximum_chunk_walltime_seconds": 7200,
+  "method": "Unchanged frozen runner; per-allocation reservation shortened by an external execution wrapper",
+  "original_pending_gpu_job": 8490117,
+  "original_scheduler_walltime_seconds": 33120,
+  "preserved": [
+    "20 configurations",
+    "30000 updates per run",
+    "datasets and data order",
+    "model and training source",
+    "A100 hardware",
+    "frozen protocol files"
+  ],
+  "resume": "Full model, optimizer, scheduler and random-generator state; no new validation points at pauses",
+  "source_hashes": {
+    "scripts/audited_mlp_runtime.py": "2009e72515490814a96864679d3a22fac66da5681323ea1a99f4d74d87154531",
+    "scripts/check_chunked_execution.py": "f8280999ea0aac3f3763b301945ea98fb9cac7cef4ed8699713c44c16948f465",
+    "scripts/chunked_mlp_runtime.py": "c6a8a9318b5c4a71fccec82f732278f59f319bbadad181b6bc02890083b26fa0",
+    "scripts/mlp_chunk_scheduler.py": "b8d54563598fe81edbfbd9af094af2a8705485c22196f069edabfaae75cce6bc",
+    "scripts/reconcile_scheduler_budget.py": "6b2ea3041f672b9fa2fe57de5990d41166e3218a72585fb06949d6ce6ec89877"
+  },
+  "status": "queued",
+  "used_gpu_seconds_at_activation": 53136,
+  "verification_job": 8490155
+}

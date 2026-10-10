@@ -1,0 +1,44 @@
+{
+  "audit_script_sha256": "ea3dd8683adcca4ceea193357bff5d188db63779c27214f98e651ec61154fd23",
+  "checkpoint_replay_examples": 960,
+  "completed_runs_audited": 60,
+  "elapsed_seconds": 30.46713714301586,
+  "errors": [],
+  "future_runs_checked": 20,
+  "limitations": [
+    "Full test inference was not repeated; every saved prediction was independently validated",
+    "CPU checkpoint replay uses 16 test examples per completed run",
+    "Sudoku digit relabeling was checked; full row/column/transpose canonicalization and full uniqueness proofs were not performed",
+    "Protocol omissions and reporting defects are documented separately; passing this audit is not full plan completion"
+  ],
+  "saved_test_predictions_revalidated": 570000,
+  "scheduler_job_id": "8490008",
+  "source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "status": "passed_with_limitations",
+  "warnings": [
+    {
+      "affected_runs": 10,
+      "code": "learned_filter_metadata_from_last_not_tested_best"
+    },
+    {
+      "both_weights_retained": 0,
+      "code": "threshold_weights_not_retained",
+      "logged_metric_intervals_remain_available": true,
+      "reached_thresholds": 34
+    },
+    {
+      "actual_splits": [
+        180000,
+        18000,
+        18000
+      ],
+      "code": "RRN_config_count_fields_are_unused_generator_defaults",
+      "config_fields": [
+        100000,
+        5000,
+        5000
+      ],
+      "sampling_checked_against_actual_data_size": true
+    }
+  ]
+}

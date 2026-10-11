@@ -61,6 +61,7 @@ def report():
     if not os.environ.get('SLURM_JOB_ID'): raise RuntimeError('Analysis requires a CPU or GPU scheduler allocation')
     target=root()/'report';target.mkdir(parents=True,exist_ok=True);collect_overfit()
     audit=read(root()/'checks/legacy_compatibility.json')
+    data_audit=read(root()/'checks/data.json')
     reuse=audit['reuse_all_15_relational_allowed']
     history={(r['model'],r['seed']):r for r in audit['historical_final_results']} if reuse else {}
     manifest=read(root()/'manifest.json');statuses={r['config_hash']:r for r in manifest['rows']}
@@ -83,6 +84,7 @@ def report():
         row={'stage':c.stage,'support':c.mask_label(),'model':c.label(),'seed':c.seed,'status':status,'origin':origin,
              'source_sha256':source,'config_hash':c.hash(),'completed_steps':30000 if historical else r['completed_steps'] if r else curve[-1]['step'] if curve else 0,
              'planned_steps':c.planned_steps,'completion_steps':c.completion_steps,'parameters':204169 if c.architecture=='recurrent' else 797449,
+             'data_hash':data_audit['data_hash'],'mask_sha256':data_audit['masks'][c.mask_label()]['mask_sha256'],
              'r':c.hops,'T':c.recurrent_steps,'layers':c.layers,**c.operations()}
         for key in ['solved_rate','exact_match','blank_accuracy','loss']: row[key]=metric.get(key) if metric else None
         row['checkpoint_step']=metric.get('checkpoint_step') if metric else None
@@ -91,6 +93,9 @@ def report():
                        validation_seconds=r['timings']['validation'],checkpoint_seconds=r['timings']['checkpoints'],elapsed_seconds=r['timings']['elapsed'],
                        training_examples_per_second=r['examples']/max(1e-12,r['timings']['training']),
                        peak_memory_bytes=(r['last_validation'] or {}).get('train_peak_memory_bytes'))
+            row.update(training_gpu_hours=r['timings']['training']/3600,
+                       active_training_call_gpu_hours=r['timings']['elapsed']/3600,
+                       gpu_hours_basis='active run; shared allocation overhead and final inference charged separately by scheduler')
         for threshold in [.5,.9]:
             crossing=r['thresholds'][str(threshold)] if r else historical_threshold(curve,threshold) if curve else {'status':'not_started'}
             thresholds.append({'stage':c.stage,'support':c.mask_label(),'model':c.label(),'seed':c.seed,'threshold':threshold,'origin':origin,**crossing})

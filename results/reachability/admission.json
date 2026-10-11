@@ -1,0 +1,35 @@
+{
+  "status": "admitted",
+  "models": [
+    "F4-one",
+    "F4-bin",
+    "F4-exp",
+    "F4-one-inner",
+    "F4-bin-inner",
+    "F4-exp-inner",
+    "R32-one",
+    "F4-geo"
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "families": [
+    "er",
+    "dag"
+  ],
+  "required_with_reserve_seconds": 84360.57378200535,
+  "remaining_seconds_at_admission": 86160.72237135842,
+  "selection_rule": "longest priority prefix with five seeds; minimum two models, reduced seed rounds only if needed",
+  "source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8",
+  "full_grid_admitted": false,
+  "omitted_models": [
+    "F4-learned"
+  ],
+  "omitted_seeds": [],
+  "additional_seconds_for_full_grid": 5065.020892680623,
+  "before_any_new_test": true
+}

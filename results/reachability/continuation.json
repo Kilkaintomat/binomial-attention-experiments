@@ -1,0 +1,23 @@
+{
+  "status": "prepared_not_authorized_beyond_cap",
+  "models": [
+    "F4-learned"
+  ],
+  "families": [
+    "er",
+    "dag"
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "pilot_runs": 6,
+  "final_runs": 10,
+  "additional_gpu_hours_estimate": 1.4069502479668397,
+  "current_cap_gpu_hours": 24,
+  "timing_basis": "profile.json with 20 percent reserve",
+  "scientific_rule": "do not extend the frozen grid after test outcomes without a new research iteration and independent test; any resource extension requires explicit user authorization"
+}

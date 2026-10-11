@@ -9,8 +9,12 @@ description = "Controlled experiments on cached transport and relational reasoni
 requires-python = ">=3.10"
 dependencies = ["torch>=2.2", "numpy>=1.24", "matplotlib>=3.7", "openpyxl>=3.1", "pypdf>=4", "pytest>=8"]
 
+[project.optional-dependencies]
+reachability = ["networkx==3.4.2"]
+
 [project.scripts]
 transport-reasoning = "transport_reasoning.__main__:main"
+reachability = "transport_reasoning.reachability.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,0 +1,115 @@
+{
+  "checked_utc": "2026-10-11T14:29:18.552476Z",
+  "queue": {
+    "status": "running",
+    "gpu_jobs": [
+      {
+        "job_id": "8490543",
+        "reserved_seconds": 1800,
+        "accounted": true,
+        "allocated_seconds": 236,
+        "scheduler_state": "COMPLETED",
+        "exit_code": "0:0"
+      },
+      {
+        "job_id": "8490548",
+        "reserved_seconds": 1800,
+        "accounted": false
+      }
+    ],
+    "gpu_seconds_used": 236,
+    "active_gpu_job": "8490548",
+    "accounting_job": "8490549",
+    "current_job": "8490548"
+  },
+  "active_job_status": [
+    "8490548|reach_slot|RUNNING|6:15|30:00",
+    "8490523|local_mask_slot|RUNNING|50:15|2:00:00",
+    "8490549|reach_account|PENDING|0:00|3:00",
+    "8490524|local_mask_account|PENDING|0:00|3:00"
+  ],
+  "runs": [
+    {
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.001,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 0.9997511199601792
+    },
+    {
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.0003,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 1.0
+    },
+    {
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.001,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 0.9976356396217023
+    },
+    {
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.0003,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 0.9975111996017919
+    },
+    {
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.001,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 0.9996192373030286
+    },
+    {
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.0003,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 0.9986526858414856
+    },
+    {
+      "family": "er",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.0003,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 0.9360231780536821
+    },
+    {
+      "family": "er",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.001,
+      "stage": "pilot",
+      "step": 3000,
+      "status": "completed",
+      "validation_ba": 0.9351363400037043
+    }
+  ],
+  "error_count_in_active_log": 0,
+  "test_evaluations": 0
+}

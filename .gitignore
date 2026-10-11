@@ -13,3 +13,4 @@ dist/
 *.xlsx
 *.log
 machine.env
+/inputs/

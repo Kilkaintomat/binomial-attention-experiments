@@ -1,0 +1,351 @@
+{
+  "status": "passed",
+  "source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8",
+  "resume": {
+    "status": "passed",
+    "steps": 40,
+    "split_step": 20,
+    "equality": "bitwise CPU parameters, optimizer, scheduler and batch RNG",
+    "incompatible_fields_rejected": [
+      "data_hash",
+      "source_hash",
+      "config"
+    ]
+  },
+  "smoke": [
+    {
+      "family": "er",
+      "model": "F4-one",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 4,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "er",
+      "model": "F4-bin",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "er",
+      "model": "F4-exp",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "er",
+      "model": "F4-one-inner",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 4,
+        "inner_ffn_calls": 4,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 925313
+      }
+    },
+    {
+      "family": "er",
+      "model": "F4-bin-inner",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 16,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 925313
+      }
+    },
+    {
+      "family": "er",
+      "model": "F4-exp-inner",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 16,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 925313
+      }
+    },
+    {
+      "family": "er",
+      "model": "R32-one",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 32,
+        "attention_calls": 32,
+        "transport_matmuls": 32,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 32,
+        "unique_blocks": 1,
+        "parameters": 198913
+      }
+    },
+    {
+      "family": "er",
+      "model": "F4-geo",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "er",
+      "model": "F4-learned",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792209
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-one",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 4,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-bin",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-exp",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-one-inner",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 4,
+        "inner_ffn_calls": 4,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 925313
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 16,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 925313
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 16,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 925313
+      }
+    },
+    {
+      "family": "dag",
+      "model": "R32-one",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 32,
+        "attention_calls": 32,
+        "transport_matmuls": 32,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 32,
+        "unique_blocks": 1,
+        "parameters": 198913
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-geo",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      }
+    },
+    {
+      "family": "dag",
+      "model": "F4-learned",
+      "steps": 40,
+      "status": "passed",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792209
+      }
+    }
+  ],
+  "overfit": [
+    {
+      "model": "F4-one",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "F4-bin",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "F4-exp",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "F4-one-inner",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "F4-bin-inner",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "F4-exp-inner",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "R32-one",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "F4-geo",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    },
+    {
+      "model": "F4-learned",
+      "steps": 1000,
+      "train_subset_accuracy": 1.0,
+      "status": "passed"
+    }
+  ],
+  "data_and_model_test_command": "python -m pytest tests/test_reachability_data.py tests/test_reachability_model.py",
+  "data_model_exit_code": 0,
+  "tolerances": {
+    "permutation_padding_atol": 2e-06,
+    "locality_atol": 2e-06
+  },
+  "test_evaluation_performed": false,
+  "allocation_id": "8490543"
+}

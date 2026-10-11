@@ -1,0 +1,27 @@
+{
+  "upstream_repository": "https://github.com/google-deepmind/digraph_transformer",
+  "upstream_commit": "22b880e8b00486e3d2ab916150d0138f538d5c50",
+  "base_commit": "e9d676f3bd02a99c05913243c4590255e5a48394",
+  "file_blobs": {
+    "script_generate_distance_np.py": "23d476f1e6a46a25540d20b952e4818e6ea35970",
+    "config.py": "f50ee936392d9bcd4127f9d8b59b4bc2d171bfdf",
+    "dataset_utils.py": "247e630b13eeee4f69046f1057bb499688724174",
+    "run_dist_dataset_gen.sh": "e5972759b9e3b3371423c909213e24c0e4973f4a"
+  },
+  "adaptations": [
+    "keep all n vertices instead of largest weak component",
+    "explicit directed BFS binary labels, not config name inference",
+    "target-only query-conditioned scalar prediction",
+    "independent deterministic RNG streams",
+    "100000 train graphs per family, fixed counts by n",
+    "incoming mask identity OR transpose(B)",
+    "eight uniform ordered non-self queries per graph"
+  ],
+  "loader_observations": [
+    "CONNECTED_CA internal name dist_adj selects adjacency-target branch",
+    "default meshgrid index assignment transposes row-major flattened matrix; asymmetric-chain check passed"
+  ],
+  "publication_score_replication": false,
+  "upstream_files_downloaded": true,
+  "upstream_license_preserved": true
+}

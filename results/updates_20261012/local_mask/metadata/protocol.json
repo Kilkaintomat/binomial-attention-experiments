@@ -1,0 +1,68 @@
+{
+  "base_commit": "9ea79b57259e9a6619098279ec4274b8efb4dd13",
+  "batch_rng": "numpy default_rng(seed+987123); paired across masks and methods",
+  "budget": "absolute approved GPU allocation seconds and wall limit; profile+validation+checkpoint+test+20% reserve",
+  "checkpoint": "max validation solved, min blank CE, earliest exact tie; full validation step1 and every250",
+  "code_commit": "61c8357b902f1a4154679a998752450b416e72ae",
+  "dataset_counts": [
+    180000,
+    18000,
+    18000
+  ],
+  "extensions": "none; recurrent binomial, inner-MLP, gating and deep supervision excluded",
+  "finals": {
+    "fresh_initialization": true,
+    "results": 30,
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "steps": 30000
+  },
+  "historical_reuse": "all 15 relational finals only after effective-configuration and artifact audit; otherwise 48 new trainings",
+  "inputs": "same 38 token-local features; no global information channel",
+  "interpretation": "I is effect of this graph change, not pure diameter; absolute quality and cost always shown",
+  "masks": {
+    "graph": "relational rows,columns,boxes+self",
+    "grid4": "Manhattan distance <=1, no wrap"
+  },
+  "models": [
+    "F4-onehop",
+    "F4-binomial",
+    "R32-onehop"
+  ],
+  "pilots": {
+    "completion_steps": 10000,
+    "count": 18,
+    "planned_steps": 30000,
+    "seeds": [
+      101,
+      103,
+      107
+    ],
+    "test_allowed": false
+  },
+  "position_diagnostic": "first64 validation; corners/other_edges/interior; micro accuracy among original blank cells",
+  "primary_estimand_pp": "I=(S(F4-binomial,grid4)-S(F4-onehop,grid4))-(S(F4-binomial,relational)-S(F4-onehop,relational))",
+  "resource_policy": "one GPU; preserve all prior queues; no release before their completion, checks, and separate budget grant",
+  "series": "sudoku_local_mask_v1",
+  "snapshot_sha256": "917858b6a7f030cbc41a95a38799bc4b77d754c7e431a957fc3567ae045cb27b",
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860",
+  "test_caveat": "follow-up on a known published benchmark; no claim of untouched confirmatory test",
+  "thresholds": "50%,90%; two consecutive full validations; censor failures and pending crossings",
+  "timing": "warmup10, repeats30, synchronized forward and full preparation/argmax/clue copy/validator; batches1,64",
+  "training": "AdamW lr .001 wd .01 clip1, batch64 replacement, warmup5%, cosine horizon30000, float32 TF32 off",
+  "uncertainty": {
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "method": "paired seed percentile bootstrap",
+    "resamples": 20000,
+    "sample_sd_ddof": 1,
+    "seed": 90421
+  }
+}

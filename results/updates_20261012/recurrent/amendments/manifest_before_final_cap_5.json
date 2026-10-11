@@ -1,0 +1,339 @@
+{
+  "rows": [
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/R16_seed101.json",
+      "config_hash": "539053ed74b58fdf",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 101,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/B16_seed101.json",
+      "config_hash": "60c8360d431c6c75",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 101,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/R32_seed101.json",
+      "config_hash": "142343ec7ecd3943",
+      "label": "R32",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 101,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/B32_seed101.json",
+      "config_hash": "ef1c3196fd02b2b1",
+      "label": "B32",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 101,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/R16_seed103.json",
+      "config_hash": "af4ca8c4313f1bb0",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 103,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/B16_seed103.json",
+      "config_hash": "e9d76de68a220507",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 103,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/R32_seed103.json",
+      "config_hash": "d07522007afd05a4",
+      "label": "R32",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 103,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/B32_seed103.json",
+      "config_hash": "8c9894c68c1d3df0",
+      "label": "B32",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 103,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/R16_seed107.json",
+      "config_hash": "f6798e3b6d396a01",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 107,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/B16_seed107.json",
+      "config_hash": "9bf0b7b038a2af7c",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 107,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/R32_seed107.json",
+      "config_hash": "233623818489932d",
+      "label": "R32",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 107,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 10000,
+      "config_file": "configs/pilot/B32_seed107.json",
+      "config_hash": "dea9e92a375d2b2e",
+      "label": "B32",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 107,
+      "stage": "pilot",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 30000,
+      "config_file": "configs/final/R16_seed11.json",
+      "config_hash": "758e02ff31080496",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 11,
+      "stage": "final",
+      "status": "completed"
+    },
+    {
+      "completed_steps": 30000,
+      "config_file": "configs/final/B16_seed11.json",
+      "config_hash": "c6ae9d083aef7f30",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 11,
+      "stage": "final",
+      "status": "completed"
+    },
+    {
+      "config_file": "configs/final/R32_seed11.json",
+      "config_hash": "40233cd30da87670",
+      "label": "R32",
+      "optional": false,
+      "origin": "historical_quality_only",
+      "seed": 11,
+      "stage": "final",
+      "status": "completed"
+    },
+    {
+      "config_file": "configs/final/B32_seed11.json",
+      "config_hash": "c62878ec0078ca87",
+      "label": "B32",
+      "optional": true,
+      "origin": "new_training",
+      "seed": 11,
+      "stage": "final",
+      "status": "running"
+    },
+    {
+      "config_file": "configs/final/R16_seed23.json",
+      "config_hash": "587fca7d9b1bb3fe",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 23,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/B16_seed23.json",
+      "config_hash": "66f33ae5da84abb7",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 23,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/R32_seed23.json",
+      "config_hash": "34a917ad43c5e09b",
+      "label": "R32",
+      "optional": false,
+      "origin": "historical_quality_only",
+      "seed": 23,
+      "stage": "final",
+      "status": "completed"
+    },
+    {
+      "config_file": "configs/final/B32_seed23.json",
+      "config_hash": "f5238d67c7c1fccb",
+      "label": "B32",
+      "optional": true,
+      "origin": "new_training",
+      "seed": 23,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/R16_seed37.json",
+      "config_hash": "a833548785bbd67e",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 37,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/B16_seed37.json",
+      "config_hash": "df4e4fb0b12bd185",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 37,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/R32_seed37.json",
+      "config_hash": "2444d450e88ca64b",
+      "label": "R32",
+      "optional": false,
+      "origin": "historical_quality_only",
+      "seed": 37,
+      "stage": "final",
+      "status": "completed"
+    },
+    {
+      "config_file": "configs/final/B32_seed37.json",
+      "config_hash": "dd9b96e7d4a1ad5e",
+      "label": "B32",
+      "optional": true,
+      "origin": "new_training",
+      "seed": 37,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/R16_seed53.json",
+      "config_hash": "7bb2e398d5d86ae9",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 53,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/B16_seed53.json",
+      "config_hash": "4ab1473bee3f4530",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 53,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/R32_seed53.json",
+      "config_hash": "147391cd33f203cc",
+      "label": "R32",
+      "optional": false,
+      "origin": "historical_quality_only",
+      "seed": 53,
+      "stage": "final",
+      "status": "completed"
+    },
+    {
+      "config_file": "configs/final/B32_seed53.json",
+      "config_hash": "3dcc02190efaec50",
+      "label": "B32",
+      "optional": true,
+      "origin": "new_training",
+      "seed": 53,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/R16_seed71.json",
+      "config_hash": "5438c76f049860b7",
+      "label": "R16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 71,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/B16_seed71.json",
+      "config_hash": "1de2b53ce58e9be0",
+      "label": "B16",
+      "optional": false,
+      "origin": "new_training",
+      "seed": 71,
+      "stage": "final",
+      "status": "planned"
+    },
+    {
+      "config_file": "configs/final/R32_seed71.json",
+      "config_hash": "e2828d712a9f9547",
+      "label": "R32",
+      "optional": false,
+      "origin": "historical_quality_only",
+      "seed": 71,
+      "stage": "final",
+      "status": "completed"
+    },
+    {
+      "config_file": "configs/final/B32_seed71.json",
+      "config_hash": "874c2c69691d43c1",
+      "label": "B32",
+      "optional": true,
+      "origin": "new_training",
+      "seed": 71,
+      "stage": "final",
+      "status": "planned"
+    }
+  ],
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7"
+}

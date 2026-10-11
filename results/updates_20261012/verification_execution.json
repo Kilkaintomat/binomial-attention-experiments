@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "execution": "separate CPU scheduler allocation",
+  "training_interrupted": false,
+  "executed_source_files_match_published_branch_provenance": true,
+  "checks": [
+    "audit_current_sudoku.py",
+    "build_current_series_assets.py",
+    "check_public_snapshot.py",
+    "check_mlp_final_snapshot.py"
+  ],
+  "new_predictions_revalidated": 360000,
+  "new_completed_run_records_checked": 131,
+  "original_main_source_unchanged": true,
+  "reachability_live_status_after_audit": "running",
+  "reachability_completed_finals_after_audit": 34,
+  "live_check_utc": "2026-10-11T22:24:45.959285Z",
+  "report_counts_remain_frozen_at_snapshot": true
+}

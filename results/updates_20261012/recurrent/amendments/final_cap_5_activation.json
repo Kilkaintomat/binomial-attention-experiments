@@ -1,0 +1,7 @@
+{
+  "active": true,
+  "check_job": 8490504,
+  "runtime_sha256": "41501316f7bbfe053aa107d94893b39c8f22c9c52ae934caae997328c115b465",
+  "takes_effect": "next GPU slot; current slot allowed to checkpoint normally",
+  "new_final_limit": 5
+}

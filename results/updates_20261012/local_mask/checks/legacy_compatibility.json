@@ -1,0 +1,770 @@
+{
+  "checkpoint_replay_examples": 240,
+  "historical_final_results": [
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "a8f037fc64311334074137ef8fc1de38ab7c654b9bbabe5bb6859c291491d9f0",
+        "checkpoint_last.pt": "e025a1278507aa0e30efa1bd26aa868c17f055277f35f1ec37f1bd80d16166f6",
+        "config.json": "0bdf5512817e20da95ef294df4a8a03fddb074c942fc6a34ba9688857efcc151",
+        "evaluation_test.json": "f36a937e6558f416aa48ae4f57b95fff5bfd0ed9663670d00a84b6b975493796",
+        "metrics.jsonl": "e5775e5a75e97077b6881d5e4760db5c6799190680e4438ce553c6a316c25151",
+        "predictions_test.npz": "83eab8f8c8044a99d737172ffac3e17f821a443b80ad265911e95f72075a8a1b",
+        "result.json": "c1cd57447c75cb22d21016ad885667612de566b4dcaead1eb0cddc82585a5d6d"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7986856856856857,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.008
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.2022
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 26000,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.277574023231864,
+        "exact_match": 0.06061111111111111,
+        "inference_peak_memory_bytes": 85513728,
+        "inference_seconds_per_example": 3.748422105693155e-05,
+        "loss": 0.44140101952022975,
+        "row_column_conflicts_mean": 11.76988888888889,
+        "solved_rate": 0.06061111111111111,
+        "split": "test"
+      },
+      "legacy_config_hash": "cb56bf2f0b9a5dda",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "be1a43983d7c2db9",
+      "model": "F4-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 11,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "0fcd2b343a75713a4b28ee7630eacd9155bd180c6450689945e80a6c3a89ecad",
+        "checkpoint_last.pt": "bac4ab5a811110e15dfb07bbb8df7010b91755e0df74cacedd1c2249cc82adfc",
+        "config.json": "4f2f4b0717c28cab42a1ae7ce560360ed0fad831450e628fa05bd58ab90b917d",
+        "evaluation_test.json": "375ad5709c23e417a649beb6b5caee1da2bb132611ed8e0d3c0d47eed75bfc14",
+        "metrics.jsonl": "de1b01ec0779d891f5b9cd16541aeb7400ea05f67492ad01cfd984ec9582ba0a",
+        "predictions_test.npz": "ef9a60f45564cd930e879e455fa5a842941feb76df572c127bad524693e0c4d7",
+        "result.json": "d291928fdbcf17e8367360930f5839637a90c1c480b47d3ee1c0269833bff68b"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7897797797797798,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0051
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.1784
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 25250,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.2507222406566143,
+        "exact_match": 0.05238888888888889,
+        "inference_peak_memory_bytes": 85513728,
+        "inference_seconds_per_example": 3.7279851424197354e-05,
+        "loss": 0.4588263385825687,
+        "row_column_conflicts_mean": 12.3415,
+        "solved_rate": 0.05238888888888889,
+        "split": "test"
+      },
+      "legacy_config_hash": "4eea932a3fc2ca5c",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "309738caabfe0a80",
+      "model": "F4-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 23,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "05ee74182abebce19d523d10b6196c293561cd46be818df70b3637098e457166",
+        "checkpoint_last.pt": "ac91125b3f7f34c7b37f50f98e596d5540bd33a35cec61b88d8fb3b63a6350e2",
+        "config.json": "39af118db13323ea9a2e301b10f5cae4893ea4e7e06af84e7e74eade41f06a71",
+        "evaluation_test.json": "07cac422a7e6597f808619a63a2eab7899c336323f08151dbb938426e3da2319",
+        "metrics.jsonl": "79af576e3d216ed33c0e90bf7bdff16a0cf3515c8290df4ce914812cbc132c0d",
+        "predictions_test.npz": "5e1e37e74d89150bd7966b270007c8e7f930f8ab941e1dc5ce527fbe66c23a2e",
+        "result.json": "0f5698d2fca31303fb9639db59f3612c92c55e618d5f4f52ead74dbf046e188b"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7897717717717718,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0048
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.182
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 25750,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.202184747904539,
+        "exact_match": 0.05322222222222222,
+        "inference_peak_memory_bytes": 85513728,
+        "inference_seconds_per_example": 3.651313359538714e-05,
+        "loss": 0.45789940796958073,
+        "row_column_conflicts_mean": 12.335888888888888,
+        "solved_rate": 0.05322222222222222,
+        "split": "test"
+      },
+      "legacy_config_hash": "37e66cb902290a9b",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "2b57f4e54789ae82",
+      "model": "F4-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 37,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "c07c66b73e511416cdb03c15d0f43ee3fd1fa64b3957fa23a68b231d92ac8559",
+        "checkpoint_last.pt": "da70a0f0dc4dd9e5eb8bc95dc1c10f9cf10e5a1919778d127a715ccbaa725534",
+        "config.json": "22e7fae4939498bf1f7b9e78f723c4c279b48df807271044dd3bb0e8ab98ee6f",
+        "evaluation_test.json": "f6057d9e1206db7ca81bba92c7d7f8bb8aae724297007246c73846ed8ba8b9b8",
+        "metrics.jsonl": "a2afa341388e3b753b4e10dd8b68399218f6097318bd542f2312adddaeb176b9",
+        "predictions_test.npz": "c80ccba610f5d3349158254436b9502758e38157d2960a3d4e13125f39c5a37f",
+        "result.json": "70433cc3f6173481774c6ff07f0fb0b108a60accbaddc970f2dba6380e0b0bb5"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7907797797797798,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0056
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.1812
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 27500,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.1865786220878363,
+        "exact_match": 0.05344444444444445,
+        "inference_peak_memory_bytes": 85513728,
+        "inference_seconds_per_example": 3.649391927238968e-05,
+        "loss": 0.45479906537797715,
+        "row_column_conflicts_mean": 12.231222222222222,
+        "solved_rate": 0.05344444444444445,
+        "split": "test"
+      },
+      "legacy_config_hash": "0e106a23141b32ac",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "bfd70f1460e800de",
+      "model": "F4-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 53,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "39c21579ed3846397b351cd98d9e7a502e65a5a879cd26b5abed951691f1b5d2",
+        "checkpoint_last.pt": "6c1736c0f2c084b49ede82d5890c326ccb5ae5394ab503856228628fbcbcc5eb",
+        "config.json": "ed05f99c16f72a50c6c3db73119f842069dbd644ae1cefecde8f1a5c1cdee6b7",
+        "evaluation_test.json": "dee85fddfbf80f27d52189962271283bd135f937e58aa1b8608abaf41f804ee0",
+        "metrics.jsonl": "e74fe2659dbf1ee6633f4359d0d9d6797b97e8b4d85ec5f48c205efb42f7e3bc",
+        "predictions_test.npz": "eb079b98b1c981b0161c49596d5fae83fbd23b5622626ecdcf769c611da6e997",
+        "result.json": "e71853e2c39a6a60c9ef3adf4092d01eebd7f8b8fb4149ebcd335157effadf6d"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7931611611611612,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0057
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.1866
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 29000,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.1929762959480286,
+        "exact_match": 0.055,
+        "inference_peak_memory_bytes": 85513728,
+        "inference_seconds_per_example": 3.6602149200108316e-05,
+        "loss": 0.4508621243370904,
+        "row_column_conflicts_mean": 12.09661111111111,
+        "solved_rate": 0.055,
+        "split": "test"
+      },
+      "legacy_config_hash": "74fcf77235af189a",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "c5c03e25940b8a76",
+      "model": "F4-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 71,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "5f72d079d198a6dcb07d9ae007e31fb1edc741e3482cd4e95fcfef86265e4c05",
+        "checkpoint_last.pt": "ce4f539290fbf81520f3ce69bbe15932e348d1f93c49b09707994414d1c28d99",
+        "config.json": "490e0158b864197db3b8c6b881262d93ef356eaaccced8ced84a6a16984e2816",
+        "evaluation_test.json": "03b444ee1c2c6fb10d78cecf6db53420db14df126b8e0ee8000397af3894f671",
+        "metrics.jsonl": "dbf11f6ca2c0f86608244b553313a1adca5bd8d6bc20417b2a9103e8a66ac724",
+        "predictions_test.npz": "dc8280b11c356e722f12fe141f451abc8cba1581a790dc30a5dbdb3b4acbf630",
+        "result.json": "43547b43a195332e95953558387fd9ea93fdf9b5b2f7ef85920afb3b1e6e6b82"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.795079079079079,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0063
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.2054
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 28250,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.533539617434144,
+        "exact_match": 0.06055555555555556,
+        "inference_peak_memory_bytes": 84532736,
+        "inference_seconds_per_example": 5.2234205313854746e-05,
+        "loss": 0.4437653922504849,
+        "row_column_conflicts_mean": 12.232722222222222,
+        "solved_rate": 0.06055555555555556,
+        "split": "test"
+      },
+      "legacy_config_hash": "8b215625b6d86ebe",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "6d060d2b1a4d7c36",
+      "model": "F4-binomial",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 11,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "1a700426681d97407b46895c3ea989d37bfb3aebfc61d4576595dfa1df557a10",
+        "checkpoint_last.pt": "ab55ec654a1c80f6551bdf66fe65577fb1a06ced2387e4dd235e21f6a3e25a6f",
+        "config.json": "7d9d475b79a6195f164287458accc1a4946c18eccbdce1c2a9b950cbf16d05eb",
+        "evaluation_test.json": "ebdf35ee8ac478e194a4c462f3700b79ccbcf042fa35ca2ab27224e40b5f8c3f",
+        "metrics.jsonl": "989816b930d27ecb12c45c05ff779b5f2ddcd02a521eeecccf35a0b3fef1bc06",
+        "predictions_test.npz": "62540836a9a44ec3ae50bda64018d8cb44c8f304489a3f70c1a0b8d2e6d9a84a",
+        "result.json": "ad3dbb9847f5c741687c116ff8ed3de91c393fbd9f27220c765e92ac67c9915d"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7794954954954955,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.004
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.1572
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 27250,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.4695615880191326,
+        "exact_match": 0.04588888888888889,
+        "inference_peak_memory_bytes": 84532736,
+        "inference_seconds_per_example": 5.1995082034005056e-05,
+        "loss": 0.4797259228494432,
+        "row_column_conflicts_mean": 13.012277777777777,
+        "solved_rate": 0.04588888888888889,
+        "split": "test"
+      },
+      "legacy_config_hash": "b71e3c93ab33aa48",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "a2d01bb40d75fe8c",
+      "model": "F4-binomial",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 23,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "0c73b99455370335fb52b9fb2723e5ff26db8d297834dfd0c26836a8ab75d52e",
+        "checkpoint_last.pt": "3c094df7f83d60059e35faa3e877f14bc22e6b50406b63f2ea20b7774c1f51af",
+        "config.json": "173975991a5ca8071f753f439db85fdbb97666d19f800a383ce6b982c7efae9b",
+        "evaluation_test.json": "300f786aff557dfa4a30e220a325540faa162497870f5a5127be57542145922f",
+        "metrics.jsonl": "4970caea56825af61cfea0d3c89a20c71f3d063e6e965ee0e91204d0a6d5b067",
+        "predictions_test.npz": "86a66b2b160a9f04f7e3400872b597143ea78f1fa482b13759c84b8a1d3eefdb",
+        "result.json": "115b813e482e12fa820b176672698a4d405f577ef99aeb8b3a486b70390852e7"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7813433433433433,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0035
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.14
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 29750,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.458853391930461,
+        "exact_match": 0.04083333333333333,
+        "inference_peak_memory_bytes": 84532736,
+        "inference_seconds_per_example": 5.18881208780739e-05,
+        "loss": 0.47578201497925654,
+        "row_column_conflicts_mean": 12.9605,
+        "solved_rate": 0.04083333333333333,
+        "split": "test"
+      },
+      "legacy_config_hash": "df2ad4acea2673e4",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "802d45be251213eb",
+      "model": "F4-binomial",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 37,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "4fa122539fe52aafff9de3eeb935063ee74e29c3f3e714d4593b7d4d2c884370",
+        "checkpoint_last.pt": "9b06a7e0c6d7c0eff8949bef0d8a3719f50337ff334630a2a69a15cac164721e",
+        "config.json": "5cc62d9b94b8e1f5398f6ace70e5c3beb68254819443db59c38714f638128bb4",
+        "evaluation_test.json": "089e3060e4b03a699c05c1b9d15145a44351775d8893f2e3358576e6b3df3122",
+        "metrics.jsonl": "fa7fc6a07f3652a04967e1d464037805f4809ab988e48c433604e730a5887647",
+        "predictions_test.npz": "d4e87506310f73560951df90952e50c6419e03eaeb271511d68e95cd13b89bbd",
+        "result.json": "71bb1b31f20c5b0f03be7284c0dee7c90e8a3d8ae419ca8205b887ec78b8a75f"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7947807807807807,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0071
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.2254
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 29250,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.499696584418416,
+        "exact_match": 0.06655555555555556,
+        "inference_peak_memory_bytes": 84532736,
+        "inference_seconds_per_example": 5.1972143352031705e-05,
+        "loss": 0.4453598650826348,
+        "row_column_conflicts_mean": 12.343555555555556,
+        "solved_rate": 0.06655555555555556,
+        "split": "test"
+      },
+      "legacy_config_hash": "e34fdbc3dfe15af8",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "c92255d74d85f433",
+      "model": "F4-binomial",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 53,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "8ba69a8ee768af39a4444260bdb701f1af0940bc1e3a8ac342c097f8b1cb8e91",
+        "checkpoint_last.pt": "fe99c6c926cc01edd8319633920644abccd126e7fbe303d1fcba9dc2ea8feb63",
+        "config.json": "3014ea2c6d0f51cc375ad043be88f0ae953b050512e11ae0c28ec036454f5038",
+        "evaluation_test.json": "8a063b9a5f13559e52bbe9c6ef3b81868c3380f8409ec276cee8d8324de97581",
+        "metrics.jsonl": "65e9b3fb555fb0071f3a0f682098c15146268293c72edc3c3718ad368c729b55",
+        "predictions_test.npz": "ec2da74435a950ec04736c9b79ee59232c22d4a3f8ae36f2eb6bd41460b2beec",
+        "result.json": "04b6bd04d3bff5fc683941e1707e4cd6c0c012d77ded17c0c56f62c1d5551018"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.7878098098098099,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.0
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.0038
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.1636
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 30000,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 2.4882499426603317,
+        "exact_match": 0.04755555555555555,
+        "inference_peak_memory_bytes": 84532736,
+        "inference_seconds_per_example": 5.214538694255882e-05,
+        "loss": 0.4611695850690206,
+        "row_column_conflicts_mean": 12.869833333333334,
+        "solved_rate": 0.04755555555555555,
+        "split": "test"
+      },
+      "legacy_config_hash": "70541bc0c4001af3",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "006138716e94807f",
+      "model": "F4-binomial",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 71,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "7cd343bb109b2a3298e02d33d13f7caa290eb1f29d3c521bc7fb24bb2cb8ef43",
+        "checkpoint_last.pt": "5917ce4feeb15d484f6296c7e3797ae91d9d645c60c7f70f9a46353089ed668d",
+        "config.json": "6fae79e3b5134e26a14fcac866d35cf4bb914b54dc616a1b7e8851d11166a2e6",
+        "evaluation_test.json": "52af43aac57ca1904f13fd8ab6f8fff65e40e54c1ac5e17787b105683e2493ad",
+        "metrics.jsonl": "4b4311e95c84ef0d5b26b4b4ea521a1eaf98e0a997ec31165c9a4c7eb30f4e32",
+        "predictions_test.npz": "a8ffcac9c55c94f8b92a8e93b75a181d42ff98c27f3763b2d4cb3bace269ee5c",
+        "result.json": "63c261349c26dcf84a2cb6ca640db69865048bb01b1520c621ebad8674960bea"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.985973973973974,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.7793333333333333
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.9752
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.9994
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 28750,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 7.958482140675187,
+        "exact_match": 0.9492777777777778,
+        "inference_peak_memory_bytes": 76018176,
+        "inference_seconds_per_example": 0.00025569470030152136,
+        "loss": 0.03495615258815491,
+        "row_column_conflicts_mean": 0.3943888888888889,
+        "solved_rate": 0.9492777777777778,
+        "split": "test"
+      },
+      "legacy_config_hash": "a87129633ce3bbd2",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "e23181300fca8791",
+      "model": "R32-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 11,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "cd3e5e1ff2d92fc0ce1098f0ccd26979f12a55d93dc59d986b05a3ecf68a9499",
+        "checkpoint_last.pt": "029b4b3b5593ee80cff6088ba79084c8e4b8231b5ae962ef3cc7b9a4b7a244fd",
+        "config.json": "1cd5113dbc88309a223827ff2f19ea1ec5fc5e30a4bc42e64bda6d21f501ce03",
+        "evaluation_test.json": "5b58c1e10daece6a17e58a83ba101a50cc00c979c9e28bd055d6ea1a47a6bfb2",
+        "metrics.jsonl": "af584ff9d0e29afbca0ae0b7f13b812a9e3afce5a3c27d0aba5e10f06a63fba7",
+        "predictions_test.npz": "46670f750da50abfe8a1ba88d89e0605cfb999294dd325368e6fdcaa4a256268",
+        "result.json": "434ab9b3e58b856e2e79fcfa5b53ddce97926c6dc1f51886ac830f624fa1d4f4"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.9858018018018018,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.7603333333333333
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.9745
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.9996
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 29500,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 7.770134378224611,
+        "exact_match": 0.9457777777777778,
+        "inference_peak_memory_bytes": 76018176,
+        "inference_seconds_per_example": 0.00024963086264000997,
+        "loss": 0.03746835642280833,
+        "row_column_conflicts_mean": 0.3913888888888889,
+        "solved_rate": 0.9457777777777778,
+        "split": "test"
+      },
+      "legacy_config_hash": "a6fe8e2ad0cc7a80",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "3e87f71b5fae4fdb",
+      "model": "R32-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 23,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "1b5047cab1118bd9db14ea83749a980f922b70be6f6e42325017ed4ee8758a41",
+        "checkpoint_last.pt": "c9858480d2c0857e83c441e556345b5fda61af08156563ca3ac1cffda7605cf6",
+        "config.json": "572bede3c469b447b2d879bd5bb8fac10848c2afc979942b6f6d947fcf47d876",
+        "evaluation_test.json": "606b07c6f905c080f5cb8a4d060af335b93989baa13f0237776fa97c519c655b",
+        "metrics.jsonl": "5d591bb616b2e0bd5f21dc125205de7ce8613311f095ba07bbe42344a078e34c",
+        "predictions_test.npz": "4d725f6972852ce2a6f2f8884a0ba5e355acbd04d1d327189ea9ad192b9a1d1b",
+        "result.json": "0f5718718ab1e06f2df4e62d7106bd5e608645da143d4e63eb5e7eb50c9110e9"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.9872352352352353,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.8003333333333333
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.9761
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.9998
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 28750,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 7.936669111251831,
+        "exact_match": 0.9533888888888888,
+        "inference_peak_memory_bytes": 76018176,
+        "inference_seconds_per_example": 0.00025544574960238405,
+        "loss": 0.031730386669036104,
+        "row_column_conflicts_mean": 0.3842777777777778,
+        "solved_rate": 0.9533888888888888,
+        "split": "test"
+      },
+      "legacy_config_hash": "2c8cf3d0b60b2285",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "39ca0b1ede2dc489",
+      "model": "R32-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 37,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "a0c2543c588933865958bc61e434ea7960742e693b650fe61f1f4d616e7c4050",
+        "checkpoint_last.pt": "f07e3fb151333d438584f86328a2b65eaf770a5bd9de917ab407bc8d55b25fb1",
+        "config.json": "04a9e7be7e00858bbc3c9f3d3fed4293a1e28ddfc013ebf7cf135f303a053b8d",
+        "evaluation_test.json": "6ef03b69555c3271997bcb1855d430364cd015daf8f80d02510728d1a3e6bd90",
+        "metrics.jsonl": "48263a79868c8661e1f363c100f36202000548a0f3f57af13234184a3041d5bb",
+        "predictions_test.npz": "67cc9c61fe91e15b676a234d27451f567633303ffef93873a2b0308f4be9b1e3",
+        "result.json": "b39f834b613353679f10e7acc552f25cbd72485eaee039f80b1a94f93fa06219"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.9852532532532533,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.7546666666666667
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.974
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.9994
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 28250,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 7.745715137571096,
+        "exact_match": 0.9445,
+        "inference_peak_memory_bytes": 76018176,
+        "inference_seconds_per_example": 0.0002485870874176423,
+        "loss": 0.039467440060740856,
+        "row_column_conflicts_mean": 0.39411111111111113,
+        "solved_rate": 0.9445,
+        "split": "test"
+      },
+      "legacy_config_hash": "a87b87f26f1fa7ec",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "ba66dc0695069d20",
+      "model": "R32-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 53,
+      "support": "relational"
+    },
+    {
+      "artifact_hashes": {
+        "checkpoint_best.pt": "bac5abb8f0189a4bf9b6142dd6e2ba94eab95dd68a5d40903152e08a794dfb2d",
+        "checkpoint_last.pt": "1046d1e682f5941f549cd0095aba2aaa0e4bc169c73ca5ccb4936e0a81bc6406",
+        "config.json": "425ca7978d4d8dafd1dbe16114c2233edba58d98d0c5eee006a3d4790fa81484",
+        "evaluation_test.json": "94a79a000f5204590b9ea5b2d13196992d7285c05428c5f5dd10a208555a1c0d",
+        "metrics.jsonl": "7f2ba33edd26be2a37a23d8c8724a7116cef4a49f37f426258289d1923199314",
+        "predictions_test.npz": "d104628972447f459b8533147d47ac5e59311c0cd20179478b9c96da6fea0f7b",
+        "result.json": "efddd30429fc79e904927393e0f4ef2a4b472e45889e00bf15fec660891346a5"
+      },
+      "current_source_not_assigned_to_old_results": true,
+      "evaluation": {
+        "blank_accuracy": 0.9851071071071071,
+        "buckets": {
+          "clues_10s": {
+            "count": 3000,
+            "solved_rate": 0.7553333333333333
+          },
+          "clues_20s": {
+            "count": 10000,
+            "solved_rate": 0.9754
+          },
+          "clues_30s": {
+            "count": 5000,
+            "solved_rate": 0.9996
+          }
+        },
+        "checkpoint_filename": "checkpoint_best.pt",
+        "checkpoint_step": 29750,
+        "count": 18000,
+        "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+        "evaluation_seconds": 7.956071343272924,
+        "exact_match": 0.9454444444444444,
+        "inference_peak_memory_bytes": 76018176,
+        "inference_seconds_per_example": 0.0002557768199799789,
+        "loss": 0.0394696082319424,
+        "row_column_conflicts_mean": 0.4043333333333333,
+        "solved_rate": 0.9454444444444444,
+        "split": "test"
+      },
+      "legacy_config_hash": "ea08dc08c9dcd08e",
+      "legacy_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+      "mapped_new_config_hash": "23555e1fbc989ac8",
+      "model": "R32-onehop",
+      "old_timing_as_current_speed_evidence": false,
+      "origin": "historical_quality_only",
+      "replay_examples": 16,
+      "seed": 71,
+      "support": "relational"
+    }
+  ],
+  "inactive_legacy_fields": {
+    "generator/clue_fraction": "inactive for official supplied RRN arrays",
+    "hops for onehop/recurrent": "effective [1] regardless of stored hops=4",
+    "inner_width": "inactive with inner_beta=0",
+    "layers for recurrent": "one shared block; stored layers=4 ignored",
+    "max_seconds": "orchestration limit; verified completion is 30000 updates",
+    "recurrent_steps for F4": "no recurrent loop; stored value ignored",
+    "train_count/val_count/test_count": "RRN loader uses all 180000/18000/18000 rows"
+  },
+  "rejected": [],
+  "reuse_all_15_relational_allowed": true,
+  "same_named_initialization_verified": true,
+  "saved_predictions_revalidated": 270000,
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860",
+  "status": "passed"
+}

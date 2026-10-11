@@ -1,0 +1,127 @@
+{
+  "best_validation_solved_rate": 0.7083333333333334,
+  "completed_steps": 10000,
+  "config": {
+    "actual_test_count": 18000,
+    "actual_train_count": 180000,
+    "actual_validation_count": 18000,
+    "architecture": "recurrent",
+    "attention_filter": "binomial",
+    "batch_size": 64,
+    "clip": 1.0,
+    "completion_steps": 10000,
+    "device": "cuda",
+    "eval_every": 250,
+    "heads": 4,
+    "hops": 4,
+    "inner_beta": 0.0,
+    "layers": 1,
+    "lr": 0.001,
+    "overfit_count": 0,
+    "planned_steps": 30000,
+    "recurrent_steps": 32,
+    "schema_version": 1,
+    "seed": 101,
+    "series": "recurrent_filter_sudoku_v1",
+    "size": 9,
+    "stage": "pilot",
+    "supervision": "final_only",
+    "support": "graph",
+    "task": "sudoku",
+    "threads": 4,
+    "warmup_fraction": 0.05,
+    "weight_decay": 0.01,
+    "weight_sharing": "tied",
+    "width": 128
+  },
+  "config_hash": "ef1c3196fd02b2b1",
+  "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+  "examples": 640000,
+  "last_validation": {
+    "blank_accuracy": 0.9261841841841841,
+    "buckets": {
+      "clues_10s": {
+        "count": 3000,
+        "solved_rate": 0.046
+      },
+      "clues_20s": {
+        "count": 10000,
+        "solved_rate": 0.7107
+      },
+      "clues_30s": {
+        "count": 5000,
+        "solved_rate": 0.9962
+      }
+    },
+    "completion_steps": 10000,
+    "count": 18000,
+    "elapsed_seconds": 993.9085027780384,
+    "evaluation_seconds": 8.503527283668518,
+    "exact_match": 0.6792222222222222,
+    "filters": [
+      {
+        "coefficients": [
+          0.2666666805744171,
+          0.4000000059604645,
+          0.2666666805744171,
+          0.06666667014360428
+        ],
+        "mu": 2.1333334147930145,
+        "nu": 3.200000137090683,
+        "tail": [
+          1.000000037252903,
+          0.7333333566784859,
+          0.3333333507180214,
+          0.06666667014360428
+        ],
+        "variance": 0.7822220932112733
+      }
+    ],
+    "gradient_norm": 6.150270462036133,
+    "inference_peak_memory_bytes": 1936220672,
+    "inference_seconds_per_example": 0.00031841981504112483,
+    "loss": 0.18411002447870042,
+    "lr": 0.00079611762633249,
+    "planned_steps": 30000,
+    "row_column_conflicts_mean": 2.744388888888889,
+    "solved_rate": 0.6792222222222222,
+    "step": 10000,
+    "train_loss": 0.24070286750793457,
+    "train_peak_memory_bytes": 1936220672,
+    "training_seconds": 657.6689224876463
+  },
+  "operations": {
+    "attention_softmax_evaluations": 32,
+    "inner_ffn_evaluations": 0,
+    "outer_ffn_evaluations": 32,
+    "qkv_evaluations": 32,
+    "transport_matmuls": 128,
+    "unique_blocks": 1
+  },
+  "parameter_count": 204169,
+  "planned_steps": 30000,
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7",
+  "split": "validation",
+  "status": "completed",
+  "thresholds": {
+    "0.5": {
+      "confirmed_step": 4000,
+      "first_passing_step": 3750,
+      "last_failing_step": 3500,
+      "status": "reached",
+      "training_seconds_lower": 230.388958806172,
+      "training_seconds_upper": 246.8924057558179
+    },
+    "0.9": {
+      "last_failing_step": 10000,
+      "status": "not_reached",
+      "training_seconds_lower": 657.6689224876463
+    }
+  },
+  "timings": {
+    "checkpoints": 0.4255426786839962,
+    "elapsed": 993.9245609007776,
+    "training": 657.6689224876463,
+    "validation": 335.438109703362
+  }
+}

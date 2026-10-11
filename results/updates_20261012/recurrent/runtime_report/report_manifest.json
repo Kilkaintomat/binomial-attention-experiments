@@ -1,0 +1,117 @@
+{
+  "active_amendment": {
+    "authorization": "Explicit user request in this session: reduce final trainings to five and prioritize local-mask Sudoku",
+    "frozen_source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7",
+    "gpu_cap_changed": false,
+    "historical_R32": 5,
+    "id": "final_cap_5",
+    "inference_limit": "two paired R16/B16 seeds and one B32; exploratory; original five-seed design not completed",
+    "interpretation": "five new recurrent-series final trainings total, including completed and active runs; local-mask training grid unchanged",
+    "local_mask_release": "after amended recurrent completion and scheduler accounting; no GPU overlap",
+    "new_final_limit": 5,
+    "new_test_previously_observed": false,
+    "omitted_config_hashes": [
+      "f5238d67c7c1fccb",
+      "a833548785bbd67e",
+      "df4e4fb0b12bd185",
+      "dd9b96e7d4a1ad5e",
+      "7bb2e398d5d86ae9",
+      "4ab1473bee3f4530",
+      "3dcc02190efaec50",
+      "5438c76f049860b7",
+      "1de2b53ce58e9be0",
+      "874c2c69691d43c1"
+    ],
+    "omitted_new_finals": 10,
+    "original_admission_sha256": "0716957eb53c23ef0b071f5bc479646a154ec0854012fd7d4946c82f98766ce1",
+    "original_protocol_sha256": "fd4d70a4d0043eae6033f3e14c98cd400948e9077c9f0b7cc9c046ca86e8a141",
+    "pilots": 12,
+    "reason": "user scheduling/resource priority, not performance selection",
+    "recorded_utc": "2026-10-11T12:34:58.559910Z",
+    "runtime_sha256": "41501316f7bbfe053aa107d94893b39c8f22c9c52ae934caae997328c115b465",
+    "selected": [
+      {
+        "config_hash": "758e02ff31080496",
+        "label": "R16",
+        "seed": 11
+      },
+      {
+        "config_hash": "c6ae9d083aef7f30",
+        "label": "B16",
+        "seed": 11
+      },
+      {
+        "config_hash": "c62878ec0078ca87",
+        "label": "B32",
+        "seed": 11
+      },
+      {
+        "config_hash": "587fca7d9b1bb3fe",
+        "label": "R16",
+        "seed": 23
+      },
+      {
+        "config_hash": "66f33ae5da84abb7",
+        "label": "B16",
+        "seed": 23
+      }
+    ],
+    "selected_config_hashes": [
+      "758e02ff31080496",
+      "c6ae9d083aef7f30",
+      "c62878ec0078ca87",
+      "587fca7d9b1bb3fe",
+      "66f33ae5da84abb7"
+    ],
+    "selection_rule": "first five new finals in the original manifest order; historical R32 excluded from the cap",
+    "training_config_changed": false,
+    "validation_previously_observed": true
+  },
+  "admission": {
+    "decision_before_new_test": true,
+    "include_final_B32": true,
+    "new_training_runs": 27,
+    "remaining_at_decision_seconds": 57498.0,
+    "required_with_margin_seconds": 28192.763243696092,
+    "reuse_historical_R32": true,
+    "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7"
+  },
+  "amended_new_final_count": 5,
+  "historical_R32": 5,
+  "inference": "exploratory_reduced_seed_count",
+  "new_mandatory_trainings_completed": 16,
+  "original_five_seed_design_completed": false,
+  "paired": [
+    {
+      "comparison": "B16-R16",
+      "complete_five_seed_comparison": false,
+      "lower95_pp": -5.477777777777781,
+      "mean_difference_pp": -5.266666666666669,
+      "paired_seeds": 2,
+      "sample_sd_pp": 0.2985561965009882,
+      "seeds": "[11, 23]",
+      "upper95_pp": -5.055555555555557
+    },
+    {
+      "comparison": "B16-R32",
+      "complete_five_seed_comparison": false,
+      "lower95_pp": -14.94444444444445,
+      "mean_difference_pp": -14.588888888888896,
+      "paired_seeds": 2,
+      "sample_sd_pp": 0.5028314888437654,
+      "seeds": "[11, 23]",
+      "upper95_pp": -14.233333333333341
+    },
+    {
+      "comparison": "B32-R32",
+      "complete_five_seed_comparison": false,
+      "lower95_pp": null,
+      "mean_difference_pp": -0.31111111111110645,
+      "paired_seeds": 1,
+      "sample_sd_pp": null,
+      "seeds": "[11]",
+      "upper95_pp": null
+    }
+  ],
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7"
+}

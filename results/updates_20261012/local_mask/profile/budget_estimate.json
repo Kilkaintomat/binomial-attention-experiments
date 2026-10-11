@@ -1,0 +1,13 @@
+{
+  "mandatory_final_results": 30,
+  "mandatory_pilots": 18,
+  "mandatory_seconds_before_margin": 26663.14546375163,
+  "mandatory_seconds_with_20_percent_margin": 31995.774556501954,
+  "measured_on_allocated_gpu": true,
+  "new_training_runs": 33,
+  "old_training_time_not_current_speed_evidence": true,
+  "profile_allocation_charged_separately": true,
+  "reserve_includes_current_inference_and_position_diagnostics": true,
+  "reuse_15_relational": true,
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860"
+}

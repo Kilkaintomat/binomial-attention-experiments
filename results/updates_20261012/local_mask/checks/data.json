@@ -1,0 +1,284 @@
+{
+  "cross_split_digit_relabel_duplicates": 0,
+  "cross_split_exact_duplicates": 0,
+  "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+  "features": 38,
+  "full_symmetry_certification": false,
+  "full_uniqueness_certification": false,
+  "graph_diameter": 2,
+  "masks": {
+    "grid4": {
+      "allowed_elements": 369,
+      "diameter": 16,
+      "mask_sha256": "4ff077fdcbf20e5b9ab6456d62c0266d6ae9446b64b93c4a185e9e0bc1972e6b",
+      "row_counts": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3
+      ]
+    },
+    "relational": {
+      "allowed_elements": 1701,
+      "diameter": 2,
+      "mask_sha256": "a3ac1515eaf67a2cca461652b7d99483782260d9f5b1456521061c58baf59ef8",
+      "row_counts": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21
+      ]
+    }
+  },
+  "no_cache_regeneration": true,
+  "preprocessing_source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "same_puzzle_target_arrays_for_both_masks": true,
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860",
+  "splits": {
+    "test": {
+      "arrays": {
+        "ids": {
+          "content_sha256": "30b529cafce50b371a51defc1e9f900ebbc1e469f3d15f9f1e7625fa1319531a",
+          "dtype": "<U64",
+          "shape": [
+            18000
+          ]
+        },
+        "puzzle": {
+          "content_sha256": "44635b8452abdddd22e3f5383627c538d7e16e287c2840cd4822dc14ee16f081",
+          "dtype": "int8",
+          "shape": [
+            18000,
+            81
+          ]
+        },
+        "y": {
+          "content_sha256": "37ad0e63b82bad50d038288d2f6a0f28e9fb06687c8d2869e2bea6fcc7a9eb8e",
+          "dtype": "int8",
+          "shape": [
+            18000,
+            81
+          ]
+        }
+      },
+      "clues_preserved": true,
+      "count": 18000,
+      "valid_targets": true
+    },
+    "train": {
+      "arrays": {
+        "ids": {
+          "content_sha256": "743f95d48a2e6cff2e9acd8a84a24db120e68905423a28a9e21970c1208e97f2",
+          "dtype": "<U64",
+          "shape": [
+            180000
+          ]
+        },
+        "puzzle": {
+          "content_sha256": "db2157d5fb99db337598fea8c5f0b46237097eb7dca15141b919515120e8b63f",
+          "dtype": "int8",
+          "shape": [
+            180000,
+            81
+          ]
+        },
+        "y": {
+          "content_sha256": "43f5e2f6dddfdbedfe8d7cae629317dfd6bd12dbe124e7a58256eb03e88f6f62",
+          "dtype": "int8",
+          "shape": [
+            180000,
+            81
+          ]
+        }
+      },
+      "clues_preserved": true,
+      "count": 180000,
+      "valid_targets": true
+    },
+    "validation": {
+      "arrays": {
+        "ids": {
+          "content_sha256": "74819026c4f02a2a6a5ce7e3f019d359c70e16a662252cb4da3b676784c3f0bb",
+          "dtype": "<U64",
+          "shape": [
+            18000
+          ]
+        },
+        "puzzle": {
+          "content_sha256": "ae7dcabebee857585a92dfa378974a98a756cdc77735f2192604fca571361de5",
+          "dtype": "int8",
+          "shape": [
+            18000,
+            81
+          ]
+        },
+        "y": {
+          "content_sha256": "ef8e2c42efd35415d1be3d329b4c22802a2e18a534e36eef3cfe7a0e12623a4a",
+          "dtype": "int8",
+          "shape": [
+            18000,
+            81
+          ]
+        }
+      },
+      "clues_preserved": true,
+      "count": 18000,
+      "valid_targets": true
+    }
+  },
+  "status": "passed"
+}

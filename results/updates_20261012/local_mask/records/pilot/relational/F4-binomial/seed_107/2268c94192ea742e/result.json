@@ -1,0 +1,177 @@
+{
+  "best_validation_solved_rate": 0.01661111111111111,
+  "completed_steps": 10000,
+  "config": {
+    "actual_test_count": 18000,
+    "actual_train_count": 180000,
+    "actual_validation_count": 18000,
+    "architecture": "feedforward",
+    "attention_filter": "binomial",
+    "batch_size": 64,
+    "clip": 1.0,
+    "completion_steps": 10000,
+    "device": "cuda",
+    "eval_every": 250,
+    "heads": 4,
+    "hops": 4,
+    "inner_beta": 0.0,
+    "layers": 4,
+    "lr": 0.001,
+    "overfit_count": 0,
+    "planned_steps": 30000,
+    "recurrent_steps": 1,
+    "schema_version": 1,
+    "seed": 107,
+    "series": "sudoku_local_mask_v1",
+    "size": 9,
+    "stage": "pilot",
+    "supervision": "final_only",
+    "support": "graph",
+    "task": "sudoku",
+    "threads": 4,
+    "warmup_fraction": 0.05,
+    "weight_decay": 0.01,
+    "weight_sharing": "untied",
+    "width": 128
+  },
+  "config_hash": "2268c94192ea742e",
+  "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+  "examples": 640000,
+  "last_validation": {
+    "blank_accuracy": 0.7437247247247247,
+    "buckets": {
+      "clues_10s": {
+        "count": 3000,
+        "solved_rate": 0.0
+      },
+      "clues_20s": {
+        "count": 10000,
+        "solved_rate": 0.0002
+      },
+      "clues_30s": {
+        "count": 5000,
+        "solved_rate": 0.0594
+      }
+    },
+    "completion_steps": 10000,
+    "count": 18000,
+    "elapsed_seconds": 207.22077277116477,
+    "evaluation_seconds": 2.2811725065112114,
+    "exact_match": 0.01661111111111111,
+    "filters": [
+      {
+        "coefficients": [
+          0.2666666805744171,
+          0.4000000059604645,
+          0.2666666805744171,
+          0.06666667014360428
+        ],
+        "mu": 2.1333334147930145,
+        "nu": 3.200000137090683,
+        "tail": [
+          1.000000037252903,
+          0.7333333566784859,
+          0.3333333507180214,
+          0.06666667014360428
+        ],
+        "variance": 0.7822220932112733
+      },
+      {
+        "coefficients": [
+          0.2666666805744171,
+          0.4000000059604645,
+          0.2666666805744171,
+          0.06666667014360428
+        ],
+        "mu": 2.1333334147930145,
+        "nu": 3.200000137090683,
+        "tail": [
+          1.000000037252903,
+          0.7333333566784859,
+          0.3333333507180214,
+          0.06666667014360428
+        ],
+        "variance": 0.7822220932112733
+      },
+      {
+        "coefficients": [
+          0.2666666805744171,
+          0.4000000059604645,
+          0.2666666805744171,
+          0.06666667014360428
+        ],
+        "mu": 2.1333334147930145,
+        "nu": 3.200000137090683,
+        "tail": [
+          1.000000037252903,
+          0.7333333566784859,
+          0.3333333507180214,
+          0.06666667014360428
+        ],
+        "variance": 0.7822220932112733
+      },
+      {
+        "coefficients": [
+          0.2666666805744171,
+          0.4000000059604645,
+          0.2666666805744171,
+          0.06666667014360428
+        ],
+        "mu": 2.1333334147930145,
+        "nu": 3.200000137090683,
+        "tail": [
+          1.000000037252903,
+          0.7333333566784859,
+          0.3333333507180214,
+          0.06666667014360428
+        ],
+        "variance": 0.7822220932112733
+      }
+    ],
+    "gradient_norm": 0.6078861355781555,
+    "inference_peak_memory_bytes": 330817536,
+    "inference_seconds_per_example": 4.502872491462363e-05,
+    "loss": 0.5607551778687371,
+    "lr": 0.00079611762633249,
+    "planned_steps": 30000,
+    "row_column_conflicts_mean": 15.71038888888889,
+    "solved_rate": 0.01661111111111111,
+    "step": 10000,
+    "train_loss": 0.6070830821990967,
+    "train_peak_memory_bytes": 330817536,
+    "training_seconds": 112.53779153339565
+  },
+  "mask_sha256": "a3ac1515eaf67a2cca461652b7d99483782260d9f5b1456521061c58baf59ef8",
+  "operations": {
+    "attention_softmax_evaluations": 4,
+    "inner_ffn_evaluations": 0,
+    "maximum_sequential_transports": 16,
+    "outer_ffn_evaluations": 4,
+    "qkv_evaluations": 4,
+    "transport_matmuls": 16,
+    "unique_blocks": 4
+  },
+  "parameter_count": 797449,
+  "planned_steps": 30000,
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860",
+  "split": "validation",
+  "status": "completed",
+  "thresholds": {
+    "0.5": {
+      "last_failing_step": 10000,
+      "status": "not_reached",
+      "training_seconds_lower": 112.53779153339565
+    },
+    "0.9": {
+      "last_failing_step": 10000,
+      "status": "not_reached",
+      "training_seconds_lower": 112.53779153339565
+    }
+  },
+  "timings": {
+    "checkpoints": 2.095442658290267,
+    "elapsed": 207.28095316700637,
+    "training": 112.53779153339565,
+    "validation": 92.40994312614202
+  }
+}

@@ -1,0 +1,511 @@
+{
+  "configurations": {
+    "B16": {
+      "config": {
+        "actual_test_count": 18000,
+        "actual_train_count": 180000,
+        "actual_validation_count": 18000,
+        "architecture": "recurrent",
+        "attention_filter": "binomial",
+        "batch_size": 64,
+        "clip": 1.0,
+        "completion_steps": 10000,
+        "device": "cuda",
+        "eval_every": 250,
+        "heads": 4,
+        "hops": 4,
+        "inner_beta": 0.0,
+        "layers": 1,
+        "lr": 0.001,
+        "overfit_count": 0,
+        "planned_steps": 30000,
+        "recurrent_steps": 16,
+        "schema_version": 1,
+        "seed": 109,
+        "series": "recurrent_filter_sudoku_v1",
+        "size": 9,
+        "stage": "profile",
+        "supervision": "final_only",
+        "support": "graph",
+        "task": "sudoku",
+        "threads": 4,
+        "warmup_fraction": 0.05,
+        "weight_decay": 0.01,
+        "weight_sharing": "tied",
+        "width": 128
+      },
+      "estimated_final_seconds": 1627.7248500920832,
+      "estimated_pilot_seconds": 544.2544198520482,
+      "full_validation_18000_seconds": {
+        "maximum": 5.0022227466106415,
+        "median": 4.994194075465202,
+        "minimum": 4.991912892088294,
+        "p25": 4.993053483776748,
+        "p75": 4.998208411037922,
+        "repeats": 3
+      },
+      "inference": [
+        {
+          "batch_size": 1,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.009991517290472984,
+            "median": 0.009775144048035145,
+            "minimum": 0.009719062596559525,
+            "p25": 0.00974840298295021,
+            "p75": 0.00980167742818594,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 102.30028274631975,
+          "forward_batch_seconds": {
+            "maximum": 0.009385298937559128,
+            "median": 0.00931495986878872,
+            "minimum": 0.009256089106202126,
+            "p25": 0.009296633768826723,
+            "p75": 0.0093266642652452,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 107.35419304925423,
+          "precision": "float32",
+          "warmup_forwards": 10
+        },
+        {
+          "batch_size": 64,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.012913420796394348,
+            "median": 0.012564750388264656,
+            "minimum": 0.012511858716607094,
+            "p25": 0.012533324304968119,
+            "p75": 0.012588310986757278,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 5093.614916518781,
+          "forward_batch_seconds": {
+            "maximum": 0.010277604684233665,
+            "median": 0.010247326456010342,
+            "minimum": 0.010171769186854362,
+            "p25": 0.010227668099105358,
+            "p75": 0.01025545597076416,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 6245.531483235046,
+          "precision": "float32",
+          "warmup_forwards": 10
+        }
+      ],
+      "label": "B16",
+      "operations": {
+        "attention_softmax_evaluations": 16,
+        "inner_ffn_evaluations": 0,
+        "outer_ffn_evaluations": 16,
+        "qkv_evaluations": 16,
+        "transport_matmuls": 64,
+        "unique_blocks": 1
+      },
+      "parameters": 204169,
+      "peak_training_memory_bytes": 988580864,
+      "single_checkpoint_seconds": {
+        "maximum": 0.01129397563636303,
+        "median": 0.007369231432676315,
+        "minimum": 0.0072790589183568954,
+        "p25": 0.007324145175516605,
+        "p75": 0.009331603534519672,
+        "repeats": 3
+      },
+      "training_examples_per_second": 1890.2137436529374,
+      "training_step_seconds": {
+        "maximum": 0.034372277557849884,
+        "median": 0.03385860472917557,
+        "minimum": 0.033690109848976135,
+        "p25": 0.033779989928007126,
+        "p75": 0.03399914363399148,
+        "repeats": 60
+      }
+    },
+    "B32": {
+      "config": {
+        "actual_test_count": 18000,
+        "actual_train_count": 180000,
+        "actual_validation_count": 18000,
+        "architecture": "recurrent",
+        "attention_filter": "binomial",
+        "batch_size": 64,
+        "clip": 1.0,
+        "completion_steps": 10000,
+        "device": "cuda",
+        "eval_every": 250,
+        "heads": 4,
+        "hops": 4,
+        "inner_beta": 0.0,
+        "layers": 1,
+        "lr": 0.001,
+        "overfit_count": 0,
+        "planned_steps": 30000,
+        "recurrent_steps": 32,
+        "schema_version": 1,
+        "seed": 109,
+        "series": "recurrent_filter_sudoku_v1",
+        "size": 9,
+        "stage": "profile",
+        "supervision": "final_only",
+        "support": "graph",
+        "task": "sudoku",
+        "threads": 4,
+        "warmup_fraction": 0.05,
+        "weight_decay": 0.01,
+        "weight_sharing": "tied",
+        "width": 128
+      },
+      "estimated_final_seconds": 2933.3221482988447,
+      "estimated_pilot_seconds": 980.4142906162888,
+      "full_validation_18000_seconds": {
+        "maximum": 7.8776376731693745,
+        "median": 7.874869789928198,
+        "minimum": 7.869307488203049,
+        "p25": 7.872088639065623,
+        "p75": 7.876253731548786,
+        "repeats": 3
+      },
+      "inference": [
+        {
+          "batch_size": 1,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.019109806045889854,
+            "median": 0.018990942277014256,
+            "minimum": 0.018949326127767563,
+            "p25": 0.018967321142554283,
+            "p75": 0.019025449641048908,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 52.656681559732455,
+          "forward_batch_seconds": {
+            "maximum": 0.018536027520895004,
+            "median": 0.01847811508923769,
+            "minimum": 0.01834060437977314,
+            "p25": 0.018448824994266033,
+            "p75": 0.01849013241007924,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 54.11807401191237,
+          "precision": "float32",
+          "warmup_forwards": 10
+        },
+        {
+          "batch_size": 64,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.023147905245423317,
+            "median": 0.02286073286086321,
+            "minimum": 0.022768637165427208,
+            "p25": 0.022832884918898344,
+            "p75": 0.022888672072440386,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 2799.560293605714,
+          "forward_batch_seconds": {
+            "maximum": 0.020435964688658714,
+            "median": 0.020393854938447475,
+            "minimum": 0.02033521793782711,
+            "p25": 0.02037869207561016,
+            "p75": 0.020412485115230083,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 3138.200217328413,
+          "precision": "float32",
+          "warmup_forwards": 10
+        }
+      ],
+      "label": "B32",
+      "operations": {
+        "attention_softmax_evaluations": 32,
+        "inner_ffn_evaluations": 0,
+        "outer_ffn_evaluations": 32,
+        "qkv_evaluations": 32,
+        "transport_matmuls": 128,
+        "unique_blocks": 1
+      },
+      "parameters": 204169,
+      "peak_training_memory_bytes": 1936220160,
+      "single_checkpoint_seconds": {
+        "maximum": 0.008383095264434814,
+        "median": 0.007642293348908424,
+        "minimum": 0.007057243958115578,
+        "p25": 0.007349768653512001,
+        "p75": 0.00801269430667162,
+        "repeats": 3
+      },
+      "training_examples_per_second": 974.7113765867637,
+      "training_step_seconds": {
+        "maximum": 0.06658492796123028,
+        "median": 0.0656604627147317,
+        "minimum": 0.06525763310492039,
+        "p25": 0.06550120376050472,
+        "p75": 0.06584982620552182,
+        "repeats": 60
+      }
+    },
+    "R16": {
+      "config": {
+        "actual_test_count": 18000,
+        "actual_train_count": 180000,
+        "actual_validation_count": 18000,
+        "architecture": "recurrent",
+        "attention_filter": "onehop",
+        "batch_size": 64,
+        "clip": 1.0,
+        "completion_steps": 10000,
+        "device": "cuda",
+        "eval_every": 250,
+        "heads": 4,
+        "hops": 1,
+        "inner_beta": 0.0,
+        "layers": 1,
+        "lr": 0.001,
+        "overfit_count": 0,
+        "planned_steps": 30000,
+        "recurrent_steps": 16,
+        "schema_version": 1,
+        "seed": 109,
+        "series": "recurrent_filter_sudoku_v1",
+        "size": 9,
+        "stage": "profile",
+        "supervision": "final_only",
+        "support": "graph",
+        "task": "sudoku",
+        "threads": 4,
+        "warmup_fraction": 0.05,
+        "weight_decay": 0.01,
+        "weight_sharing": "tied",
+        "width": 128
+      },
+      "estimated_final_seconds": 1313.1228899825364,
+      "estimated_pilot_seconds": 439.2005246449262,
+      "full_validation_18000_seconds": {
+        "maximum": 4.434165043756366,
+        "median": 4.424766331911087,
+        "minimum": 4.423683151602745,
+        "p25": 4.424224741756916,
+        "p75": 4.429465687833726,
+        "repeats": 3
+      },
+      "inference": [
+        {
+          "batch_size": 1,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.008177544921636581,
+            "median": 0.007939358241856098,
+            "minimum": 0.007907023653388023,
+            "p25": 0.007930058520287275,
+            "p75": 0.007958929054439068,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 125.954764797994,
+          "forward_batch_seconds": {
+            "maximum": 0.007544340565800667,
+            "median": 0.0074906181544065475,
+            "minimum": 0.007409360259771347,
+            "p25": 0.0074722920544445515,
+            "p75": 0.007496095262467861,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 133.5003305984466,
+          "precision": "float32",
+          "warmup_forwards": 10
+        },
+        {
+          "batch_size": 64,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.01081501878798008,
+            "median": 0.010488435626029968,
+            "minimum": 0.010418279096484184,
+            "p25": 0.010463758371770382,
+            "p75": 0.010513662826269865,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 6101.95860297471,
+          "forward_batch_seconds": {
+            "maximum": 0.008268285542726517,
+            "median": 0.008205699734389782,
+            "minimum": 0.008054668083786964,
+            "p25": 0.008175289258360863,
+            "p75": 0.008228733204305172,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 7799.456727837406,
+          "precision": "float32",
+          "warmup_forwards": 10
+        }
+      ],
+      "label": "R16",
+      "operations": {
+        "attention_softmax_evaluations": 16,
+        "inner_ffn_evaluations": 0,
+        "outer_ffn_evaluations": 16,
+        "qkv_evaluations": 16,
+        "transport_matmuls": 16,
+        "unique_blocks": 1
+      },
+      "parameters": 204169,
+      "peak_training_memory_bytes": 849926656,
+      "single_checkpoint_seconds": {
+        "maximum": 0.011349452659487724,
+        "median": 0.008986270055174828,
+        "minimum": 0.00769902765750885,
+        "p25": 0.008342648856341839,
+        "p75": 0.010167861357331276,
+        "repeats": 3
+      },
+      "training_examples_per_second": 2493.3789702563968,
+      "training_step_seconds": {
+        "maximum": 0.025950061157345772,
+        "median": 0.025667979381978512,
+        "minimum": 0.025462208315730095,
+        "p25": 0.02558559598401189,
+        "p75": 0.025792086496949196,
+        "repeats": 60
+      }
+    },
+    "R32": {
+      "config": {
+        "actual_test_count": 18000,
+        "actual_train_count": 180000,
+        "actual_validation_count": 18000,
+        "architecture": "recurrent",
+        "attention_filter": "onehop",
+        "batch_size": 64,
+        "clip": 1.0,
+        "completion_steps": 10000,
+        "device": "cuda",
+        "eval_every": 250,
+        "heads": 4,
+        "hops": 1,
+        "inner_beta": 0.0,
+        "layers": 1,
+        "lr": 0.001,
+        "overfit_count": 0,
+        "planned_steps": 30000,
+        "recurrent_steps": 32,
+        "schema_version": 1,
+        "seed": 109,
+        "series": "recurrent_filter_sudoku_v1",
+        "size": 9,
+        "stage": "profile",
+        "supervision": "final_only",
+        "support": "graph",
+        "task": "sudoku",
+        "threads": 4,
+        "warmup_fraction": 0.05,
+        "weight_decay": 0.01,
+        "weight_sharing": "tied",
+        "width": 128
+      },
+      "estimated_final_seconds": 2291.4206488728523,
+      "estimated_pilot_seconds": 766.0409880112857,
+      "full_validation_18000_seconds": {
+        "maximum": 6.675429908558726,
+        "median": 6.658673720434308,
+        "minimum": 6.631390076130629,
+        "p25": 6.645031898282468,
+        "p75": 6.667051814496517,
+        "repeats": 3
+      },
+      "inference": [
+        {
+          "batch_size": 1,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.015338141471147537,
+            "median": 0.015144916251301765,
+            "minimum": 0.015105828642845154,
+            "p25": 0.01512692030519247,
+            "p75": 0.015172545332461596,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 66.0287573339368,
+          "forward_batch_seconds": {
+            "maximum": 0.014719851315021515,
+            "median": 0.01466244738548994,
+            "minimum": 0.014616763219237328,
+            "p25": 0.014635111205279827,
+            "p75": 0.014683009125292301,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 68.20143825304409,
+          "precision": "float32",
+          "warmup_forwards": 10
+        },
+        {
+          "batch_size": 64,
+          "end_to_end_batch_seconds": {
+            "maximum": 0.01865437626838684,
+            "median": 0.018361283466219902,
+            "minimum": 0.018258072435855865,
+            "p25": 0.01832488877698779,
+            "p75": 0.01841980079188943,
+            "repeats": 30
+          },
+          "end_to_end_examples_per_second": 3485.595117451552,
+          "forward_batch_seconds": {
+            "maximum": 0.01609162986278534,
+            "median": 0.015968026593327522,
+            "minimum": 0.015907924622297287,
+            "p25": 0.01595989428460598,
+            "p75": 0.0159808536991477,
+            "repeats": 30
+          },
+          "forward_examples_per_second": 4008.0093570700437,
+          "precision": "float32",
+          "warmup_forwards": 10
+        }
+      ],
+      "label": "R32",
+      "operations": {
+        "attention_softmax_evaluations": 32,
+        "inner_ffn_evaluations": 0,
+        "outer_ffn_evaluations": 32,
+        "qkv_evaluations": 32,
+        "transport_matmuls": 32,
+        "unique_blocks": 1
+      },
+      "parameters": 204169,
+      "peak_training_memory_bytes": 1661453824,
+      "single_checkpoint_seconds": {
+        "maximum": 0.011905115097761154,
+        "median": 0.00727357342839241,
+        "minimum": 0.007259070873260498,
+        "p25": 0.007266322150826454,
+        "p75": 0.009589344263076782,
+        "repeats": 3
+      },
+      "training_examples_per_second": 1300.4410715647898,
+      "training_step_seconds": {
+        "maximum": 0.049716370180249214,
+        "median": 0.04921407159417868,
+        "minimum": 0.04888927936553955,
+        "p25": 0.04908229550346732,
+        "p75": 0.04936539614573121,
+        "repeats": 60
+      }
+    }
+  },
+  "environment": {
+    "backend": "dense_masked_generic_action",
+    "coefficient_sharing": "one vector per block shared across heads",
+    "commit": "87d79135109024c1a6fda443756dfedebc3c6e85",
+    "cuda_available": true,
+    "cuda_build": "12.4",
+    "dtype": "float32",
+    "gpu_memory_bytes": 84974239744,
+    "gpu_model": "NVIDIA A100-SXM4-80GB",
+    "packages": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.2.2",
+      "pytest": "9.1.1",
+      "torch": "2.6.0+cu124"
+    },
+    "platform": "Linux",
+    "python": "3.11.11",
+    "scheduler_job_id": "8490221",
+    "source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+    "tf32": false,
+    "threads": 4
+  },
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7"
+}

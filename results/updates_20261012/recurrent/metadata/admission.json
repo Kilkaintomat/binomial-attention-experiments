@@ -1,0 +1,9 @@
+{
+  "decision_before_new_test": true,
+  "include_final_B32": true,
+  "new_training_runs": 27,
+  "remaining_at_decision_seconds": 57498.0,
+  "required_with_margin_seconds": 28192.763243696092,
+  "reuse_historical_R32": true,
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7"
+}

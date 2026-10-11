@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "copied_file_hashes_checked": 767,
+  "completed_run_records_checked": 131,
+  "new_sudoku_test_runs": 20,
+  "reachability_final_training_runs": 33,
+  "reachability_test_evaluations": 0,
+  "same_seed_graph_summary": [
+    11,
+    23
+  ],
+  "no_new_training": true,
+  "scope": "Raw Sudoku prediction audit, config/source/data hashes, checkpoint selection, curves, scalar tables and identical seed coverage; reachability validation is not a test result."
+}

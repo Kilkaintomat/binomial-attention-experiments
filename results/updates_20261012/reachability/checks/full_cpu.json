@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8",
+  "tests": 36,
+  "pytest_exit_code": 0,
+  "resume": {
+    "status": "passed",
+    "steps": 40,
+    "split_step": 20,
+    "equality": "bitwise CPU parameters, optimizer, scheduler and batch RNG",
+    "incompatible_fields_rejected": [
+      "data_hash",
+      "source_hash",
+      "config"
+    ]
+  },
+  "cli_help_and_dry_run": "passed",
+  "package_install_import": "passed",
+  "data_hash": "cf5ce937d591c8eea2e497f3bcef3bb111c2a7a9f5a2f6e5bfdaeb54921b0155",
+  "allocation_id": "8490542"
+}

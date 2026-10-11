@@ -34,5 +34,19 @@
     "previous_partial_first_run_preserved": true,
     "old_protocols_and_primary_tables_unchanged": true,
     "audit": "results/audit/mlp_final_publication_audit.json"
+  },
+  "current_series_update": {
+    "snapshot_utc": "2026-10-11T22:14:43.415897Z",
+    "report": "REPORT_SUDOKU_GRAPHS_RU.md",
+    "records": "results/updates_20261012",
+    "publication_authorization": "User explicitly requested publishing changes and current Sudoku/graph results; this supersedes the earlier no-publication scope for these series.",
+    "training_interrupted": false,
+    "original_main_training_source_unchanged": true,
+    "code_kept_on_isolated_branches": true,
+    "completed_new_recurrent_finals": 5,
+    "completed_new_local_mask_finals": 15,
+    "completed_reachability_finals": 33,
+    "reachability_final_target": 80,
+    "reachability_test_results_in_this_snapshot": 0
   }
 }

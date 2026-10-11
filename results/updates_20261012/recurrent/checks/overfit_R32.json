@@ -1,0 +1,13 @@
+{
+  "result": {
+    "best_train_subset_solved": 1.0,
+    "completed_steps": 1000,
+    "config_hash": "b33d059523616135",
+    "final_loss": 0.0001818370510591194,
+    "initial_loss": 2.264986991882324,
+    "label": "R32",
+    "passes_95_percent_memorization": true
+  },
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7",
+  "status": "passed"
+}

@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "new_final_runs": 20,
+  "test_predictions_revalidated": 360000,
+  "checkpoint_metadata_checked": 20,
+  "checkpoint_inference_replayed": false,
+  "scope": "Independent Sudoku legality, exact match and blank accuracy from saved predictions; IDs and selected checkpoint metadata. Historical controls retain their earlier audit.",
+  "runs": [
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-binomial/seed_11/6fa069c27aa5e95b",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 30000,
+      "evaluation_sha256": "ae12575bd634d593a5a5e62b2737bf96e290b754a637d7806cfce490f9e0f2ce",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.5941321321321321
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-binomial/seed_23/b9836991eac69239",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 30000,
+      "evaluation_sha256": "f1ec47efa75b7f421d9f98fdb56dfdd8d7505c3bdb7f8364eda28fea96f3c6b6",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.6038868868868869
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-binomial/seed_37/d0c8a7fade57685f",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 29750,
+      "evaluation_sha256": "0945eb9d7e03a3e8c1a033806f608814c4c1b3c22b21984c74f7365d984aacf9",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.592901901901902
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-binomial/seed_53/0b940263b608e382",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 30000,
+      "evaluation_sha256": "95af59cbfaef2dd3325fc2613056942e3411e1d551c3d2ec6e3f8bdbe0c00773",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.6113983983983984
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-binomial/seed_71/3f1f8c8006ea3eba",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 30000,
+      "evaluation_sha256": "92325d57a95906c3bba61b010a91df5a3beadeed898f205d3102a7a5d138577e",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.6047367367367368
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-onehop/seed_11/cc319dd86671dd5c",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 28750,
+      "evaluation_sha256": "a5e37c5bba84f2a33831a263df526394ea015fe4240cfe5e046edcbed97346b5",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.31773373373373376
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-onehop/seed_23/7f0cdf88dc4847df",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 29250,
+      "evaluation_sha256": "9b0cb4b5c81f7c3faccfb64e2dacc7e1d7526a0f687259ba12503937cac07a1f",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.3354844844844845
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-onehop/seed_37/6b83d12f8cb52c3e",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 30000,
+      "evaluation_sha256": "8ab3eebd18a6b294672b7de436d4c1177ba7d3f509a475f7ee9ceee619fc5bfd",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.33255355355355354
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-onehop/seed_53/9814df8382dbfdee",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 29750,
+      "evaluation_sha256": "6ebd4a854b9e18170cdda67ad3142daf6cc1473e85584be3f61cc46b8976205c",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.3272672672672673
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/F4-onehop/seed_71/c214176409d34313",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 29000,
+      "evaluation_sha256": "0e9aa5ef263bdf50cec27e1bb29ac531c841dbab487ede58ef09e1438d9c2176",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.33776176176176176
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/R32-onehop/seed_11/8469ca04b96e590a",
+      "count": 18000,
+      "solved_count": 10,
+      "selected_checkpoint_step": 28000,
+      "evaluation_sha256": "fc27275864acbe5d163403c36a04341798210cfcce147e59c6a489460048b22f",
+      "solved_rate": 0.0005555555555555556,
+      "exact_match": 0.0005555555555555556,
+      "blank_accuracy": 0.6546386386386387
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/R32-onehop/seed_23/5dd3179321f8825a",
+      "count": 18000,
+      "solved_count": 260,
+      "selected_checkpoint_step": 29750,
+      "evaluation_sha256": "c79450abb26353536ec27df4cc446431aa8fade98d32474e1c4dd16bbdbc2287",
+      "solved_rate": 0.014444444444444444,
+      "exact_match": 0.014444444444444444,
+      "blank_accuracy": 0.724992992992993
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/R32-onehop/seed_37/2ede4a6d201fcc03",
+      "count": 18000,
+      "solved_count": 49,
+      "selected_checkpoint_step": 30000,
+      "evaluation_sha256": "d51c25a62c9847da9df54d1c59a4e6ab514af3aa6758b60cc4a6a7cef355163b",
+      "solved_rate": 0.0027222222222222222,
+      "exact_match": 0.0027222222222222222,
+      "blank_accuracy": 0.682957957957958
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/R32-onehop/seed_53/6334834b4d7aaa64",
+      "count": 18000,
+      "solved_count": 1,
+      "selected_checkpoint_step": 27250,
+      "evaluation_sha256": "e434dcdcd18a1c1fa3e0f3392c5c8a3c4efab3fd617164e5f2cba4a7c75b8f1e",
+      "solved_rate": 5.555555555555556e-05,
+      "exact_match": 5.555555555555556e-05,
+      "blank_accuracy": 0.6232322322322322
+    },
+    {
+      "series": "local_mask",
+      "record": "final/grid4/R32-onehop/seed_71/fffe4fb2fe3c2b59",
+      "count": 18000,
+      "solved_count": 0,
+      "selected_checkpoint_step": 29500,
+      "evaluation_sha256": "546f76a13a7708867d0bd46acd1871cf33300391e21b37b6290bae94d1d28e85",
+      "solved_rate": 0.0,
+      "exact_match": 0.0,
+      "blank_accuracy": 0.5785115115115115
+    },
+    {
+      "series": "recurrent",
+      "record": "final/B16/seed_11/c6ae9d083aef7f30",
+      "count": 18000,
+      "solved_count": 14397,
+      "selected_checkpoint_step": 28750,
+      "evaluation_sha256": "6c76c4e5f2e170203eeaff79ae84c4a7e5151eb115b342aeabe4286b2f026631",
+      "solved_rate": 0.7998333333333333,
+      "exact_match": 0.7998333333333333,
+      "blank_accuracy": 0.9712272272272272
+    },
+    {
+      "series": "recurrent",
+      "record": "final/B16/seed_23/66f33ae5da84abb7",
+      "count": 18000,
+      "solved_count": 14462,
+      "selected_checkpoint_step": 28750,
+      "evaluation_sha256": "43dd948ebe9c4615f5ccf693edc43e8bb8a8679c967c45f02d0494b3426fc118",
+      "solved_rate": 0.8034444444444444,
+      "exact_match": 0.8034444444444444,
+      "blank_accuracy": 0.9714634634634635
+    },
+    {
+      "series": "recurrent",
+      "record": "final/B32/seed_11/c62878ec0078ca87",
+      "count": 18000,
+      "solved_count": 17031,
+      "selected_checkpoint_step": 30000,
+      "evaluation_sha256": "c53af6c7e590dbf1f772506a3c4ade1b0d4d97b7e7548d92cb14ea0f96c50021",
+      "solved_rate": 0.9461666666666667,
+      "exact_match": 0.9461666666666667,
+      "blank_accuracy": 0.9881721721721721
+    },
+    {
+      "series": "recurrent",
+      "record": "final/R16/seed_11/758e02ff31080496",
+      "count": 18000,
+      "solved_count": 15383,
+      "selected_checkpoint_step": 28250,
+      "evaluation_sha256": "61e2d51b216a057759cc98e4aee2bfc9cbda6d17bbc146b4215baa9b7da2e724",
+      "solved_rate": 0.8546111111111111,
+      "exact_match": 0.8546111111111111,
+      "blank_accuracy": 0.976997997997998
+    },
+    {
+      "series": "recurrent",
+      "record": "final/R16/seed_23/587fca7d9b1bb3fe",
+      "count": 18000,
+      "solved_count": 15372,
+      "selected_checkpoint_step": 28250,
+      "evaluation_sha256": "76e3436f86324e057d7aaf91d3ccef4e4b3e934c3eab944d21d0de3914a35874",
+      "solved_rate": 0.854,
+      "exact_match": 0.854,
+      "blank_accuracy": 0.9762312312312312
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "grid_frozen_before_new_test": true,
+  "new_training_runs": 33,
+  "remaining_at_decision_seconds": 57496,
+  "required_with_margin_seconds": 31995.774556501954,
+  "reuse_15_relational": true,
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860"
+}

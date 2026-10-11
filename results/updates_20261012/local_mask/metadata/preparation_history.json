@@ -1,0 +1,6 @@
+{
+  "scientific_code_changed": false,
+  "reason": "report wording distinguishes planned position diagnostics from executed measurements",
+  "revision_before_any_new_gpu_allocation": true,
+  "previous_protocol": "protocol_preparation_v0.json"
+}

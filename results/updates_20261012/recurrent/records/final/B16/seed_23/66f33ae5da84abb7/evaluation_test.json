@@ -1,0 +1,29 @@
+{
+  "blank_accuracy": 0.9714634634634635,
+  "buckets": {
+    "clues_10s": {
+      "count": 3000,
+      "solved_rate": 0.251
+    },
+    "clues_20s": {
+      "count": 10000,
+      "solved_rate": 0.8717
+    },
+    "clues_30s": {
+      "count": 5000,
+      "solved_rate": 0.9984
+    }
+  },
+  "checkpoint_step": 28750,
+  "count": 18000,
+  "data_hash": "9b17eb5fd873bc3cd719c5e7f899f9e503771c3c9d96a354f03bdd3710a3603a",
+  "evaluation_seconds": 5.932681754231453,
+  "exact_match": 0.8034444444444444,
+  "inference_peak_memory_bytes": 981341696,
+  "inference_seconds_per_example": 0.00016230168607499866,
+  "loss": 0.06697246246619357,
+  "row_column_conflicts_mean": 1.2717777777777777,
+  "solved_rate": 0.8034444444444444,
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7",
+  "split": "test"
+}

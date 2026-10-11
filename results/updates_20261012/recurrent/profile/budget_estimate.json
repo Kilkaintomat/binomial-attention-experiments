@@ -1,0 +1,13 @@
+{
+  "historical_training_time_not_current_speed_evidence": true,
+  "mandatory_final_results": 15,
+  "mandatory_pilot_runs": 12,
+  "mandatory_seconds_before_margin": 23493.969369746745,
+  "mandatory_seconds_with_20_percent_margin": 28192.763243696092,
+  "measured_on_allocated_gpu": true,
+  "new_training_runs": 22,
+  "optional_B32_additional_seconds_with_20_percent_margin": 17599.932889793068,
+  "profile_allocation_charged_separately": true,
+  "reuse_historical_R32_quality": true,
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7"
+}

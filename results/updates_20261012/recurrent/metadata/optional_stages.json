@@ -1,0 +1,66 @@
+{
+  "combination_policy": "no Cartesian product; each extension needs a new implementation version and checks",
+  "families": {
+    "T": "select on validation before test",
+    "budget_seconds_formula": "1.2*(3*sum(two measured pilot costs)+5*sum(two measured final costs))",
+    "families": [
+      "exponential",
+      "geometric"
+    ],
+    "final_seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "gate": "B16 better than R16 in >=2/3 seeds and mean",
+    "hops": 4,
+    "mean_hops": 2.1333333333333333,
+    "new_finals": 10,
+    "new_pilots": 6,
+    "pilot_seeds": [
+      101,
+      103,
+      107
+    ]
+  },
+  "mixture": {
+    "T": "freeze before test",
+    "budget_seconds_formula": "1.2*(3*sum(two measured pilot costs)+5*sum(two measured final costs))",
+    "controls": [
+      "onehop",
+      "binomial"
+    ],
+    "new_finals": 10,
+    "new_pilots": 6,
+    "variants": [
+      "local_scalar_shared_gate_w0_b0",
+      "fixed_g0.5"
+    ]
+  },
+  "status": "disabled_pending_separate_validation_decision_and_budget",
+  "supervision": {
+    "T": "freeze before test",
+    "budget_seconds_formula": "1.2*(3*sum(two measured pilot costs)+5*sum(two measured final costs))",
+    "controls": "matching final_only",
+    "loss_weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "new_finals": 10,
+    "new_pilots": 6,
+    "steps": [
+      "T/4",
+      "T/2",
+      "3T/4",
+      "T"
+    ],
+    "variants": [
+      "onehop",
+      "binomial"
+    ]
+  }
+}

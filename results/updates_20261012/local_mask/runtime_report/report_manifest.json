@@ -1,0 +1,16 @@
+{
+  "accounted_gpu_seconds": 21030,
+  "historical_relational": 15,
+  "new_trainings_completed": 33,
+  "new_trainings_planned": 33,
+  "primary_interaction": {
+    "complete_five_seeds": true,
+    "contrast": "I",
+    "lower95_pp": -0.5377777777777781,
+    "mean_pp": 0.26555555555555543,
+    "paired_seeds": 5,
+    "sample_sd_pp": 0.9846303436215276,
+    "upper95_pp": 0.9233333333333335
+  },
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860"
+}

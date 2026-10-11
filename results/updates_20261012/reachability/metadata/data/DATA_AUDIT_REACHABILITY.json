@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "small": false,
+  "independent_oracle_queries_checked": 8704,
+  "exact_graph_duplicates_across_splits": 0,
+  "isomorphism_audit": [
+    {
+      "family": "er",
+      "n": 16,
+      "cross_split_candidate_pairs": 1,
+      "exact_pairs_checked": 1,
+      "isomorphic_pairs_found": 1,
+      "full_coverage": true,
+      "limitation": "WL grouping alone is not proof of non-isomorphism; graph-level holdout may retain isomorphic topologies"
+    },
+    {
+      "family": "er",
+      "n": 17,
+      "cross_split_candidate_pairs": 2,
+      "exact_pairs_checked": 2,
+      "isomorphic_pairs_found": 2,
+      "full_coverage": true,
+      "limitation": "WL grouping alone is not proof of non-isomorphism; graph-level holdout may retain isomorphic topologies"
+    },
+    {
+      "family": "dag",
+      "n": 16,
+      "cross_split_candidate_pairs": 7788,
+      "exact_pairs_checked": 5000,
+      "isomorphic_pairs_found": 4948,
+      "full_coverage": false,
+      "limitation": "WL grouping alone is not proof of non-isomorphism; graph-level holdout may retain isomorphic topologies"
+    },
+    {
+      "family": "dag",
+      "n": 17,
+      "cross_split_candidate_pairs": 4302,
+      "exact_pairs_checked": 4302,
+      "isomorphic_pairs_found": 4268,
+      "full_coverage": true,
+      "limitation": "WL grouping alone is not proof of non-isomorphism; graph-level holdout may retain isomorphic topologies"
+    }
+  ],
+  "data_hash": "cf5ce937d591c8eea2e497f3bcef3bb111c2a7a9f5a2f6e5bfdaeb54921b0155",
+  "full_isomorphic_disjointness_established": false
+}

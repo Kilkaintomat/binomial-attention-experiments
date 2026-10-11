@@ -1,0 +1,32 @@
+{
+  "base_commit": "9ea79b57259e9a6619098279ec4274b8efb4dd13",
+  "batch_sampling": "uniform replacement, numpy default_rng(seed+987123)",
+  "bootstrap": {
+    "interval": "percentile, 2.5/97.5",
+    "samples": 20000,
+    "seed": 90421,
+    "unit": "paired training seed"
+  },
+  "checkpoint_selection": "maximum validation solved, minimum loss, earliest step",
+  "code_commit": "87d79135109024c1a6fda443756dfedebc3c6e85",
+  "evaluation": "step 1 and every 250, complete 18000 validation",
+  "extra_stages": "disabled; no automatic family/gate/supervision experiments",
+  "failures": "retain all seeds; stop dispatcher on unexpected failure",
+  "final": "15 results; 30000 updates; five historical R32 only after compatibility audit",
+  "mechanism": "first16 validation; observational; intermediate readout trained only at final iteration",
+  "noninferiority": "lower 95% paired seed bootstrap bound > -1 percentage point",
+  "optional_B32": "first priority if measured budget fits; decision frozen before any new test",
+  "pilot": "12 fresh trainings; 10000 updates, scheduler horizon 30000; no test",
+  "practical_targets": {
+    "B16_minus_R16_pp": ">0",
+    "B16_minus_R32_pp": ">=-1",
+    "speed_reduction": ">=10% measured separately"
+  },
+  "precision": "float32; TF32 disabled",
+  "resource_policy": "one GPU; old campaign untouched and complete before release; grant required; actual allocated seconds charged",
+  "schema_version": 1,
+  "series": "recurrent_filter_sudoku_v1",
+  "source_sha256": "c3b99115ee9b0a49b0a238609eec282ee722bf7bd09645d2d6013c20ea011ca7",
+  "test_caveat": "follow-up on a previously evaluated benchmark, not untouched confirmatory data",
+  "thresholds": "50%,90%; two consecutive validations; retain previous failing and first passing checkpoints; censor failures"
+}

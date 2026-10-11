@@ -1,0 +1,15 @@
+{
+  "best_train_subset_solved": 1.0,
+  "completed_steps": 1000,
+  "final_loss": 0.00016120537475217134,
+  "finite": true,
+  "generalization_claim": false,
+  "initial_loss": 2.264664649963379,
+  "low_memorization_is_not_automatically_a_code_error": true,
+  "memorized_95_percent": true,
+  "model": "R32-onehop",
+  "seed": 229,
+  "source_sha256": "647975e8907be8e5358b13e6258434d393a8028536156415e72e1dd350af5860",
+  "status": "passed",
+  "support": "relational"
+}

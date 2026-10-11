@@ -1,0 +1,305 @@
+{
+  "version": "directed_reachability_v1",
+  "base_commit": "e9d676f3bd02a99c05913243c4590255e5a48394",
+  "upstream_commit": "22b880e8b00486e3d2ab916150d0138f538d5c50",
+  "data": {
+    "master_seed": 20261011,
+    "families": [
+      "er_exact_n_v1",
+      "dag_exact_n_v1"
+    ],
+    "split_graph_counts": {
+      "train": {
+        "16": 50000,
+        "17": 50000
+      },
+      "validation": {
+        "18": 2500,
+        "19": 2500
+      },
+      "test_ID": {
+        "16": 2500,
+        "17": 2500
+      },
+      "test_near": {
+        "20": 2500,
+        "21": 2500,
+        "22": 2500,
+        "23": 2500,
+        "24": 2500,
+        "25": 2500,
+        "26": 2500,
+        "27": 2500
+      },
+      "test_far": {
+        "32": 2000,
+        "64": 2000,
+        "128": 2000
+      }
+    },
+    "queries_per_graph": 8,
+    "query_sampling": "uniform ordered non-self pairs without replacement",
+    "augmentation": "fixed independent random relabeling at generation; no online augmentation",
+    "rng_streams": "SeedSequence(master,family,split,n,graph_index,attempt,stream)",
+    "exact_duplicate_policy": "reject any repeated labeled adjacency within family and n across all splits",
+    "isomorphism_audit": "directed WL grouping; bounded exact isomorphism checks; partial coverage explicitly reported",
+    "er_d0": [
+      1,
+      1.5,
+      2
+    ],
+    "dag_d0": [
+      1,
+      1.5,
+      2,
+      2.5,
+      3
+    ],
+    "p": "d0/(n-1)",
+    "all_vertices_retained": true,
+    "labels": "directed BFS, negative distance stored as -1",
+    "features": [
+      "constant",
+      "source_marker",
+      "target_marker",
+      "log1p_indegree",
+      "log1p_outdegree"
+    ],
+    "attention_mask": "identity OR transpose(B); padded rows self-only",
+    "readout": "target only"
+  },
+  "models": {
+    "F4-one": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "onehop",
+      "hops": 1,
+      "inner_beta": 0.0
+    },
+    "F4-bin": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "binomial",
+      "hops": 4,
+      "inner_beta": 0.0
+    },
+    "F4-exp": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "exponential",
+      "hops": 4,
+      "inner_beta": 0.0
+    },
+    "F4-one-inner": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "onehop",
+      "hops": 1,
+      "inner_beta": 0.1
+    },
+    "F4-bin-inner": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "binomial",
+      "hops": 4,
+      "inner_beta": 0.1
+    },
+    "F4-exp-inner": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "exponential",
+      "hops": 4,
+      "inner_beta": 0.1
+    },
+    "R32-one": {
+      "architecture": "recurrent",
+      "share_weights": true,
+      "outer_steps": 32,
+      "filter": "onehop",
+      "hops": 1,
+      "inner_beta": 0.0
+    },
+    "F4-geo": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "geometric",
+      "hops": 4,
+      "inner_beta": 0.0
+    },
+    "F4-learned": {
+      "architecture": "feedforward",
+      "share_weights": false,
+      "outer_steps": 4,
+      "filter": "learned",
+      "hops": 4,
+      "inner_beta": 0.0
+    }
+  },
+  "width": 128,
+  "heads": 4,
+  "training": {
+    "batch_size": 64,
+    "sampling": "uniform replacement over fixed graph-query list",
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "dtype": "float32",
+    "TF32": false,
+    "warmup_steps": 1500,
+    "cosine_horizon": 30000,
+    "loss": "unweighted BCEWithLogits"
+  },
+  "pilots": {
+    "learning_rates": [
+      0.0003,
+      0.001
+    ],
+    "seed": 101,
+    "confirmation_seed": 103,
+    "steps": 3000,
+    "full_count": 54,
+    "selection": "last full validation BA, then lower BCE, then lower LR",
+    "small_validation": "first 128 graphs of each validation size by manifest order; all 8 queries"
+  },
+  "finals": {
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "steps": 30000,
+    "full_count": 90,
+    "validation_every": 1000,
+    "best": "maximum validation BA, minimum BCE, earliest step",
+    "seed_rounds": true
+  },
+  "stress": {
+    "cells": [
+      [
+        16,
+        2
+      ],
+      [
+        16,
+        4
+      ],
+      [
+        32,
+        2
+      ],
+      [
+        32,
+        4
+      ],
+      [
+        32,
+        8
+      ],
+      [
+        64,
+        2
+      ],
+      [
+        64,
+        4
+      ],
+      [
+        64,
+        8
+      ],
+      [
+        64,
+        16
+      ],
+      [
+        128,
+        2
+      ],
+      [
+        128,
+        4
+      ],
+      [
+        128,
+        8
+      ],
+      [
+        128,
+        16
+      ],
+      [
+        128,
+        32
+      ],
+      [
+        128,
+        48
+      ]
+    ],
+    "variants": [
+      "dag",
+      "cyclic"
+    ],
+    "templates_per_cell_variant": 200,
+    "queries_per_template": 2,
+    "positive_negative_paired": true
+  },
+  "extra_compute": {
+    "hops": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "recurrent_steps": [
+      32,
+      64,
+      128
+    ],
+    "parameters": "lambda/rho stay fixed at training r=4",
+    "learned_extended": "unsupported",
+    "far_graphs_per_n": 500,
+    "stress_templates_per_cell_variant": 50,
+    "subset": "first graph/template IDs in each manifest group, fixed before training"
+  },
+  "budget": {
+    "gpu_seconds_limit": 86400,
+    "admission_reserve": 1.2,
+    "priority": [
+      "F4-one",
+      "F4-bin",
+      "F4-exp",
+      "F4-one-inner",
+      "F4-bin-inner",
+      "F4-exp-inner",
+      "R32-one",
+      "F4-geo",
+      "F4-learned"
+    ],
+    "accounting": "actual allocated GPU seconds including checks, errors, evaluation",
+    "continuation": "retain omitted grid and budget estimate; no automatic cap increase"
+  },
+  "statistics": {
+    "threshold": 0.5,
+    "primary": "balanced_accuracy",
+    "seed_sd": "sample, ddof=1",
+    "paired_bootstrap": {
+      "seed": 20261011,
+      "resamples": 20000,
+      "unit": "model seed"
+    },
+    "graph_bootstrap_unit": "all eight queries of graph; both stress queries of template",
+    "claims": "exploratory; no familywise significance claim"
+  },
+  "upstream_adaptation": "exact-n query-conditioned binary reachability; not replication of published scores",
+  "external_publication_authorized": false
+}

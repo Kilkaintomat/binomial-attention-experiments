@@ -161,3 +161,72 @@ def test_interrupted_resume_restores_mask_optimizer_and_rng(tmp_path,monkeypatch
     for key in ['model','optimizer','scheduler','data_rng','python_rng','numpy_rng','torch_rng','mask_sha256','step','best']: equal(direct[key],resumed[key])
     g1,g2=np.random.default_rng(),np.random.default_rng(); g1.bit_generator.state=direct['data_rng'];g2.bit_generator.state=resumed['data_rng']
     assert np.array_equal(g1.integers(0,16,64),g2.integers(0,16,64))
+
+
+def test_primary_interaction_is_paired_difference_of_differences():
+    from research.sudoku_local_mask_v1.reporting import contrast
+    rows=[]
+    for i,seed in enumerate([11,23,37,53,71]):
+        for support,one,binomial,recurrent in [('relational',.10,.12,.9),('grid4',.01,.08,.5)]:
+            for model,value in [('F4-onehop',one),('F4-binomial',binomial),('R32-onehop',recurrent)]:
+                rows.append({'stage':'final','status':'completed','support':support,'model':model,'seed':seed,'solved_rate':value+i*.001})
+    values,summary=contrast(rows);lookup={r['contrast']:r for r in summary}
+    assert lookup['I']['paired_seeds']==5 and lookup['I']['complete_five_seeds']
+    assert lookup['G_grid']['mean_pp']==pytest.approx(7)
+    assert lookup['G_rel']['mean_pp']==pytest.approx(2)
+    assert lookup['I']['mean_pp']==pytest.approx(5)
+    assert lookup['I']['lower95_pp']==pytest.approx(5)
+    rows=[r for r in rows if not (r['support']=='grid4' and r['model']=='F4-binomial' and r['seed']==71)]
+    _,summary=contrast(rows);row=next(r for r in summary if r['contrast']=='I')
+    assert row['paired_seeds']==4 and not row['complete_five_seeds']
+
+
+def test_admission_and_accounting_never_expand_limit(tmp_path,monkeypatch):
+    from argparse import Namespace
+    from transport_reasoning.config import write_json
+    from research.sudoku_local_mask_v1 import scheduler
+    from research.sudoku_local_mask_v1.campaign import admission
+    monkeypatch.setenv('LOCAL_MASK_OUTPUT',str(tmp_path))
+    write_json(tmp_path/'profile/budget_estimate.json',{'mandatory_seconds_with_20_percent_margin':1000,
+               'reuse_15_relational':True,'new_training_runs':33})
+    assert admission(900) is None and not (tmp_path/'admission.json').exists()
+    value={'status':'profile_completed','gpu_seconds_used':3500,'first_allocation_unix':__import__('time').time(),
+           'gpu_jobs':[{'job_id':'123','reserved_seconds':600,'accounted':False}]}
+    scheduler.save(value);write_json(tmp_path/'queue/budget_grant.json',{'gpu_seconds_limit':4100,'wall_seconds_limit':7200})
+    def command(args):
+        assert args[0]=='sacct'
+        return '123|COMPLETED|600|gres/gpu=1|0:0|'
+    monkeypatch.setattr(scheduler,'command',command)
+    monkeypatch.setattr(scheduler,'batch',lambda *a,**k:pytest.fail('No unreserved allocation'))
+    result=scheduler.account(Namespace(job='123'))
+    assert result['gpu_seconds_used']==4100 and result['status']=='budget_stopped'
+    assert scheduler.account(Namespace(job='123'))['gpu_seconds_used']==4100
+
+
+def test_predecessor_waits_for_existing_queue_without_mutation(tmp_path,monkeypatch):
+    from transport_reasoning.config import write_json
+    from research.sudoku_local_mask_v1 import scheduler
+    old=tmp_path/'old';prior=tmp_path/'prior'
+    monkeypatch.setenv('RUN_LEGACY_PROJECT',str(old));monkeypatch.setenv('RUN_PRIOR_SERIES_PROJECT',str(prior))
+    legacy=old/'experiments/transport_reasoning/mlp_final_submission.json'
+    previous=prior/'experiments/recurrent_filter_sudoku_v1/queue/state.json'
+    write_json(legacy,{'gpu_job':'10','post_job_accounting_job':'11'})
+    write_json(previous,{'status':'held','accounting_job':'21','gpu_jobs':[{'job_id':'20','accounted':False}]})
+    before=(legacy.read_bytes(),previous.read_bytes())
+    monkeypatch.setattr(scheduler,'active',lambda job:str(job)=='21')
+    result=scheduler.predecessor()
+    assert result['dependency']=='21' and not result['ready']
+    assert before==(legacy.read_bytes(),previous.read_bytes())
+
+
+def test_position_accuracy_uses_blank_group_denominators():
+    from research.sudoku_local_mask_v1.measure import position_accuracy
+    c=make('F4-onehop','grid4',device='cpu',width=16)
+    class Data:
+        ids=[str(i) for i in range(64)]
+        def batch(self,ids,device):
+            return {'x':torch.zeros(64,81,38),'mask':torch.tensor(np.broadcast_to(allowed_mask('grid4'),(64,81,81)).copy()),
+                    'puzzle':torch.zeros(64,81,dtype=torch.long),'y':torch.ones(64,81,dtype=torch.long)}
+    result=position_accuracy(Encoder(c),Data(),c)
+    assert [g['blank_cells'] for g in result['groups']]==[64*4,64*28,64*49]
+    assert sum(g['blank_cells'] for g in result['groups'])==64*81

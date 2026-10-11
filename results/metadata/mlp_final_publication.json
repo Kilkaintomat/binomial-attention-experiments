@@ -1,0 +1,109 @@
+{
+  "snapshot_utc": "2026-10-11T08:49:15.331206+00:00",
+  "completed_new_runs": 20,
+  "historical_paired_controls": 20,
+  "all_primary_plus_mlp_final_runs": 80,
+  "source_sha256": "d8b8974c94d1fbca8539a07380ddefc1d9894bd45a66f19c49c38860b449e1f6",
+  "budget": {
+    "allocation_seconds_mlp_extension_including_failed_attempt": 27682,
+    "total_original_campaign_gpu_seconds": 80671,
+    "original_ceiling_gpu_hours": 24,
+    "allocations": [
+      {
+        "actual_seconds": 28,
+        "gpu_count": 1,
+        "status": "finished"
+      },
+      {
+        "actual_seconds": 52961,
+        "gpu_count": 1,
+        "status": "finished"
+      },
+      {
+        "actual_seconds": 147,
+        "gpu_count": 1,
+        "purpose": "inner_mlp_final_v1",
+        "status": "finished"
+      },
+      {
+        "actual_seconds": 6728,
+        "gpu_count": 1,
+        "purpose": "inner_mlp_final_v1",
+        "status": "finished"
+      },
+      {
+        "actual_seconds": 6724,
+        "gpu_count": 1,
+        "purpose": "inner_mlp_final_v1",
+        "status": "finished"
+      },
+      {
+        "actual_seconds": 6724,
+        "gpu_count": 1,
+        "purpose": "inner_mlp_final_v1",
+        "status": "finished"
+      },
+      {
+        "actual_seconds": 6721,
+        "gpu_count": 1,
+        "purpose": "inner_mlp_final_v1",
+        "status": "finished"
+      },
+      {
+        "actual_seconds": 638,
+        "gpu_count": 1,
+        "purpose": "inner_mlp_final_v1",
+        "status": "finished"
+      }
+    ],
+    "new_sudoku_series_excluded": true
+  },
+  "analysis": {
+    "kind": "post-training descriptive paired seed analysis",
+    "bootstrap_seed": 20261011,
+    "resamples": 20000,
+    "interval": "95% percentile",
+    "multiplicity_correction": false,
+    "sample_sd_ddof": 1
+  },
+  "main_results": [
+    [
+      "maze",
+      "Binomial",
+      "98.7600 ± 0.1817",
+      "99.7200 ± 0.1789",
+      "+0.9600",
+      "[+0.7400; +1.1800]"
+    ],
+    [
+      "maze",
+      "Exponential",
+      "99.5800 ± 0.2168",
+      "99.9400 ± 0.0894",
+      "+0.3600",
+      "[+0.1800; +0.5600]"
+    ],
+    [
+      "sudoku",
+      "Binomial",
+      "5.2278 ± 1.0799",
+      "38.9789 ± 1.5801",
+      "+33.7511",
+      "[+32.1644; +34.9556]"
+    ],
+    [
+      "sudoku",
+      "Exponential",
+      "5.7622 ± 0.9416",
+      "39.6578 ± 1.3395",
+      "+33.8956",
+      "[+33.3889; +34.4022]"
+    ]
+  ],
+  "figures": [
+    "mlp_final_solved",
+    "mlp_final_curves_step",
+    "mlp_final_curves_training_seconds"
+  ],
+  "summary_ru": "Внутренний MLP увеличил средний Sudoku solved до 38.98% у binomial и 39.66% у exponential; без него было около 5–6%. На Maze оба варианта решают более 99,7% задач в среднем."
+}

@@ -1,0 +1,27 @@
+{
+  "branch_fraction": 0.0,
+  "broken_fraction": 0.001,
+  "buckets": {
+    "long": {
+      "count": 91,
+      "solved_rate": 1.0
+    },
+    "short": {
+      "count": 909,
+      "solved_rate": 0.9988998899889989
+    }
+  },
+  "checkpoint_filename": "checkpoint_best.pt",
+  "checkpoint_step": 10000,
+  "count": 1000,
+  "data_hash": "cc9d4a77297250f178f77c206e0b7c24254a62689d33b2e53e937d88b9c6a0cb",
+  "evaluation_seconds": 0.3949955590069294,
+  "exact_match": 0.999,
+  "inference_peak_memory_bytes": 90688512,
+  "inference_seconds_per_example": 0.00025334488414227964,
+  "loss": 0.00024994706333382054,
+  "solved_rate": 0.999,
+  "split": "test",
+  "vertex_f1": 0.9999432752850417,
+  "vertex_iou": 0.999886557005105
+}

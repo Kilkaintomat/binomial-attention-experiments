@@ -1,10 +1,12 @@
 # Binomial attention: эксперименты и результаты
 
-Публичный исследовательский снимок сравнения binomial, exponential, geometric и learned polynomial attention с one-hop и recurrent моделями на Maze и Sudoku. Основная серия завершена: **60 обучений по 30 000 обновлений, пять seeds на каждую пару задача × метод**. Срез: 10 октября 2026, 20:44:53 UTC.
+Публичный исследовательский снимок сравнения binomial, exponential, geometric и learned polynomial attention с one-hop и recurrent моделями на Maze и Sudoku. Завершены **60 основных и 20 дополнительных MLP-обучений по 30 000 обновлений**, по пять seeds на условие. Основной снимок от 10 октября 2026 дополнен финальными MLP-результатами 11 октября 2026.
 
-**[Большой подробный отчёт на русском](REPORT_RU.md)** · **[Все таблицы запусков](docs/EXPERIMENT_TABLES_RU.md)** · **[CSV результатов](results/tables/results.csv)**
+**[Финальные результаты MLP](REPORT_MLP_FINAL_RU.md)** · **[Большой подробный отчёт на русском](REPORT_RU.md)** · **[Все таблицы запусков](docs/EXPERIMENT_TABLES_RU.md)** · **[Исходная серия CSV](results/tables/results.csv)**
 
 В отчёте описаны данные, формулы, архитектура, инициализация, loss, выбор гиперпараметров, обучение, checkpoint/resume, измерение времени, каждый этап экспериментов, найденные ошибки и ограничения выводов.
+
+Основная серия без внутреннего MLP:
 
 | Метод | Maze test solved, % | Sudoku test solved, % |
 | --- | --- | --- |
@@ -19,7 +21,18 @@
 
 ![Финальные результаты](results/figures/final_solved.png)
 
-Новая финальная серия с внутренним MLP **не завершена: 0/20** на момент среза. Её 24 коротких пилота приведены отдельно. Частичные логи первого финального MLP-запуска не считаются финальным результатом. Датированный [статус выполнения](results/metadata/execution_snapshot.json) не является живым монитором.
+Финальная серия с внутренним MLP **завершена: 20/20**. Её 24 коротких пилота остаются отдельным этапом. Ниже — финальные test-результаты, mean ± sample SD по пяти seeds.
+
+<!-- MLP_FINAL_RESULTS_START -->
+| Задача | Фильтр | Без MLP, % | С MLP, % | Δ, п.п. | 95% CI Δ, п.п. |
+| --- | --- | --- | --- | --- | --- |
+| maze | Binomial | 98.7600 ± 0.1817 | 99.7200 ± 0.1789 | +0.9600 | [+0.7400; +1.1800] |
+| maze | Exponential | 99.5800 ± 0.2168 | 99.9400 ± 0.0894 | +0.3600 | [+0.1800; +0.5600] |
+| sudoku | Binomial | 5.2278 ± 1.0799 | 38.9789 ± 1.5801 | +33.7511 | [+32.1644; +34.9556] |
+| sudoku | Exponential | 5.7622 ± 0.9416 | 39.6578 ± 1.3395 | +33.8956 | [+33.3889; +34.4022] |
+<!-- MLP_FINAL_RESULTS_END -->
+
+Перепроверены 190 000 сохранённых test-предсказаний и 320 ответов лучших checkpoint; [аудит](results/audit/mlp_final_publication_audit.json) пройден. Дополнительные параметры и вычисления не выровнены с контролем: прирост нельзя приписывать только одному механизму. Прежний частичный [статус выполнения](results/metadata/execution_snapshot.json) сохранён как архив; актуальное завершение — в [MLP metadata](results/metadata/mlp_final_publication.json).
 
 ## Содержимое
 
@@ -27,6 +40,7 @@
 - [src](src): исходники моделей, генераторов, обучения, проверки решений и метрик.
 - [tests](tests): проверки математических операций, валидаторов и воспроизводимого продолжения.
 - [results/records](results/records): конфигурации, result/evaluation JSON и validation-кривые запусков.
+- [results/mlp_final/records](results/mlp_final/records):20 завершённых MLP-обучений, отдельно от прежнего частичного снимка.
 - [results/tables](results/tables): агрегаты, парные различия, timing и pointer diagnostics.
 - [results/protocols](results/protocols): замороженные протоколы и очереди.
 - [results/audit](results/audit): результаты независимой ревизии и её ограничения.
@@ -43,8 +57,10 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
 python -m pytest
+python scripts/build_mlp_final_assets.py
 python scripts/build_public_assets.py
 python scripts/check_public_snapshot.py
+python scripts/check_mlp_final_snapshot.py
 ```
 
 На вычислительном кластере выполняйте tests, подготовку данных и построение рисунков внутри CPU allocation, а обучение — внутри GPU allocation. `requirements.lock` — архивный перечень пакетов объединённого контейнера и venv; в нём есть повторяющиеся версии pip/setuptools. Он сохранён как свидетельство окружения и не является готовым входом для `pip install -r`. Установка через pyproject обеспечивает запуск, но сама по себе не гарантирует побитное совпадение с историческим окружением.
@@ -97,4 +113,4 @@ python -m transport_reasoning evaluate \
 
 Архивный аудит заново проверил 570 000 сохранённых test-предсказаний и повторил inference на 960 примерах из checkpoints. Эти исходные массивы и веса не опубликованы; публичная проверка сверяет скаляры evaluation JSON, конфигурации, hashes, validation-кривые, выбор best checkpoint и агрегаты. [Результат проверки публичного снимка](results/metadata/publication_validation.json) описывает этот более узкий объём проверки.
 
-Нерешённые пункты — MLP final, OOD Maze, dense controls, parameter-matched и equal-wall-time controls, полная Sudoku symmetry/uniqueness certification — перечислены в отчёте. Успешная техническая проверка не означает завершения всего исходного плана.
+MLP final для binomial/exponential завершён. Нерешённые пункты — OOD Maze, dense controls, parameter-matched и equal-wall-time controls, MLP final для других фильтров, полная Sudoku symmetry/uniqueness certification — перечислены в отчёте. Успешная техническая проверка не означает завершения всего исходного плана.

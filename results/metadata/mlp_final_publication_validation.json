@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "new_final_records": 20,
+  "historical_paired_controls": 20,
+  "record_hashes_checked": 100,
+  "validation_points_checked": 4840,
+  "paired_contrasts_recomputed": 6,
+  "links_checked": 61,
+  "scope": "Portable files, hashes, full final coverage, paired scalar metrics, checkpoint selection, aggregates and seed bootstrap. Private audit is separate."
+}

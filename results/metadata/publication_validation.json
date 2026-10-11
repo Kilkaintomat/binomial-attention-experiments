@@ -4,6 +4,6 @@
   "archived_records_checked": 152,
   "final_runs_checked": 60,
   "test_examples_represented_by_checked_aggregate_metrics": 570000,
-  "local_document_links_checked": 41,
+  "local_document_links_checked": 54,
   "scope": "Published config hashes, training source, archived scalar evaluations, best-step selection, aggregates and links. No raw predictions or checkpoints are included; this is not a new prediction replay."
 }

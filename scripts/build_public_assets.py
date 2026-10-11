@@ -175,6 +175,15 @@ def main():
         'MLP_PILOT_TABLE': table(['Задача', 'Метод', 'Off seeds %', 'On seeds %', 'Off mean %', 'On mean %', 'Δ п.п.', 'Off train s', 'On train s'], mlp_table),
         'POINTER_TABLE': table(['Условие', 'Метод', 'H eval', 'Conditional accuracy', 'Terminal mass', 'Unreached accuracy'], pointer_rows),
         'MODULE_TABLE': table(['Файл', 'Назначение'], [[f'[{p}]({p})', desc] for p, desc in modules])}
+    mlp = read('results/metadata/mlp_final_publication.json')
+    replacements.update(MLP_FINAL_SUMMARY=mlp['summary_ru'],
+                        MLP_FINAL_TABLE=table(['Задача', 'Фильтр', 'Без MLP, %', 'С MLP, %', 'Δ, п.п.', '95% CI Δ, п.п.'], mlp['main_results']),
+                        MLP_BUDGET=(f"MLP-расширение израсходовало {mlp['budget']['allocation_seconds_mlp_extension_including_failed_attempt']} секунд GPU allocation "
+                                    f"({mlp['budget']['allocation_seconds_mlp_extension_including_failed_attempt']/3600:.4f} GPU-часа), включая неудачную попытку сохранения. "
+                                    f"Вся прежняя кампания: {mlp['budget']['total_original_campaign_gpu_seconds']} секунд "
+                                    f"({mlp['budget']['total_original_campaign_gpu_seconds']/3600:.4f} GPU-часа из24); "
+                                    f"остаток {(86400-mlp['budget']['total_original_campaign_gpu_seconds'])/3600:.4f} GPU-часа. "
+                                    'Новые рекуррентная и локальная серии в этот расход не входят.'))
     text = (ROOT / 'scripts/report_template_ru.txt').read_text()
     for key, value in replacements.items():
         assert '@@' + key + '@@' in text, key
@@ -193,6 +202,10 @@ def main():
                  [[r[k] for k in ['condition', 'method', 'seed', 'H', 'conditional_accuracy', 'terminal_mass', 'unreached_accuracy']] for r in pointers]),
                  '## Идентификаторы данных', 'Manifest содержит исходные CSV hashes и hashes полученных NPZ. Байты NPZ могут зависеть от версии упаковки; воспроизведение на другом окружении следует проверять также по содержимому массивов.',
                  '```json\n' + json.dumps(read('results/protocols/mlp_final_protocol.json')['data_manifests'], indent=2, ensure_ascii=False) + '\n```']
+    appendix += ['## Завершённая финальная MLP-серия',
+                 '20 дополнительных финальных обучений опубликованы отдельно от архивных152 строк: [подробный отчёт](../REPORT_MLP_FINAL_RU.md), '
+                 '[40 строк on/off по seeds](../results/tables/mlp_final_per_seed.csv), [парные интервалы](../results/tables/mlp_final_contrasts.csv).',
+                 replacements['MLP_FINAL_TABLE']]
     (ROOT / 'docs').mkdir(exist_ok=True)
     (ROOT / 'docs/EXPERIMENT_TABLES_RU.md').write_text('\n\n'.join(appendix) + '\n')
     print(json.dumps({'report': 'REPORT_RU.md', 'appendix': 'docs/EXPERIMENT_TABLES_RU.md', 'final_runs': len(final), 'all_records': len(rows), 'figures': 4}))

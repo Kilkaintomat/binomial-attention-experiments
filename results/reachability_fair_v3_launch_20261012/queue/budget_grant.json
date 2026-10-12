@@ -1,0 +1,6 @@
+{
+  "gpu_seconds_limit": 36000,
+  "authorization": "User explicitly approved up to10 GPU-hours for this separate fair-comparison series.",
+  "recorded_unix": 1791834604.000176,
+  "includes": "all GPU allocations, smoke, profiling, pilots, finals, inference, failures and overhead"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "architecture_checks": [
+    {
+      "model": "R16-one",
+      "operations": {
+        "qkv_calls": 16,
+        "attention_calls": 16,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 16,
+        "unique_blocks": 1,
+        "parameters": 198913
+      },
+      "radius": 16,
+      "status": "passed"
+    },
+    {
+      "model": "F4-last-r4",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 16,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      },
+      "radius": 16,
+      "status": "passed"
+    },
+    {
+      "model": "F4-bin-r8",
+      "operations": {
+        "qkv_calls": 4,
+        "attention_calls": 4,
+        "transport_matmuls": 32,
+        "inner_ffn_calls": 0,
+        "outer_ffn_calls": 4,
+        "unique_blocks": 4,
+        "parameters": 792193
+      },
+      "radius": 32,
+      "status": "passed"
+    }
+  ],
+  "initialization_equality": true,
+  "terminal_power_formula": true,
+  "padding_permutation": true,
+  "locality_outside_radius": true,
+  "threshold_selection_tests": true,
+  "source_hash": "0e64a51633b59e170ba300a0f25534ee3496c308f8ab9637c5bed37c72cbb41c",
+  "data_hash": "6c0732be2c3884965dc1f7cc9c3d4fc2bdce848e042120a4f656601badf45944",
+  "scheduler_job": "8491581"
+}

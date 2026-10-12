@@ -1,0 +1,22 @@
+{
+  "status": "admitted",
+  "estimated_seconds_with_reserve": 30637.67826705426,
+  "remaining_seconds": 35836,
+  "models": [
+    "R16-one",
+    "F4-last-r4",
+    "F4-bin-r8"
+  ],
+  "families": [
+    "er",
+    "dag"
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "test_scores_used": false
+}

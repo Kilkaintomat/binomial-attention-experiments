@@ -1,0 +1,36 @@
+{
+  "status": "running",
+  "gpu_jobs": [
+    {
+      "job_id": "8491582",
+      "mode": "preflight",
+      "reserved_seconds": 600,
+      "accounted": true,
+      "allocated_seconds": 32,
+      "scheduler_state": "COMPLETED",
+      "exit_code": "0:0",
+      "gpu_count": 1
+    },
+    {
+      "job_id": "8491584",
+      "mode": "profile_refinement",
+      "reserved_seconds": 600,
+      "accounted": true,
+      "allocated_seconds": 132,
+      "scheduler_state": "COMPLETED",
+      "exit_code": "0:0",
+      "gpu_count": 1
+    },
+    {
+      "job_id": "8491587",
+      "mode": "slot",
+      "reserved_seconds": 1800,
+      "accounted": false
+    }
+  ],
+  "gpu_seconds_used": 164,
+  "active_gpu_job": "8491587",
+  "accounting_job": "8491588",
+  "current_job": "8491587",
+  "previous_admission_stop_reason": "Full prespecified grid estimate exceeds remaining10 GPU-hours"
+}

@@ -1,0 +1,12 @@
+{
+  "gpu_array_job": "8491516",
+  "report_job": "8491517",
+  "max_GPU_allocated_seconds": 7200,
+  "slots": 4,
+  "seconds_per_slot": 1800,
+  "concurrent_GPUs": 1,
+  "source_commit": "c7c6026",
+  "prepare_job": 8491515,
+  "failed_CPU_launcher_before_Python": 8491514,
+  "submitted_utc": "2026-10-12T17:47:18.654222+00:00"
+}

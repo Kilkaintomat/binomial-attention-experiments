@@ -1,0 +1,512 @@
+{
+  "evaluations": 720,
+  "settings": 18,
+  "threads": [
+    {
+      "threads": 1,
+      "cases": [
+        {
+          "filter": "binomial",
+          "r": 16,
+          "rule": "original",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "weights": 2.7755575615628914e-17,
+            "mean_index": 0.0,
+            "variance_index": 8.881784197001252e-16,
+            "tail_mass_k_ge_r_half": 1.1102230246251565e-16
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "binomial",
+          "r": 32,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "binomial",
+          "r": 4,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "binomial",
+          "r": 8,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 16,
+          "rule": "matched",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 32,
+          "rule": "matched",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 1.3877787807814457e-17,
+            "mean_index": 3.552713678800501e-15,
+            "variance_index": 1.7763568394002505e-15,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 8,
+          "rule": "matched",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 16,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 32,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 4,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 8,
+          "rule": "original",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 5.551115123125783e-17,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 2.7755575615628914e-17
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 16,
+          "rule": "matched",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 1.3877787807814457e-17,
+            "mean_index": 1.7763568394002505e-15,
+            "variance_index": 3.552713678800501e-15,
+            "tail_mass_k_ge_r_half": 1.1102230246251565e-16
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 32,
+          "rule": "matched",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 8,
+          "rule": "matched",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 1.1102230246251565e-16,
+            "weights": 8.326672684688674e-17,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 1.1102230246251565e-16
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 16,
+          "rule": "original",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 5.551115123125783e-17,
+            "mean_index": 8.881784197001252e-16,
+            "variance_index": 1.7763568394002505e-15,
+            "tail_mass_k_ge_r_half": 1.3877787807814457e-17
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 32,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 4,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 8,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        }
+      ]
+    },
+    {
+      "threads": 4,
+      "cases": [
+        {
+          "filter": "binomial",
+          "r": 16,
+          "rule": "original",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "weights": 2.7755575615628914e-17,
+            "mean_index": 0.0,
+            "variance_index": 8.881784197001252e-16,
+            "tail_mass_k_ge_r_half": 1.1102230246251565e-16
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "binomial",
+          "r": 32,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "binomial",
+          "r": 4,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "binomial",
+          "r": 8,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 16,
+          "rule": "matched",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 32,
+          "rule": "matched",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 1.3877787807814457e-17,
+            "mean_index": 3.552713678800501e-15,
+            "variance_index": 1.7763568394002505e-15,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 8,
+          "rule": "matched",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 16,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 32,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 4,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "exponential",
+          "r": 8,
+          "rule": "original",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 5.551115123125783e-17,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 2.7755575615628914e-17
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 16,
+          "rule": "matched",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 1.3877787807814457e-17,
+            "mean_index": 1.7763568394002505e-15,
+            "variance_index": 3.552713678800501e-15,
+            "tail_mass_k_ge_r_half": 1.1102230246251565e-16
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 32,
+          "rule": "matched",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 8,
+          "rule": "matched",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 1.1102230246251565e-16,
+            "weights": 8.326672684688674e-17,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 1.1102230246251565e-16
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 16,
+          "rule": "original",
+          "exact_dictionary_match": false,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 5.551115123125783e-17,
+            "mean_index": 8.881784197001252e-16,
+            "variance_index": 1.7763568394002505e-15,
+            "tail_mass_k_ge_r_half": 1.3877787807814457e-17
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 32,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 4,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        },
+        {
+          "filter": "geometric",
+          "r": 8,
+          "rule": "original",
+          "exact_dictionary_match": true,
+          "absolute_differences": {
+            "parameter": 0.0,
+            "weights": 0.0,
+            "mean_index": 0.0,
+            "variance_index": 0.0,
+            "tail_mass_k_ge_r_half": 0.0
+          },
+          "float32_weights_equal": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "completed": 720,
+  "expected": 720,
+  "new_trainings": 0,
+  "data_hash": "367f177bd4e00471d553c13c7415692dbddd21707097c5af94d694cbff70d437",
+  "protocol_hash": "e6b627441e7b6d02b784d64177be60f4935edfdb189dfe8b440d97d37d87b318",
+  "extension_source_hash": "b0327dad80b01d9a29b1e9dc86aff9939844fb03beb62f72388d62c7454628e6",
+  "scheduler_job": "8491518"
+}

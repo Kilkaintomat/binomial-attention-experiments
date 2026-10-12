@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "coefficient_cases": 20,
+  "frozen_checkpoints": 30,
+  "r4_exact_logit_equivalence": true,
+  "learned_parameter_immutability": true,
+  "independent_scalar_weight_check": true,
+  "finite_outputs_all_settings": true,
+  "data_hash": "367f177bd4e00471d553c13c7415692dbddd21707097c5af94d694cbff70d437",
+  "elapsed_seconds": 25.597158521413803,
+  "scheduler_job": "8491515",
+  "all_data_frozen_before_new_predictions": true
+}

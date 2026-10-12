@@ -1,0 +1,23 @@
+{
+  "reason": "Exact float64 dictionary comparison was too strict across CPU implementations; stored float32 coefficients are identical.",
+  "original_failed_job": 8491517,
+  "diagnostic_job": 8491570,
+  "replacement_audit_job": "8491571",
+  "original_inference_source_unchanged": true,
+  "predictions_unchanged": true,
+  "new_inference": false,
+  "original_report_sha256": "7a175b7a0627c9abe3ecf7acb92736adea7729fe61f28db0ef1dccc104d46d52",
+  "corrected_report_sha256": "c70b3681366b7d61bc0a6ad3e22c28358af1fdfb3b79c06e05de04e1929cace0",
+  "coefficient_validation": {
+    "checked": 720,
+    "max_absolute_difference": {
+      "weights": 8.326672684688674e-17,
+      "mean_index": 3.552713678800501e-15,
+      "variance_index": 3.552713678800501e-15,
+      "tail_mass_k_ge_r_half": 1.1102230246251565e-16,
+      "parameter": 1.1102230246251565e-16
+    },
+    "float32_weights_bitwise_equal": true,
+    "float64_absolute_tolerance": 1e-14
+  }
+}

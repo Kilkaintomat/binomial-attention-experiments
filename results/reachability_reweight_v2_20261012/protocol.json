@@ -1,0 +1,158 @@
+{
+  "protocol": {
+    "version": "reachability_reweight_v2",
+    "authorization": "User requested testing exponential/geometric reweighting as r increases, without retraining.",
+    "status": "new hypothesis after observing v1 tests; new random test draws, same generator families",
+    "base_commit": "2a10b8a8e56c7c04012ef8cdea3e164a9f9cf048",
+    "base_source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8",
+    "base_training_data_hash": "cf5ce937d591c8eea2e497f3bcef3bb111c2a7a9f5a2f6e5bfdaeb54921b0155",
+    "models": [
+      "F4-bin",
+      "F4-exp",
+      "F4-geo"
+    ],
+    "families": [
+      "er",
+      "dag"
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "hops": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "training": "none; all 30 existing best checkpoints frozen by v1 validation selection",
+    "learned_parameters": "unchanged; no optimizer, gradients, threshold fitting, or model selection",
+    "coefficient_rules": {
+      "original": "v1 binomial; exp/geometric keep lambda/rho calibrated at train r=4",
+      "matched": "exp/geometric lambda/rho uniquely solve sum(k*c_k)=r*2**(r-1)/(2**r-1)",
+      "solver": "100 bisection steps in log parameter [-40,40], float64 softmax; r=4 reuses original exactly",
+      "r4": "one common evaluation, shared by original/matched; not counted twice",
+      "inner_MLP": "excluded; plain filters only, as in the mathematical question"
+    },
+    "data": {
+      "master_seed": 2026101201,
+      "far_sizes": [
+        32,
+        64,
+        128
+      ],
+      "far_graphs_per_size_family": 500,
+      "far_queries_per_graph": 8,
+      "stress_cells": [
+        [
+          16,
+          2
+        ],
+        [
+          16,
+          4
+        ],
+        [
+          32,
+          2
+        ],
+        [
+          32,
+          4
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          64,
+          2
+        ],
+        [
+          64,
+          4
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          64,
+          16
+        ],
+        [
+          128,
+          2
+        ],
+        [
+          128,
+          4
+        ],
+        [
+          128,
+          8
+        ],
+        [
+          128,
+          16
+        ],
+        [
+          128,
+          32
+        ],
+        [
+          128,
+          48
+        ]
+      ],
+      "stress_variants": [
+        "dag",
+        "cyclic"
+      ],
+      "stress_templates_per_cell_variant": 50,
+      "stress_queries_per_template": 2,
+      "all_models_share_identical_test_draws": true,
+      "exact_duplicates": "reject labeled adjacencies against all same-size v1 data and new test draws",
+      "isomorphism": "no claim of isomorphic/topological disjointness; stress uses the original construction",
+      "selection": "all generated examples, no filtering by model predictions or class label",
+      "expected_graphs": 4500,
+      "expected_unique_queries": 27000
+    },
+    "evaluation": {
+      "batch_size": 64,
+      "float32": true,
+      "TF32": false,
+      "threshold": 0.5,
+      "primary": "balanced accuracy",
+      "stress_pair_metric": "fraction of templates with both answers correct",
+      "save": "raw logits, labels, graph/query IDs, metadata, state norms, timing, memory, actual coefficients",
+      "expected_evaluations": 720,
+      "expected_prediction_entries": 2700000,
+      "timing": "observed forward time on the common workload, no claim of isolated latency benchmarking"
+    },
+    "comparisons": [
+      "matched vs original at each r=8,16,32",
+      "matched vs own r=4",
+      "matched vs binomial at same r"
+    ],
+    "statistics": {
+      "summary": "mean and sample SD over five model seeds, each cell separately",
+      "intervals": "exact 3125 resamples of paired model-seed differences; conditional on common test draws",
+      "claims": "exploratory; no multiplicity-adjusted significance claim; no best-r selection"
+    },
+    "limits": {
+      "max_new_GPU_allocated_seconds": 7200,
+      "old_GPU_allocated_seconds": 73283,
+      "combined_ceiling_seconds": 86400,
+      "slots": 4,
+      "seconds_per_slot": 1800,
+      "concurrent_GPUs": 1,
+      "stop": "no automatic budget increase or training fallback"
+    }
+  },
+  "protocol_hash": "e6b627441e7b6d02b784d64177be60f4935edfdb189dfe8b440d97d37d87b318",
+  "extension_source_hash": "b0327dad80b01d9a29b1e9dc86aff9939844fb03beb62f72388d62c7454628e6"
+}

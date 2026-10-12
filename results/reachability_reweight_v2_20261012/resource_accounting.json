@@ -1,0 +1,90 @@
+{
+  "scheduler_records": [
+    {
+      "job_id_raw": "8491514",
+      "job_id": "8491514",
+      "job_name": "rw2_prepare",
+      "state": "FAILED",
+      "allocated_seconds": 0,
+      "exit_code": "1:0",
+      "alloc_tres": "billing=1,cpu=1,mem=4G,node=1"
+    },
+    {
+      "job_id_raw": "8491515",
+      "job_id": "8491515",
+      "job_name": "rw2_prepare",
+      "state": "COMPLETED",
+      "allocated_seconds": 35,
+      "exit_code": "0:0",
+      "alloc_tres": "billing=1,cpu=1,mem=4G,node=1"
+    },
+    {
+      "job_id_raw": "8491517",
+      "job_id": "8491517",
+      "job_name": "rw2_audit_report",
+      "state": "FAILED",
+      "allocated_seconds": 7,
+      "exit_code": "1:0",
+      "alloc_tres": "billing=1,cpu=1,mem=4G,node=1"
+    },
+    {
+      "job_id_raw": "8491518",
+      "job_id": "8491516_0",
+      "job_name": "rw2_eval",
+      "state": "COMPLETED",
+      "allocated_seconds": 397,
+      "exit_code": "0:0",
+      "alloc_tres": "billing=4,cpu=4,gres/gpu=1,mem=8G,node=1"
+    },
+    {
+      "job_id_raw": "8491524",
+      "job_id": "8491516_1",
+      "job_name": "rw2_eval",
+      "state": "COMPLETED",
+      "allocated_seconds": 0,
+      "exit_code": "0:0",
+      "alloc_tres": "billing=4,cpu=4,gres/gpu=1,mem=8G,node=1"
+    },
+    {
+      "job_id_raw": "8491527",
+      "job_id": "8491516_2",
+      "job_name": "rw2_eval",
+      "state": "COMPLETED",
+      "allocated_seconds": 0,
+      "exit_code": "0:0",
+      "alloc_tres": "billing=4,cpu=4,gres/gpu=1,mem=8G,node=1"
+    },
+    {
+      "job_id_raw": "8491516",
+      "job_id": "8491516_3",
+      "job_name": "rw2_eval",
+      "state": "COMPLETED",
+      "allocated_seconds": 0,
+      "exit_code": "0:0",
+      "alloc_tres": "billing=4,cpu=4,gres/gpu=1,mem=8G,node=1"
+    },
+    {
+      "job_id_raw": "8491570",
+      "job_id": "8491570",
+      "job_name": "rw2_coeff_audit",
+      "state": "COMPLETED",
+      "allocated_seconds": 6,
+      "exit_code": "0:0",
+      "alloc_tres": "billing=4,cpu=4,mem=4G,node=1"
+    },
+    {
+      "job_id_raw": "8491571",
+      "job_id": "8491571",
+      "job_name": "rw2_full_audit",
+      "state": "COMPLETED",
+      "allocated_seconds": 25,
+      "exit_code": "0:0",
+      "alloc_tres": "billing=1,cpu=1,mem=4G,node=1"
+    }
+  ],
+  "new_gpu_allocated_seconds": 397,
+  "old_gpu_allocated_seconds": 73283,
+  "combined_gpu_allocated_seconds": 73680,
+  "combined_ceiling_seconds": 86400,
+  "failed_CPU_attempt": "Empty optional Bash array under set -u; failed before Python, fixed before data generation."
+}

@@ -1,0 +1,141 @@
+{
+  "protocol": {
+    "version": "reachability_curriculum_v4",
+    "base_source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8",
+    "base_data_hash": "cf5ce937d591c8eea2e497f3bcef3bb111c2a7a9f5a2f6e5bfdaeb54921b0155",
+    "master_seed": 2026101301,
+    "new_training_count": 30,
+    "reused_controls": 10,
+    "architecture": "F4-bin",
+    "families": [
+      "er",
+      "dag"
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "regimes": {
+      "original": "reuse original last checkpoint at30000",
+      "class_balanced": "same original data, equal probability classes",
+      "short_aug": "50% original class-balanced,50% paired augmented n48; positive-length distribution from original train restricted to1..8",
+      "length_balanced": "same50/50 mixture and same augmented pool; uniform augmented positive length1..16"
+    },
+    "primary_contrasts": [
+      "class_balanced-original",
+      "length_balanced-short_aug"
+    ],
+    "confounding": "class_balanced to short_aug changes size, structure and negative-example difficulty; not a pure size effect",
+    "model": {
+      "outer_steps": 4,
+      "hops": 4,
+      "width": 128,
+      "heads": 4,
+      "share_weights": false,
+      "inner_MLP": false
+    },
+    "training": {
+      "updates": 30000,
+      "batch_size": 64,
+      "lr": "original F4-bin LR per family, fixed across regimes and seeds",
+      "new_LR_search": false,
+      "optimizer": "same AdamW,weight_decay0.01,clip1,warmup1500,cosine30000,float32,TF32false",
+      "checkpoint": "last at30000 primary; original validation monitoring every1000, no data-dependent extensions",
+      "sampling": "fixed distribution from step1; no staged curriculum; virtual index reproducible from trainer batch RNG"
+    },
+    "pool": {
+      "n": 48,
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "graphs_per_family_length_train": 1024,
+      "graphs_per_family_length_validation": 128,
+      "queries_per_graph": 2,
+      "generator": "mirrored chains with incoming trees and two-step detours; optional mirrored backward edges",
+      "ER_augmentation_is_not_ER": "controlled cyclic graph family distinct from original ER distribution",
+      "negative_controls": "same graph/weak component; matched source degrees; no directed path",
+      "split_disjointness": "reject exact labeled adjacency duplicates; no isomorphism-disjointness claim"
+    },
+    "test_plan": {
+      "new_master_seed": 2026101302,
+      "random_families": [
+        "er",
+        "dag"
+      ],
+      "random_sizes": [
+        64,
+        128,
+        256
+      ],
+      "graphs_per_random_cell": 500,
+      "queries_per_random_graph": 8,
+      "stress_n": 256,
+      "stress_lengths": [
+        8,
+        12,
+        16,
+        20,
+        24,
+        32,
+        48,
+        64
+      ],
+      "stress_variants": [
+        "plain_dag",
+        "plain_cyclic",
+        "detour_dag",
+        "detour_cyclic"
+      ],
+      "stress_graphs_per_cell": 100,
+      "stress_queries_per_graph": 2,
+      "hops": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "closed": "freeze all40 final checkpoints before new test predictions",
+      "extra_compute": "fixed learned tensors; binomial coefficients recomputed for each r",
+      "primary": "BA at logit0, paired-seed differences; all5seeds retained",
+      "secondary": [
+        "recall",
+        "specificity",
+        "AUROC",
+        "BCE",
+        "both queries correct",
+        "paired logit margins"
+      ],
+      "calibration": "separate thresholds from original validation and augmented validation n48 length1..16; no test calibration",
+      "length_transfer": "lengths>16; lengths8/12/16 are size-transfer controls",
+      "inference_source": "separately frozen after queue launch but before new test predictions"
+    },
+    "resources": {
+      "requested_new_gpu_seconds": 36000,
+      "grant_required": true,
+      "whole_grid_reserve_factor": 1.2,
+      "one_GPU_per_series": true,
+      "slot_seconds": 1800,
+      "includes": "GPU checks, profiling, training and inference; actual Slurm allocation accounting"
+    }
+  },
+  "protocol_hash": "77e5a0804df12f368cd0b176c339bbe15caa3148f7f1298d516589a6d953d0e5",
+  "source_hash": "f89d27d7d807eb8b610dab1cc94ebe4ec394cc0f58d176888ab7c5c5fd366936"
+}

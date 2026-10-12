@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "threshold_cases": 4,
+  "stress_generator_cases": 32,
+  "original_checkpoint_paths": 50,
+  "test_predictions_performed": false,
+  "new_test_created": false,
+  "source_hash": "a0b58418581329b86d7630c5659f1e38411faa3c29ef2a32219f9c34fc1556c2",
+  "scheduler_job": "8491714"
+}

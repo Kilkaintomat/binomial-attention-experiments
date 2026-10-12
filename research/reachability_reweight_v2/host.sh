@@ -3,7 +3,7 @@ set -euo pipefail
 source "$HOME/directed-reachability-v1/.cache/site.sh"
 REWEIGHT_PROJECT="$HOME/reachability-reweight-v2"
 REWEIGHT_ACTION="${1:?action required}"
-REWEIGHT_NV=()
+REWEIGHT_EXEC=(apptainer exec)
 REWEIGHT_THREADS=1
 REWEIGHT_GPU_ENV=""
 if [[ "$REWEIGHT_ACTION" == evaluate ]]; then
@@ -11,11 +11,11 @@ if [[ "$REWEIGHT_ACTION" == evaluate ]]; then
     echo 'All evaluations already completed.'
     exit 0
   fi
-  REWEIGHT_NV=(--nv)
+  REWEIGHT_EXEC+=(--nv)
   REWEIGHT_THREADS=4
   REWEIGHT_GPU_ENV=",SLURM_JOB_GPUS=$SLURM_JOB_GPUS"
 fi
-exec apptainer exec "${REWEIGHT_NV[@]}" --cleanenv --no-home \
+exec "${REWEIGHT_EXEC[@]}" --cleanenv --no-home \
   --bind "$RUN_LEGACY_PROJECT:/legacy:ro" \
   --bind "$RUN_PROJECT:/original:ro" \
   --bind "$REWEIGHT_PROJECT:/workspace" --pwd /workspace \

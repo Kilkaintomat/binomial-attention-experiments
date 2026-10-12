@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "snapshot_utc": "2026-10-12T08:24:56.944283Z",
+  "copied_files_checked": 645,
+  "completed_run_records_checked": 125,
+  "validation_points_checked": 2598,
+  "finals_completed": 77,
+  "pilots_and_confirmations_completed": 48,
+  "partial_records": [
+    {
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 71,
+      "saved_result_step": 8696,
+      "status": "paused",
+      "interpretation": "previous slot result; live training may have advanced"
+    }
+  ],
+  "unfinished": [
+    {
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 71
+    },
+    {
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 71
+    },
+    {
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 71
+    }
+  ],
+  "test_evaluations": 0,
+  "common_seeds": [
+    11,
+    23,
+    37,
+    53
+  ],
+  "source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8",
+  "data_hash": "cf5ce937d591c8eea2e497f3bcef3bb111c2a7a9f5a2f6e5bfdaeb54921b0155",
+  "source_files_checked": 30,
+  "gpu_hours_accounted": 17.195555555555554,
+  "active_allocation_excluded": true,
+  "scope": "File hashes; configs, source/data identity; all completed validation confusion matrices and checkpoint selection; LR choices; complete common seed coverage; aggregates. No new inference or prediction-level replay.",
+  "training_modified": false
+}

@@ -1,0 +1,104 @@
+{
+  "status": "completed",
+  "config": {
+    "family": "er",
+    "model": "F4-geo",
+    "seed": 103,
+    "stage": "confirmation",
+    "lr": 0.0003,
+    "architecture": "feedforward",
+    "filter": "geometric",
+    "outer_steps": 4,
+    "share_weights": false,
+    "hops": 4,
+    "inner_beta": 0.0,
+    "width": 128,
+    "heads": 4,
+    "batch_size": 64,
+    "planned_steps": 30000,
+    "completion_steps": 3000,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "warmup_fraction": 0.05,
+    "tf32": false,
+    "device": "cuda",
+    "threads": 4,
+    "task": "reachability",
+    "version": "directed_reachability_v1"
+  },
+  "source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8",
+  "data_hash": "cf5ce937d591c8eea2e497f3bcef3bb111c2a7a9f5a2f6e5bfdaeb54921b0155",
+  "step": 3000,
+  "best_step": 3000,
+  "best_validation_ba": 0.9997363950559428,
+  "final_validation": {
+    "count": 40000,
+    "positive_count": 17071,
+    "negative_count": 22929,
+    "positive_fraction": 0.426775,
+    "balanced_accuracy": 0.9997363950559428,
+    "accuracy": 0.999775,
+    "precision": 1.0,
+    "recall": 0.9994727901118856,
+    "specificity": 1.0,
+    "f1": 0.9997363255500542,
+    "auroc": 0.9999529892317289,
+    "average_precision": 0.9999482377690698,
+    "bce": 0.0014479511074707728,
+    "tp": 17062,
+    "tn": 22929,
+    "fp": 0,
+    "fn": 9,
+    "elapsed_seconds": 39.71942644007504,
+    "forward_seconds": 1.7626752778887749,
+    "batch_size": 64,
+    "max_observed_state_norm": null,
+    "step": 3000,
+    "full_validation": true,
+    "training_seconds": 35.20839090272784
+  },
+  "times": {
+    "training_seconds": 35.20839090272784,
+    "validation_seconds": 3.860592929646373,
+    "checkpoint_seconds": 0.3988982606679201,
+    "elapsed_seconds": 39.798282250761986
+  },
+  "thresholds": {
+    "0.8": {
+      "status": "reached",
+      "step": 3000,
+      "training_seconds": 35.20839090272784
+    },
+    "0.9": {
+      "status": "reached",
+      "step": 3000,
+      "training_seconds": 35.20839090272784
+    },
+    "0.95": {
+      "status": "reached",
+      "step": 3000,
+      "training_seconds": 35.20839090272784
+    }
+  },
+  "operations": {
+    "qkv_calls": 4,
+    "attention_calls": 4,
+    "transport_matmuls": 16,
+    "inner_ffn_calls": 0,
+    "outer_ffn_calls": 4,
+    "unique_blocks": 4,
+    "parameters": 792193
+  },
+  "examples_seen": 192000,
+  "batch_rng": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 116099672196651478429659740607280988144,
+      "inc": 330455577955324453647272240646271087703
+    },
+    "has_uint32": 1,
+    "uinteger": 1323900356
+  },
+  "train_peak_memory_bytes": 74625536,
+  "device_name": "NVIDIA A100-SXM4-80GB"
+}

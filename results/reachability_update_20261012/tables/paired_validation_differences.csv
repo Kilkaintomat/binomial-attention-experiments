@@ -1,0 +1,13 @@
+family,comparison,seeds,paired_seeds,difference_mean_pp,difference_sample_sd_pp,minimum_pp,maximum_pp,split
+er,F4-bin minus F4-one,"11,23,37,53",4,6.02459400366448,0.03279890337071832,5.977425700395367,6.052894193639746,"validation; descriptive, no test inference"
+er,F4-exp minus F4-bin,"11,23,37,53",4,0.0,0.0023914726170906914,-0.0029289438228552456,0.0029289438228552456,"validation; descriptive, no test inference"
+er,F4-geo minus F4-bin,"11,23,37,53",4,0.0,0.0,0.0,0.0,"validation; descriptive, no test inference"
+er,F4-bin-inner minus F4-bin,"11,23,37,53",4,-0.002928943822858021,0.005857887645716042,-0.011715775291432085,0.0,"validation; descriptive, no test inference"
+er,F4-bin-inner minus F4-one-inner,"11,23,37,53",4,6.018410156212406,0.029444550738570635,5.997437020228647,6.060891210478081,"validation; descriptive, no test inference"
+er,R32-one minus F4-bin,"11,23,37,53",4,0.0007322359557138114,0.0014644719114276228,0.0,0.0029289438228552456,"validation; descriptive, no test inference"
+dag,F4-bin minus F4-one,"11,23,37,53",4,0.24265803882528858,0.01244400199104101,0.23643603782976808,0.2613240418118501,"validation; descriptive, no test inference"
+dag,F4-exp minus F4-bin,"11,23,37,53",4,0.0,0.0,0.0,0.0,"validation; descriptive, no test inference"
+dag,F4-geo minus F4-bin,"11,23,37,53",4,-0.0031110004977602523,0.006222000995520505,-0.01244400199104101,0.0,"validation; descriptive, no test inference"
+dag,F4-bin-inner minus F4-bin,"11,23,37,53",4,0.0,0.0,0.0,0.0,"validation; descriptive, no test inference"
+dag,F4-bin-inner minus F4-one-inner,"11,23,37,53",4,0.23643603782976808,0.0,0.23643603782976808,0.23643603782976808,"validation; descriptive, no test inference"
+dag,R32-one minus F4-bin,"11,23,37,53",4,0.0,0.0,0.0,0.0,"validation; descriptive, no test inference"

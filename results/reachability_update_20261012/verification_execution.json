@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "allocation_type": "CPU, 1 core, 4 GiB",
+  "elapsed_seconds": 7,
+  "scheduler_state": "COMPLETED",
+  "exit_code": "0:0",
+  "training_modified": false,
+  "inference_replayed": false,
+  "script": "scripts/build_reachability_update.py",
+  "script_sha256": "63c3d3aa6731f7a6944b9e9f210ad5f3f92b4ba1eb9b8b2cea2baf08c43911db",
+  "prior_attempt": {
+    "scheduler_state": "FAILED",
+    "exit_code": "127:0",
+    "reason": "Python environment bind missing before interpreter start",
+    "scientific_runs_affected": false,
+    "resolved": true
+  }
+}

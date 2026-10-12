@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "snapshot_utc": "2026-10-12T16:11:08.541690Z",
+  "completed_finals": 80,
+  "completed_pilots_confirmations": 48,
+  "fixed_evaluations": 480,
+  "extra_evaluations": 920,
+  "baseline_rows": 72,
+  "validation_points_checked": 2688,
+  "captured_file_hashes_checked": 2094,
+  "source_files_checked": 30,
+  "gpu_seconds": 73283,
+  "gpu_hours": 20.35638888888889,
+  "full_admitted_grid_complete": true,
+  "full_original_grid_complete": false,
+  "omitted_model": "F4-learned",
+  "macro_aggregation_corrected": true,
+  "all_test_groups_have_five_seeds": true,
+  "training_modified": false
+}

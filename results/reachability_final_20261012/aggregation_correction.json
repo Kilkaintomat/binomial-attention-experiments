@@ -1,0 +1,9 @@
+{
+  "issue": "Runtime far/macro combined three sizes and five seeds as fifteen observations.",
+  "affected_original": "reachability/runtime_report/aggregate_results.csv: test_far, n=macro; seed_count=15 and SD over size-seed cells",
+  "correction": "Average sizes 32/64/128 within each seed, then compute mean and sample SD across five independent training seeds.",
+  "corrected": "tables/fixed_test_aggregate.csv: test_far, n=macro; seed_count=5",
+  "per_size_scores_changed": false,
+  "saved_predictions_changed": false,
+  "original_records_preserved": true
+}

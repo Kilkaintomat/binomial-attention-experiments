@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "allocations": [
+    {
+      "purpose": "all saved prediction metrics and checkpoint audit",
+      "resource": "CPU, 1 core, 4 GiB",
+      "state": "COMPLETED",
+      "elapsed_seconds": 79,
+      "exit_code": "0:0"
+    },
+    {
+      "purpose": "publication checks and tables/plots",
+      "resource": "CPU, 1 core, 4 GiB",
+      "state": "COMPLETED",
+      "elapsed_seconds": 8,
+      "exit_code": "0:0"
+    },
+    {
+      "purpose": "rebuild after plot tick-label correction; same table checks",
+      "resource": "CPU, 1 core, 4 GiB",
+      "state": "COMPLETED",
+      "elapsed_seconds": 8,
+      "exit_code": "0:0"
+    }
+  ],
+  "scripts": {
+    "scripts/audit_reachability_predictions.py": "7051fd6a660e47db421494927f9f9de86f9eb858d02463492931915439f83381",
+    "scripts/build_reachability_final.py": "f7e0afb747c6f03d4ee0438a083f641f9c36636c2a8b557123dde76ea27deb23",
+    "scripts/build_reachability_update.py": "63c3d3aa6731f7a6944b9e9f210ad5f3f92b4ba1eb9b8b2cea2baf08c43911db"
+  },
+  "new_training": false,
+  "new_inference": false,
+  "source_and_data_modified": false
+}

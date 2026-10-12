@@ -1,0 +1,15 @@
+{
+  "features": [
+    "log1p_in_s",
+    "log1p_out_s",
+    "log1p_in_t",
+    "log1p_out_t",
+    "log1p_n",
+    "log1p_m"
+  ],
+  "normalization": "train-only mean/std",
+  "optimizer": "Newton, up to 50 iterations, tolerance1e-7",
+  "l2": 0.001,
+  "selection": "no hyperparameter selection; fixed before baseline test evaluation",
+  "hard_predicate_bce": "undefined; no invented probability calibration"
+}

@@ -1,0 +1,1050 @@
+{
+  "rows": [
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_71f554396ffb240a.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_cc78ee980b40164a.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_a45a694504ef54a1.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_68115aea139a6b6c.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_68cad1d06f7e16b5.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_08ef79d21c02455f.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_e35e9d5e18f4a6c9.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_9fa516194cb3b7ee.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_2b12c6404849eb7a.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_17440a007f7070b2.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_b1c2913b35d15075.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_c5e65d0f6f58ffa7.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_bc15382406af0f24.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_575fd83d3d247f29.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_50a73fdc20a4993d.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_30c818eb7e08cfff.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_2c116684fa1fd9bf.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_89c4e23ead2e7b34.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_75bea88b4fad434d.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_021d451c5892586c.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_232a72548be9383f.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_79301422dd45ceac.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_e25f5b5f69f6a113.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_3e8a0796e335728d.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_e591d8a08919e03a.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_08e6b45d91464e85.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_78a71bc82318c66f.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_29e49fb8459c5119.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_0209f90337a91e4a.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_681230af01e2bbeb.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_99f05320d5daa1bc.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_1f48c546d62c3dbe.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_3b93ef50442ff500.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_a887e7dc800c6d8c.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 101,
+      "lr": 0.0003,
+      "config_file": "configs/pilot_5b3d4ee19c92cfe6.json"
+    },
+    {
+      "stage": "pilot",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 101,
+      "lr": 0.001,
+      "config_file": "configs/pilot_0300c5d62ef9d7d4.json"
+    },
+    {
+      "stage": "confirmation",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 103,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 11,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 23,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 37,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 53,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-one-inner",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-one-inner",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-bin-inner",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-bin-inner",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-exp-inner",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-exp-inner",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "R32-one",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "R32-one",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-geo",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-geo",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "er",
+      "model": "F4-learned",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    },
+    {
+      "stage": "final",
+      "family": "dag",
+      "model": "F4-learned",
+      "seed": 71,
+      "lr": "selected_by_pilot"
+    }
+  ],
+  "full_neural_training_count": 144,
+  "source_hash": "a98bc726b261c66a552a50b3fcf5e7dc165f7ba3fe12a52a722fe377ba9a8ed8"
+}

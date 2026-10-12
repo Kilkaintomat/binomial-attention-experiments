@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "family": "er",
+      "n": 16,
+      "candidate_pairs": 1,
+      "exact_pairs_checked": 1,
+      "isomorphic_pairs": 1,
+      "affected_train_graphs": 1,
+      "affected_ID_test_graphs": 1,
+      "ID_test_graphs": 2500,
+      "complete": true,
+      "cpu_elapsed_seconds": 0.05364094953984022
+    },
+    {
+      "family": "er",
+      "n": 17,
+      "candidate_pairs": 2,
+      "exact_pairs_checked": 2,
+      "isomorphic_pairs": 2,
+      "affected_train_graphs": 2,
+      "affected_ID_test_graphs": 2,
+      "ID_test_graphs": 2500,
+      "complete": true,
+      "cpu_elapsed_seconds": 0.039907798171043396
+    },
+    {
+      "family": "dag",
+      "n": 16,
+      "candidate_pairs": 7788,
+      "exact_pairs_checked": 7788,
+      "isomorphic_pairs": 7721,
+      "affected_train_graphs": 2707,
+      "affected_ID_test_graphs": 343,
+      "ID_test_graphs": 2500,
+      "complete": true,
+      "cpu_elapsed_seconds": 5.618350247852504
+    },
+    {
+      "family": "dag",
+      "n": 17,
+      "candidate_pairs": 4302,
+      "exact_pairs_checked": 4302,
+      "isomorphic_pairs": 4268,
+      "affected_train_graphs": 2039,
+      "affected_ID_test_graphs": 267,
+      "ID_test_graphs": 2500,
+      "complete": true,
+      "cpu_elapsed_seconds": 3.5177818965166807
+    }
+  ],
+  "data_hash": "cf5ce937d591c8eea2e497f3bcef3bb111c2a7a9f5a2f6e5bfdaeb54921b0155",
+  "audit_source_sha256": "afa4f2ac15e6965b6bd6bec8a685faa2c40f446e4c096d8a0c9fd6d0a2964ec6",
+  "data_changed": false,
+  "interpretation": "exact labeled graphs are disjoint; some ID-test graph topologies recur up to directed isomorphism; no topological-disjointness claim"
+}

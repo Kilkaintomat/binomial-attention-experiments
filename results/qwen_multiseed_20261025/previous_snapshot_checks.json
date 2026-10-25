@@ -1,0 +1,11 @@
+{
+  "previous_snapshot_moscow": "2026-10-25T13:41:53.294007+03:00",
+  "current_snapshot_moscow": "2026-10-25T22:25:26.839472+03:00",
+  "previous_completed_runs": 14,
+  "newly_completed_runs": 18,
+  "preserved_metric_rows": 28,
+  "preserved_hop_rows": 56,
+  "unchanged_completed_source_files": 70,
+  "previous_training_steps_verified": 7376,
+  "previous_report_sha256": "dcc1ebd805e60b4facfd0650de584095cf992acf5492bb784acdc464ef70a6b2"
+}

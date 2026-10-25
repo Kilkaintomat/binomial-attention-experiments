@@ -1,0 +1,19 @@
+{
+  "snapshot_moscow": "2026-10-25T13:41:53.294007+03:00",
+  "campaign_manifest_sha256": "40551d109d7d54081d6b7440b049a0fa6e5e66c9e8305a005208fa3e98be0341",
+  "files": {
+    "REPORT_QWEN_MULTISEED_20261025_RU.md": "dcc1ebd805e60b4facfd0650de584095cf992acf5492bb784acdc464ef70a6b2",
+    "results/qwen_multiseed_20261025/by_hops.csv": "4704b1adadfc463c36f6a5aa654ff4582aad3e6a1c63b87a5e95071cc382ec18",
+    "results/qwen_multiseed_20261025/data_checks.json": "1c6a113f1b1297a2b05b6d30f07c6496664606bc66b92f5cc3891fcf84ebba35",
+    "results/qwen_multiseed_20261025/gates.csv": "755cc488c58ab29058299a5d3fdccfd4eea134764ab9a28194d5b575d0c1be95",
+    "results/qwen_multiseed_20261025/metrics.csv": "147d79f4bf27d394986eb7c21d938f4291a80a4ea18453db8de459683dc60e70",
+    "results/qwen_multiseed_20261025/metrics.json": "5c83b697eba9881fd9ead2a4f57e26118162568e7ec1077c79fb12d464e98518",
+    "results/qwen_multiseed_20261025/protocol.json": "feb20f66597f16d0432f74e55d2bcf05aa6ae23a67bef831fb96d6d2d6a24082",
+    "results/qwen_multiseed_20261025/run_status.csv": "dd8f864365e7fa92c1e4ed02ae30959e0c5adc81e6b35492bcf81ce609d19a6a",
+    "results/qwen_multiseed_20261025/seed11_scores.png": "72f36d700d70f57cb3a1c1f9217c42a90b0b6e4fb739074bb3ed21349e5cf822",
+    "results/qwen_multiseed_20261025/source_hashes.json": "eb88b6b4d223fdc197eff7aab7c44f7e402c30ae44e84acec6a4b505f7d4b408",
+    "results/qwen_multiseed_20261025/training_loss.png": "9f7f741f3d760b9d35939f0707f3bf2f7f7379f812b11abab7164ca61f34f3e9",
+    "results/qwen_multiseed_20261025/training_steps.csv": "bfa9c75874ccd58afd7fe8be56341304bab4e83fcca9cd1cd49e09fc9525271d",
+    "results/qwen_multiseed_20261025/training_summary.json": "c633448b69081b5e132656bfc969c0b78af38b6b17a9c341eab02d523911d678"
+  }
+}

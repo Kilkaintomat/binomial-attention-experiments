@@ -1,0 +1,22 @@
+{
+  "snapshot_moscow": "2026-10-25T22:25:26.839472+03:00",
+  "campaign_manifest_sha256": "40551d109d7d54081d6b7440b049a0fa6e5e66c9e8305a005208fa3e98be0341",
+  "files": {
+    "REPORT_QWEN_MULTISEED_20261025_RU.md": "3857a26ae59fe38ddb168d812ac7b3fc0151d5846f8f0c86c69c5407c8c855cd",
+    "results/qwen_multiseed_20261025/by_hops.csv": "bd92e9bc545c5f4ac0498703b1104968954816e268ebab7f6f91e4b795efe114",
+    "results/qwen_multiseed_20261025/data_checks.json": "fd588bc6ca4928a221aec74592b930a9c37b83e8d51997e87d650ed0faea981c",
+    "results/qwen_multiseed_20261025/gates.csv": "6d213997e2e78b17c8eb980b448909202c5226d7852605d4763b2d2441e28345",
+    "results/qwen_multiseed_20261025/metrics.csv": "30e9ef26983200e27cc803d8c5d07910e7551bf3fbfff30b991a1479ba981121",
+    "results/qwen_multiseed_20261025/metrics.json": "21b77d0681084f8de1c8bf4e25a35b218dc82be7d4114f6b90e41f3347639245",
+    "results/qwen_multiseed_20261025/previous_snapshot_checks.json": "a403a74bbc0497a6585d2066ee61267c829a0b4bca4a36d4b24dcf67069b4036",
+    "results/qwen_multiseed_20261025/protocol.json": "52fcd4880a557de01968f1b7965d498e1511fc00b11c530865bdf4e5dab53855",
+    "results/qwen_multiseed_20261025/run_status.csv": "9e271f656157fe3321de616319c98d77d5e7ba77830807ffd7e2532a2053d6a6",
+    "results/qwen_multiseed_20261025/seed11_scores.png": "46cf9f770bc6a1dbc5fdd33dac8ae7c69abf1be86bebf30cbba223782888955a",
+    "results/qwen_multiseed_20261025/seed22_scores.png": "70dffb1f6ed0535038dbb17c80b57a480d7b3d09c165cd56bf9bafeae9534754",
+    "results/qwen_multiseed_20261025/seed33_scores.png": "b3ce0704f4c0e281a73837f2c3924fc7b552b6a2c3a86f699c5b2c8acd121c62",
+    "results/qwen_multiseed_20261025/source_hashes.json": "e826bc3b33eb553f8f79a49f2d09da2897f1a41613f81dcc3bb3184328c447be",
+    "results/qwen_multiseed_20261025/training_loss.png": "4c42b534b822b12be7db800e4d4e8834f9b90f88668b830b83dde68ee31dda76",
+    "results/qwen_multiseed_20261025/training_steps.csv": "d0d89f48eb93944e7c59878b573f84a538cd9ea0fe7c93440616fe7d9791fccb",
+    "results/qwen_multiseed_20261025/training_summary.json": "e312213d4b585fa50e3c5a14616295eb951ac5a9039f5b43900a2628885d0b13"
+  }
+}

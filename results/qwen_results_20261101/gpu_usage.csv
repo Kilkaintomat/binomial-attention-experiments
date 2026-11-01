@@ -1,0 +1,9 @@
+series,gpu_hours
+earlier_preparation_and_pilots,2.7675
+mixed,14.228055555555555
+separate,28.8675
+t4,0.49472222222222223
+gates_mlp,0.03638888888888889
+new_gates_completed_allocations_gpu_hours,0.07416666666666667
+new_gates_active_allocations_elapsed_gpu_hours,0.0
+new_gates_active_allocations_full_reserved_gpu_hours,2.0

@@ -1,0 +1,64 @@
+{
+  "snapshot_time_msk": "01.11.2026 21:27:26 МСК",
+  "queue_snapshot_time_msk": "01.11.2026 21:33:42 МСК",
+  "scope": "internal evaluation, 64 questions per dataset; not official dev/test",
+  "metric_scale": "all EM/F1/format CSV values are 0-100",
+  "aggregate_sd": "sample SD across seeds 11,22,33",
+  "cohort": {
+    "context_policy": "whole_context_or_exclude_never_truncate",
+    "counts": {
+      "hotpot_internal.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 64,
+        "max_input": 3604,
+        "source_sha256": "c2445bfa25d34362987973b4c2aa5e2132f17a73f8e3297126ca4afa93b0e57b"
+      },
+      "hotpot_train.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 2000,
+        "max_input": 4272,
+        "source_sha256": "35f4e290182d9e5aad8bcee79dd8c306ea854da305e3f728b7f8b05eccad86f4"
+      },
+      "musique_internal.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 64,
+        "max_input": 5317,
+        "source_sha256": "b63870a925e58fb343c899dc86449af7cdd3c7e8b2a0e50f74bbd692e035ff02"
+      },
+      "musique_train.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 2000,
+        "max_input": 4991,
+        "source_sha256": "38eca0ed75bb9a09a9f3a54938d57cfc1835021b04df1156dcf202ef6bf97526"
+      }
+    },
+    "eval_count_per_dataset": 64,
+    "files": {
+      "hotpot_internal.jsonl": "7f185306bd3987efb9b76a49d012c1f1554fc1f7e135585b8294c749aee8a1d8",
+      "hotpot_internal.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hotpot_train.jsonl": "be8c8ac7cb74b19ee497b2a9cc9e1cff134fbdefb34290e3f5f5298c3c9ae365",
+      "hotpot_train.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "musique_internal.jsonl": "581fc8eb6946f0d2d223ecf8288d5186fa17411c5021ab8d63d36b8a116845e7",
+      "musique_internal.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "musique_train.jsonl": "da36ac33ac4b909fe4feb7a45db292ea1e52addde339bf9e8f0ca5ae0c4bbfd6",
+      "musique_train.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "max_input_tokens": 8192,
+    "selection": "first eligible examples in pre-shuffled internal/train split",
+    "train_count_per_dataset": 2000
+  },
+  "new_gate_plan_manifest_sha256": "5d2cd8099ad1653292a2e23c3a8d211c69295310ff9f544937ac28f70d204459",
+  "new_gate_cpu_tests_passed": 15,
+  "new_gate_gpu_preflight": "passed",
+  "new_gate_numerical_cases": 112,
+  "new_gate_update_checks": 24,
+  "new_gate_training_started": 0,
+  "new_gate_training_completed": 0,
+  "gpu_hours_used": 46.46833333333333,
+  "global_cap_gpu_hours": 100,
+  "shared_new_series_cap_gpu_hours": 45,
+  "prior_failed_new_series_gpu_seconds": 131,
+  "new_gate_reserved_gpu_hours": 2.0,
+  "source_snapshot_sha256": "0acec9a44f0ba5da6af8325867cde0762447f7db62cf449235f3b829ddf58275",
+  "queue_snapshot_sha256": "bb3585382762e3a46df3d4172f8a3a9528e2e9a8562c8c961449797f5da86375"
+}

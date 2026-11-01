@@ -1,0 +1,15 @@
+{
+  "training_runs": 108,
+  "mixed_runs": 36,
+  "separate_runs": 72,
+  "metric_rows": 216,
+  "all_training_steps_500": true,
+  "all_evaluations_128": true,
+  "identical_cohorts": true,
+  "unchanged_since_previous_local_snapshot": 108,
+  "previous_metric_rows_matched": 216,
+  "previous_public_metric_rows_matched": 64,
+  "previous_public_training_runs_matched": 32,
+  "new_gate_completed_trainings": 0,
+  "validation_scope": "Comparison of saved result/training records, cohort and checkpoint hashes; no model re-execution"
+}

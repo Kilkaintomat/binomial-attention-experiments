@@ -1,0 +1,91 @@
+{
+  "snapshot_utc": "2026-11-04T11:38:13.069438Z",
+  "snapshot_msk": "04.11.2026, 14:38:13 МСК",
+  "completed_runs": 218,
+  "metric_rows": 436,
+  "prediction_count": 27904,
+  "series_completed": {
+    "mixed": 36,
+    "separate": 72,
+    "sigmoid": 48,
+    "fixed1": 48,
+    "mlp": 14
+  },
+  "series_planned": {
+    "mixed": 36,
+    "separate": 72,
+    "sigmoid": 48,
+    "fixed1": 48,
+    "mlp": 36
+  },
+  "cohort": {
+    "context_policy": "whole_context_or_exclude_never_truncate",
+    "counts": {
+      "hotpot_internal.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 64,
+        "max_input": 3604,
+        "source_sha256": "c2445bfa25d34362987973b4c2aa5e2132f17a73f8e3297126ca4afa93b0e57b"
+      },
+      "hotpot_train.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 2000,
+        "max_input": 4272,
+        "source_sha256": "35f4e290182d9e5aad8bcee79dd8c306ea854da305e3f728b7f8b05eccad86f4"
+      },
+      "musique_internal.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 64,
+        "max_input": 5317,
+        "source_sha256": "b63870a925e58fb343c899dc86449af7cdd3c7e8b2a0e50f74bbd692e035ff02"
+      },
+      "musique_train.jsonl": {
+        "excluded_before_cohort_filled": 0,
+        "included": 2000,
+        "max_input": 4991,
+        "source_sha256": "38eca0ed75bb9a09a9f3a54938d57cfc1835021b04df1156dcf202ef6bf97526"
+      }
+    },
+    "eval_count_per_dataset": 64,
+    "files": {
+      "hotpot_internal.jsonl": "7f185306bd3987efb9b76a49d012c1f1554fc1f7e135585b8294c749aee8a1d8",
+      "hotpot_internal.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hotpot_train.jsonl": "be8c8ac7cb74b19ee497b2a9cc9e1cff134fbdefb34290e3f5f5298c3c9ae365",
+      "hotpot_train.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "musique_internal.jsonl": "581fc8eb6946f0d2d223ecf8288d5186fa17411c5021ab8d63d36b8a116845e7",
+      "musique_internal.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "musique_train.jsonl": "da36ac33ac4b909fe4feb7a45db292ea1e52addde339bf9e8f0ca5ae0c4bbfd6",
+      "musique_train.jsonl.exclusions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "max_input_tokens": 8192,
+    "selection": "first eligible examples in pre-shuffled internal/train split",
+    "train_count_per_dataset": 2000
+  },
+  "environment_sha256": "5069c12b4ac0e3b660feb6d593675b300a97c3a864f49b6170b53601da48ccf2",
+  "metric_scale": "0-100",
+  "delta_reference": "same model, training dataset, evaluation dataset and seed; mixed uses mixed baseline, all separate campaigns use separate baseline",
+  "sd": "sample standard deviation across seeds; omitted for n=1",
+  "queue_snapshot": {
+    "training_jobs": [
+      {
+        "id": "8520925",
+        "state": "PENDING",
+        "reason": "Priority",
+        "time_limit_hours": 2
+      },
+      {
+        "id": "8520927",
+        "state": "PENDING",
+        "reason": "Priority",
+        "time_limit_hours": 2
+      }
+    ]
+  },
+  "budget_caps_gpu_hours": {
+    "global": 200,
+    "shared_new_series": 65,
+    "mlp": 20
+  },
+  "raw_snapshot_sha256": "1aa37913d93565ce1d40aaa29de20a0fbef9d07c723dd0ae196351e7fcffbaee",
+  "publication_scope": "All completed 500-update Qwen multihop campaigns; frozen/no-LoRA pilots and diagnostic-only T4 runs are not counted as trained runs."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "series": "sigmoid",
+    "status": "passed",
+    "regular_cases": 112,
+    "update_benchmarks": 24,
+    "regular_bf16_exceedances": 2,
+    "old_failure_reproduction_cases": 0
+  },
+  {
+    "series": "fixed1",
+    "status": "passed",
+    "regular_cases": 96,
+    "update_benchmarks": 16,
+    "regular_bf16_exceedances": 4,
+    "old_failure_reproduction_cases": 0
+  },
+  {
+    "series": "mlp",
+    "status": "passed",
+    "regular_cases": 88,
+    "update_benchmarks": 18,
+    "regular_bf16_exceedances": 0,
+    "old_failure_reproduction_cases": 4
+  }
+]

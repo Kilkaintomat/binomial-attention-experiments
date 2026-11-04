@@ -1,0 +1,15 @@
+{
+  "snapshot_utc": "2026-11-04T11:38:13.069438Z",
+  "completed_runs": 218,
+  "predictions_checked": 27904,
+  "scalar_scores_checked": 111616,
+  "sampling_updates_checked": 91000,
+  "old_results_unchanged": 108,
+  "logged_updates_checked": 109000,
+  "duplicate_logged_steps": 0,
+  "errors": [],
+  "format_invalid_total": 0,
+  "predictions_without_eos_total": 40,
+  "scope": "Saved records and prediction text were validated locally; no inference, checkpoint tensor audit or training was performed for this publication.",
+  "mixed_sampling_check": "Mixed logs contain no sample IDs; their per-update sampling order was not rechecked."
+}

@@ -131,5 +131,26 @@
     "latex_delimiters_and_braces_balanced": true,
     "source_files_verified": 9,
     "local_and_repository_links_resolve": true
-  }
+  },
+  "rendering_corrections": [
+    {
+      "date": "2026-11-04",
+      "previous_commit": "48bceb57c03323797873064b81b03d913c1dec84",
+      "reason": "Reported unsupported operatorname macro in displayed equations",
+      "change": "Replace operatorname and operatorname* function labels with mathrm",
+      "occurrences_replaced": 40,
+      "mathematical_content_changed": false,
+      "latex_typesetting": {
+        "renderer": "KaTeX",
+        "version": "0.16.21",
+        "successful_formulas": 406,
+        "errors": 0
+      },
+      "github_markdown_recognition": {
+        "js-display-math": 154,
+        "js-inline-math": 252
+      },
+      "verification_scope": "Actual LaTeX typesetting in KaTeX plus explicit exclusion of the macro reported unsupported by the user; GitHub browser-side MathJax was not executed."
+    }
+  ]
 }

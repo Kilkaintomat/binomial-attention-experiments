@@ -67,9 +67,9 @@ Evidence: D0:S0, D1:S0
 Из вопроса и документов строится текстовый prompt $x$. Его инструкция требует ровно две строки: Answer и Evidence. Целевой текст $y^\star$ содержит первый допустимый ответ из разметки, список ссылок и токен завершения EOS:
 
 $$
-x=\operatorname{Prompt}(q,\mathcal D),
+x=\mathrm{Prompt}(q,\mathcal D),
 \qquad
-y^\star=\operatorname{Format}(a^\star_1,\mathcal S^\star)\Vert\mathrm{EOS}.
+y^\star=\mathrm{Format}(a^\star_1,\mathcal S^\star)\Vert\mathrm{EOS}.
 $$
 
 Символ $\Vert$ здесь означает присоединение последовательностей. При оценке ответ сверяется со всеми допустимыми формулировками, хотя в обучающий target записывается первая.
@@ -77,7 +77,7 @@ $$
 Токенизатор преобразует текст в последовательность целочисленных идентификаторов:
 
 $$
-\operatorname{Tok}(x)=(x_1,\ldots,x_n).
+\mathrm{Tok}(x)=(x_1,\ldots,x_n).
 $$
 
 Токен может быть словом, частью слова или знаком. В формулах attention позиции относятся именно к токенам, а не к документам или предложениям.
@@ -137,7 +137,7 @@ $$
 Пусть на входе блока стоит $X=X^{(\ell)}$. Для каждого токена Qwen применяет RMSNorm:
 
 $$
-\operatorname{RMSNorm}_{\gamma}(x)=
+\mathrm{RMSNorm}_{\gamma}(x)=
 \gamma\odot
 \frac{x}
 {\sqrt{\frac{1}{d}\sum_{k=1}^{d}x_k^2+\varepsilon}},
@@ -149,7 +149,7 @@ $\gamma$ — вектор масштабов из исходной модели.
 Обозначим нормализованный вход attention:
 
 $$
-U=\operatorname{RMSNorm}_{\mathrm{in},\ell}(X).
+U=\mathrm{RMSNorm}_{\mathrm{in},\ell}(X).
 $$
 
 ### 3.2. Q, K и V
@@ -175,12 +175,12 @@ Qwen3 дополнительно нормализует Q и K внутри ка
 $$
 q_{i,h}
 =\mathcal R_i\!\left(
-\operatorname{RMSNorm}_{Q,\ell}(\widetilde q_{i,h})
+\mathrm{RMSNorm}_{Q,\ell}(\widetilde q_{i,h})
 \right),
 \qquad
 k_{j,a}
 =\mathcal R_j\!\left(
-\operatorname{RMSNorm}_{K,\ell}(\widetilde k_{j,a})
+\mathrm{RMSNorm}_{K,\ell}(\widetilde k_{j,a})
 \right).
 $$
 
@@ -262,8 +262,8 @@ $$
 Головы соединяются и проходят выходную проекцию:
 
 $$
-\operatorname{Attn}_{\ell}(U)=
-\operatorname{Concat}_{h=0}^{n_q-1}(Y_h)W_O^\top.
+\mathrm{Attn}_{\ell}(U)=
+\mathrm{Concat}_{h=0}^{n_q-1}(Y_h)W_O^\top.
 $$
 
 Concat означает соединение по координатам признаков: 16 векторов по 128 координат превращаются в один вектор длины 2048.
@@ -273,14 +273,14 @@ Concat означает соединение по координатам при�
 После attention блок выполняет:
 
 $$
-R=X+\operatorname{Attn}_{\ell}(U),
+R=X+\mathrm{Attn}_{\ell}(U),
 $$
 
 $$
 X^{(\ell+1)}=
 R+
-\operatorname{MLP}_{\ell}\!
-\left(\operatorname{RMSNorm}_{\mathrm{post},\ell}(R)\right).
+\mathrm{MLP}_{\ell}\!
+\left(\mathrm{RMSNorm}_{\mathrm{post},\ell}(R)\right).
 $$
 
 Сложение со входом называется residual-связью. Оно сохраняет прямой путь исходного представления через блок.
@@ -288,16 +288,16 @@ $$
 Штатный MLP Qwen использует SwiGLU:
 
 $$
-\operatorname{MLP}_{\ell}(u)=
+\mathrm{MLP}_{\ell}(u)=
 \left[
-\operatorname{SiLU}(uW_{\mathrm{gate}}^\top)
+\mathrm{SiLU}(uW_{\mathrm{gate}}^\top)
 \odot
 (uW_{\mathrm{up}}^\top)
 \right]W_{\mathrm{down}}^\top,
 $$
 
 $$
-\operatorname{SiLU}(z)=z\,\sigma(z),
+\mathrm{SiLU}(z)=z\,\sigma(z),
 \qquad
 \sigma(z)=\frac{1}{1+e^{-z}}.
 $$
@@ -314,7 +314,7 @@ $$
 
 $$
 H_{\mathrm{final}}
-=\operatorname{RMSNorm}_{\mathrm{final}}(X^{(28)}),
+=\mathrm{RMSNorm}_{\mathrm{final}}(X^{(28)}),
 \qquad
 z_i=H_{\mathrm{final},i}W_{\mathrm{vocab}}^\top,
 $$
@@ -530,7 +530,7 @@ c_s\ge0,\qquad
 \sum_{s=1}^{H}c_s=1.
 $$
 
-В основных полиномиальных прогонах $H=4$. Сумма начинается с 1: отдельного слагаемого $c_0I$ нет. Внешняя residual-связь $X+\operatorname{Attn}(X)$ при этом остаётся на своём месте.
+В основных полиномиальных прогонах $H=4$. Сумма начинается с 1: отдельного слагаемого $c_0I$ нет. Внешняя residual-связь $X+\mathrm{Attn}(X)$ при этом остаётся на своём месте.
 
 ### 6.1. Binomial
 
@@ -765,7 +765,7 @@ $$
 
 Следовательно, начальный гейт всех токенов и голов равен 0.1. Нормализация считается только по координатам одного токена; будущие токены в неё не входят.
 
-Если для одной головы обозначить $G=\operatorname{diag}(g_1,\ldots,g_n)$, то:
+Если для одной головы обозначить $G=\mathrm{diag}(g_1,\ldots,g_n)$, то:
 
 $$
 Y=(I-G)AV+GP_H(A)V.
@@ -942,7 +942,7 @@ flowchart TD
 Пусть $u\in\mathbb R^{d_a}$ — объединённый вектор всех голов **одного токена**, $d_a=2048$. Вводим:
 
 $$
-\operatorname{LN}_{\gamma,\delta}(u)=
+\mathrm{LN}_{\gamma,\delta}(u)=
 \gamma\odot
 \frac{u-\bar u\mathbf1}
 {\sqrt{\frac1{d_a}\sum_{k=1}^{d_a}(u_k-\bar u)^2+\varepsilon_{\mathrm{LN}}}}
@@ -960,8 +960,8 @@ $$
 
 $$
 f_\ell(u)=
-\operatorname{GELU}
-\left(\operatorname{LN}_{\gamma_\ell,\delta_\ell}(u)W_{1,\ell}^{\top}+b_{1,\ell}\right)
+\mathrm{GELU}
+\left(\mathrm{LN}_{\gamma_\ell,\delta_\ell}(u)W_{1,\ell}^{\top}+b_{1,\ell}\right)
 W_{2,\ell}^{\top}+b_{2,\ell},
 $$
 
@@ -975,12 +975,12 @@ $$
 GELU — нелинейная функция, применяемая к каждой координате:
 
 $$
-\operatorname{GELU}(z)
+\mathrm{GELU}(z)
 =z\Phi(z)
-=\frac z2\left(1+\operatorname{erf}\frac z{\sqrt2}\right).
+=\frac z2\left(1+\mathrm{erf}\frac z{\sqrt2}\right).
 $$
 
-$\Phi$ — функция распределения стандартной нормальной величины; $\operatorname{erf}$ — эквивалентная запись через функцию ошибок. Для понимания конструкции достаточно того, что GELU преобразует каждую координату нелинейно.
+$\Phi$ — функция распределения стандартной нормальной величины; $\mathrm{erf}$ — эквивалентная запись через функцию ошибок. Для понимания конструкции достаточно того, что GELU преобразует каждую координату нелинейно.
 
 Используем residual-преобразование:
 
@@ -1011,9 +1011,9 @@ $$
 
 $$
 \mathscr F_\ell(\mathcal Z)=
-\operatorname{Split}
+\mathrm{Split}
 \left[
-F_\ell\left(\operatorname{Merge}(\mathcal Z)\right)
+F_\ell\left(\mathrm{Merge}(\mathcal Z)\right)
 \right].
 $$
 
@@ -1149,12 +1149,12 @@ $$
 
 $$
 \begin{aligned}
-U&=\operatorname{RMSNorm}_{\mathrm{in},\ell}(X),\\
+U&=\mathrm{RMSNorm}_{\mathrm{in},\ell}(X),\\
 R&=X+
-\operatorname{Merge}\big(\mathcal C_\ell(U)\big)W_{O,\ell}^{\top},\\
+\mathrm{Merge}\big(\mathcal C_\ell(U)\big)W_{O,\ell}^{\top},\\
 B_\ell^{\mathrm{variant}}(X)
-&=R+\operatorname{MLP}_{\ell}
-\big(\operatorname{RMSNorm}_{\mathrm{post},\ell}(R)\big).
+&=R+\mathrm{MLP}_{\ell}
+\big(\mathrm{RMSNorm}_{\mathrm{post},\ell}(R)\big).
 \end{aligned}
 $$
 
@@ -1251,7 +1251,7 @@ $$
 $$
 \phi^\star
 \approx
-\operatorname*{arg\,min}_{\phi}
+\mathrm{arg\,min}_{\phi}
 \mathbb E_{e\sim D_{\mathrm{train}}}
 \mathcal L(e;\Theta_0,\phi).
 $$
@@ -1328,7 +1328,7 @@ $$
 При раздельном обучении на HotpotQA:
 
 $$
-e_{k,b}\sim\operatorname{Uniform}(D_H),
+e_{k,b}\sim\mathrm{Uniform}(D_H),
 \qquad b=1,\ldots,8.
 $$
 
@@ -1472,7 +1472,7 @@ $$
 
 $$
 \widehat y_t=
-\operatorname*{arg\,max}_{v\in\mathcal V}
+\mathrm{arg\,max}_{v\in\mathcal V}
 p_{\Theta_0,\phi_{500}}
 \left(v\mid x,\widehat y_{<t}\right).
 $$
@@ -1527,10 +1527,10 @@ $$
 
 $$
 (z_{i,h}^{(s)})_h=
-\operatorname{Split}
+\mathrm{Split}
 \left[
 F_\ell\left(
-\operatorname{Merge}
+\mathrm{Merge}
 ((\widetilde z_{i,h}^{(s)})_h)
 \right)
 \right].
@@ -1619,7 +1619,7 @@ Checkpoint, обученный на HotpotQA, оценивается и на Hot
 
 ### 13.2. Нормализация ответа
 
-Перед сравнением текст приводится к нижнему регистру, очищается от предусмотренной scorer пунктуации и английских артиклей a/an/the, повторные пробелы схлопываются. Обозначим эту операцию $\operatorname{norm}$.
+Перед сравнением текст приводится к нижнему регистру, очищается от предусмотренной scorer пунктуации и английских артиклей a/an/the, повторные пробелы схлопываются. Обозначим эту операцию $\mathrm{norm}$.
 
 Формат ответа и поддерживающие ссылки разбираются отдельно. Слово «токен» в Answer F1 означает элемент строки после нормализации и разбиения по пробелам, **не subword-токен Qwen**.
 
@@ -1631,8 +1631,8 @@ $$
 \mathrm{EM}(e)=
 \max_{a^\star\in\mathcal A^\star}
 \mathbf1\{
-\operatorname{norm}(\widehat a)
-=\operatorname{norm}(a^\star)
+\mathrm{norm}(\widehat a)
+=\mathrm{norm}(a^\star)
 \}.
 $$
 
@@ -1654,8 +1654,8 @@ $$
 Пусть нормализованное предсказание содержит $n_p$ токенов-слов, эталон — $n_g$. Совпадения считаются с учётом повторений:
 
 $$
-C=\sum_w\min\big(\operatorname{count}_{\mathrm{pred}}(w),
-\operatorname{count}_{\mathrm{gold}}(w)\big).
+C=\sum_w\min\big(\mathrm{count}_{\mathrm{pred}}(w),
+\mathrm{count}_{\mathrm{gold}}(w)\big).
 $$
 
 Точность и полнота:

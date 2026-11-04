@@ -1,0 +1,27 @@
+{
+  "mixed": {
+    "previous_completed": 36,
+    "now_completed": 36,
+    "same_result_hashes": true
+  },
+  "separate": {
+    "previous_completed": 72,
+    "now_completed": 72,
+    "same_result_hashes": true
+  },
+  "sigmoid": {
+    "previous_completed": 48,
+    "now_completed": 48,
+    "same_result_hashes": true
+  },
+  "fixed1": {
+    "previous_completed": 48,
+    "now_completed": 48,
+    "same_result_hashes": true
+  },
+  "mlp": {
+    "previous_completed": 14,
+    "now_completed": 14,
+    "same_result_hashes": true
+  }
+}

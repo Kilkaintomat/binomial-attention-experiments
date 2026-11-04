@@ -1,0 +1,9 @@
+{
+  "automatic_adjustment": "Raise new campaign reservation if measured benchmark estimate plus prescribed margins exceeds initial ceiling; old authorization/ledgers remain read-only",
+  "basis": "User instruction 2026-11-05: prepare and launch both language task families, download as necessary, autonomously choose interpretation and increase GPU-hours as needed",
+  "campaign_gpu_hours": 240,
+  "epoch": 1793828959.262046,
+  "global_gpu_hours": 500,
+  "max_concurrent_gpus": 2,
+  "prior_reserved_gpu_hours": 200
+}

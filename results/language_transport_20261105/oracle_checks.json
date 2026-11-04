@@ -1,0 +1,6 @@
+{
+  "max_abs_error": 1.1102230246251565e-16,
+  "n": 54,
+  "scope": "analytic oracle only, no trained language model",
+  "zero_pairs": 15
+}

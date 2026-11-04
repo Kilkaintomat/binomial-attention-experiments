@@ -1,0 +1,307 @@
+{
+  "files": {
+    "phop_conditional/pilot.jsonl": {
+      "answers": {
+        "A": 29,
+        "B": 26,
+        "C": 33,
+        "D": 40
+      },
+      "missing": 0,
+      "n": 128,
+      "nontrivial": 113,
+      "self_loop": 15,
+      "sha256": "3aa6694d603e188a47f77654c6dfd88103c1e81dc3b580105e9314ca1abd269e"
+    },
+    "phop_conditional/test.jsonl": {
+      "answers": {
+        "A": 269,
+        "B": 228,
+        "C": 274,
+        "D": 253
+      },
+      "missing": 0,
+      "n": 1024,
+      "nontrivial": 906,
+      "self_loop": 118,
+      "sha256": "8ff871b113c248d14e845487237f3d2a87270c024ec4431747a955cc5d5afa53"
+    },
+    "phop_conditional/tiny.jsonl": {
+      "answers": {
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 3
+      },
+      "missing": 0,
+      "n": 8,
+      "nontrivial": 6,
+      "self_loop": 2,
+      "sha256": "03aad01c2f89a6ad93a16b58f75566e652d3da5b6449ad429dbaece5912a94b8"
+    },
+    "phop_conditional/train.jsonl": {
+      "answers": {
+        "A": 4074,
+        "B": 4271,
+        "C": 3957,
+        "D": 4082
+      },
+      "missing": 0,
+      "n": 16384,
+      "nontrivial": 14388,
+      "self_loop": 1996,
+      "sha256": "d7068a4de9a299510e1fc78ddfd9f1263fd03354f6058a7a35fbcd95603078a8"
+    },
+    "phop_conditional/validation.jsonl": {
+      "answers": {
+        "A": 65,
+        "B": 72,
+        "C": 55,
+        "D": 64
+      },
+      "missing": 0,
+      "n": 256,
+      "nontrivial": 220,
+      "self_loop": 36,
+      "sha256": "248cc0ce1b86bcee233a3e5494313ce9b28ba061dfd405b6a9256e56abfde843"
+    },
+    "phop_fixed16/pilot.jsonl": {
+      "answers": {
+        "A": 29,
+        "B": 33,
+        "C": 34,
+        "D": 32
+      },
+      "missing": 0,
+      "n": 128,
+      "nontrivial": 100,
+      "self_loop": 28,
+      "sha256": "fdce89c184e0e17ed7541424f0c1173caa657a4f02c36f4a137ec4fede39d88a"
+    },
+    "phop_fixed16/test.jsonl": {
+      "answers": {
+        "A": 147,
+        "B": 123,
+        "C": 116,
+        "D": 126
+      },
+      "missing": 0,
+      "n": 512,
+      "nontrivial": 388,
+      "self_loop": 124,
+      "sha256": "b7bce31659c9eed1310dc8e93bc52363cd9d3cfa6bddfbf0a24b43d2d35d060d"
+    },
+    "phop_fixed16/tiny.jsonl": {
+      "answers": {
+        "A": 2,
+        "B": 2,
+        "D": 4
+      },
+      "missing": 0,
+      "n": 8,
+      "nontrivial": 5,
+      "self_loop": 3,
+      "sha256": "ebd2ce3bf5690c9b8b9475dac9258f663950f03fd92ba9b25efa2ab752127452"
+    },
+    "phop_fixed16/train.jsonl": {
+      "answers": {
+        "A": 4080,
+        "B": 4089,
+        "C": 4136,
+        "D": 4079
+      },
+      "missing": 0,
+      "n": 16384,
+      "nontrivial": 12237,
+      "self_loop": 4147,
+      "sha256": "00aa3d82f4aa04b07a7254789f9c1e743845927ac41623af48cb0fca54b0b77a"
+    },
+    "phop_fixed16/validation.jsonl": {
+      "answers": {
+        "A": 61,
+        "B": 59,
+        "C": 65,
+        "D": 71
+      },
+      "missing": 0,
+      "n": 256,
+      "nontrivial": 198,
+      "self_loop": 58,
+      "sha256": "97e7b4ef43e0afbb53250c667ec4b093bcb63f770b45c28e1608d25f8efa13d2"
+    },
+    "phop_fixed32/pilot.jsonl": {
+      "answers": {
+        "A": 39,
+        "B": 26,
+        "C": 30,
+        "D": 33
+      },
+      "missing": 0,
+      "n": 128,
+      "nontrivial": 89,
+      "self_loop": 39,
+      "sha256": "d177d6fd072c639d04666176ca7987cad2ef6375fb24cafe7e689f0980884da5"
+    },
+    "phop_fixed32/test.jsonl": {
+      "answers": {
+        "A": 97,
+        "B": 140,
+        "C": 147,
+        "D": 128
+      },
+      "missing": 0,
+      "n": 512,
+      "nontrivial": 399,
+      "self_loop": 113,
+      "sha256": "1b894268a16fea40a2f80e6624463540c1477afae11e757bd29efc0664bff5b8"
+    },
+    "phop_fixed32/tiny.jsonl": {
+      "answers": {
+        "A": 2,
+        "B": 1,
+        "BOTTOM": 2,
+        "D": 3
+      },
+      "missing": 2,
+      "n": 8,
+      "nontrivial": 1,
+      "self_loop": 5,
+      "sha256": "c9bebf511dc4045ac58dd6a8a3a34831131774523e8e0d36efc6df9d69ff96df"
+    },
+    "phop_fixed32/train.jsonl": {
+      "answers": {
+        "A": 4097,
+        "B": 4031,
+        "C": 4184,
+        "D": 4072
+      },
+      "missing": 0,
+      "n": 16384,
+      "nontrivial": 12242,
+      "self_loop": 4142,
+      "sha256": "4df50a87daa094578c489a6fb9ed00133b2c2c0c9daf4be69e8f877fe26a25ee"
+    },
+    "phop_fixed32/validation.jsonl": {
+      "answers": {
+        "A": 67,
+        "B": 69,
+        "C": 54,
+        "D": 66
+      },
+      "missing": 0,
+      "n": 256,
+      "nontrivial": 179,
+      "self_loop": 77,
+      "sha256": "322d501fcf29985449624830dc5cf1a4fbaf290ddb22cf9bb6c377bb8031f66a"
+    },
+    "vt/pilot.jsonl": {
+      "answers": {
+        "black": 9,
+        "blue": 9,
+        "brown": 11,
+        "cyan": 6,
+        "gold": 4,
+        "gray": 7,
+        "green": 9,
+        "lime": 10,
+        "orange": 11,
+        "pink": 7,
+        "purple": 11,
+        "red": 6,
+        "silver": 11,
+        "teal": 6,
+        "violet": 5,
+        "white": 6
+      },
+      "n": 128,
+      "sha256": "3b2aa57f8a850a8884903e6219815c00994fe6ae92a226a729961dd8b26ff88c"
+    },
+    "vt/test.jsonl": {
+      "answers": {
+        "black": 64,
+        "blue": 52,
+        "brown": 58,
+        "cyan": 60,
+        "gold": 69,
+        "gray": 70,
+        "green": 55,
+        "lime": 72,
+        "orange": 60,
+        "pink": 63,
+        "purple": 53,
+        "red": 59,
+        "silver": 65,
+        "teal": 77,
+        "violet": 71,
+        "white": 76
+      },
+      "n": 1024,
+      "sha256": "62070f5e1cbbbaac53a09afb1e005daa0e8dd13439eaad97bf49f9898ad16b28"
+    },
+    "vt/tiny.jsonl": {
+      "answers": {
+        "black": 1,
+        "gray": 1,
+        "green": 1,
+        "orange": 1,
+        "red": 1,
+        "violet": 1,
+        "white": 2
+      },
+      "n": 8,
+      "sha256": "7ddc02b5880852012fceb544bd56329a13ce00357f249bc4b53c7502e6747e4f"
+    },
+    "vt/train.jsonl": {
+      "answers": {
+        "black": 1017,
+        "blue": 1056,
+        "brown": 1047,
+        "cyan": 961,
+        "gold": 1022,
+        "gray": 1057,
+        "green": 956,
+        "lime": 1013,
+        "orange": 989,
+        "pink": 1067,
+        "purple": 1038,
+        "red": 980,
+        "silver": 1051,
+        "teal": 1061,
+        "violet": 1044,
+        "white": 1025
+      },
+      "n": 16384,
+      "sha256": "2929f0f0ad88c31fc4fb830de02ab91eeea9271a296a50ec65a419a615a96d93"
+    },
+    "vt/validation.jsonl": {
+      "answers": {
+        "black": 23,
+        "blue": 20,
+        "brown": 17,
+        "cyan": 13,
+        "gold": 13,
+        "gray": 17,
+        "green": 10,
+        "lime": 16,
+        "orange": 14,
+        "pink": 14,
+        "purple": 15,
+        "red": 16,
+        "silver": 17,
+        "teal": 13,
+        "violet": 16,
+        "white": 22
+      },
+      "n": 256,
+      "sha256": "f3b1abd239e57c20e69b00331529c6ecd36c416a27451071f759a145cb729150"
+    }
+  },
+  "split_seeds": {
+    "pilot": 740001,
+    "test": 730001,
+    "tiny": 750001,
+    "train": 710001,
+    "validation": 720001
+  },
+  "test_is_not_used_for_selection": true
+}

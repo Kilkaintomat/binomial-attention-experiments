@@ -1,0 +1,11 @@
+{
+  "cpu_tests_passed": 19,
+  "cpu_job_id": "8521800",
+  "source_matches_cluster": true,
+  "protocol_matches_cluster": true,
+  "previous_results_unchanged": 218,
+  "github_math_formulas": 5,
+  "github_math_payload_preserved": true,
+  "math_typesetting_errors": 0,
+  "oracle_only_no_new_lm_results": true
+}

@@ -1,0 +1,39 @@
+{
+  "campaign": "language_transport_20261105",
+  "data_manifest_sha256": "726f436fe780538aab7baea37d0558fcf52d2e8a8f2bb1a7f2617bd6a587a07b",
+  "frozen_evaluations": 2,
+  "inference_loops": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "inference_r": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    80,
+    96
+  ],
+  "main_lora_runs": 18,
+  "main_scratch_runs": 48,
+  "max_concurrent_gpus": 2,
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "pilot_runs": 6,
+  "pilot_selection": "VT baseline validation <=4 only; LR .0003/.001; r fixed 8; steps 8000 or 16000 by prespecified rule",
+  "predecessor": "research/qbm_mlp_20261102",
+  "predecessor_total": 36,
+  "protocol_sha256": "9c70c87b776132abc85649f9fdee1cb66e976784950bd5edc1fa50286983d1e5",
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "source_sha256": "7f143b2d01d8d1cfee3161d4349213af4c443e64b3661ccfc5ee7c2dc80e51e0",
+  "training_slice_seconds": 7200
+}

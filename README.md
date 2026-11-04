@@ -4,6 +4,10 @@
 
 **[Финальные результаты MLP](REPORT_MLP_FINAL_RU.md)** · **[Большой подробный отчёт на русском](REPORT_RU.md)** · **[Все таблицы запусков](docs/EXPERIMENT_TABLES_RU.md)** · **[Исходная серия CSV](results/tables/results.csv)**
 
+**Языковая кампания и состояние очереди — 5 ноября 2026:** [отчёт](REPORT_LANGUAGE_STATUS_20261105_RU.md).
+Прежние 218 завершённых Qwen-прогонов сохранены; MLP 14/36 ожидает GPU. Подготовлена и активирована отдельная последовательность variable tracking и p-hop: 66 основных обучений на трёх seed, две frozen оценки, шесть pilot. GPU-этап ждёт завершения MLP; 19 CPU-тестов прошли, новых модельных результатов пока нет.
+[Протокол](research/language_transport_20261105/PROTOCOL_RU.md) · [Код и воспроизведение](research/language_transport_20261105/REPRODUCE_RU.md) · [Manifests, receipt и аналитический график](results/language_transport_20261105).
+
 **Математика Qwen-эксперимента — учебный разбор, 4 ноября 2026:** [отчёт с формулами](REPORT_QWEN_MATH_20261104_RU.md).
 От исходного decoder-блока Qwen и LoRA до Binomial, Geometric, Exponential, Power, всех гейтов, T=2 и внутреннего MLP.
 Пошагово разобраны замены в архитектуре, матрица сравнений, loss и optimizer, KV/transport-cache, EM/F1 и парные дельты; приведены числовые примеры и схема блока.

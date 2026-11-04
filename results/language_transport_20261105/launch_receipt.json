@@ -1,0 +1,53 @@
+{
+  "as_of_epoch": 1793829051.526949,
+  "initial_dispatcher_job": "8521804",
+  "next_dispatcher_job": "8521805",
+  "status": {
+    "active_jobs": [],
+    "actual_gpu_hours": 0.0,
+    "charged_gpu_hours": 0.0,
+    "epoch": 1793828990.2088172,
+    "predecessor_completed": 14,
+    "predecessor_total": 36,
+    "status": "waiting_existing_mlp"
+  },
+  "cpu_verification_job": "8521800",
+  "tests_passed": 19,
+  "technical_cpu_attempts": [
+    {
+      "job": "8521782",
+      "status": "COMPLETED",
+      "seconds": 49,
+      "scope": "initial 13 tests and dataset generation"
+    },
+    {
+      "job": "8521798",
+      "status": "FAILED",
+      "seconds": 31,
+      "scope": "17 tests passed; import cache after plotting-dependency installation; no GPU"
+    },
+    {
+      "job": "8521800",
+      "status": "COMPLETED",
+      "seconds": 33,
+      "scope": "final 19 tests, plots and frozen manifest"
+    }
+  ],
+  "new_gpu_jobs_submitted": 0,
+  "new_gpu_hours": 0,
+  "main_trainings": 66,
+  "frozen_evaluations": 2,
+  "pilot_trainings": 6,
+  "gpu_release_condition": "All 36 existing MLP runs completed and no previous GPU allocation remains",
+  "old_jobs_modified": false,
+  "budget_authorization": {
+    "automatic_adjustment": "Raise new campaign reservation if measured benchmark estimate plus prescribed margins exceeds initial ceiling; old authorization/ledgers remain read-only",
+    "basis": "User instruction 2026-11-05: prepare and launch both language task families, download as necessary, autonomously choose interpretation and increase GPU-hours as needed",
+    "campaign_gpu_hours": 240,
+    "epoch": 1793828959.262046,
+    "global_gpu_hours": 500,
+    "max_concurrent_gpus": 2,
+    "prior_reserved_gpu_hours": 200
+  },
+  "manifest_sha256": "9e3211911eed089cfa9e557bfffb471cae2ec2ec856f5e99fe693e20a07733d6"
+}

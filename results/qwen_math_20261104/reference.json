@@ -151,6 +151,32 @@
         "js-inline-math": 252
       },
       "verification_scope": "Actual LaTeX typesetting in KaTeX plus explicit exclusion of the macro reported unsupported by the user; GitHub browser-side MathJax was not executed."
+    },
+    {
+      "date": "2026-11-05",
+      "previous_commit": "c4040fa28de088062594e2fe43da17133ee86999",
+      "reason": "Markdown processing altered TeX before math rendering, including matrix row separators and less-than subscripts. Five typesetting errors reproduced from the prior GitHub HTML payload.",
+      "change": "Use fenced math blocks and protected inline math; keep block TeX on one source line and use the equivalent lt command for less-than.",
+      "display_formulas_updated": 154,
+      "inline_formulas_updated": 252,
+      "mathematical_content_changed": false,
+      "github_payload_validation": {
+        "formulas": 406,
+        "display_formulas": 154,
+        "inline_formulas": 252,
+        "github_math_payload_exactly_matches_source": true,
+        "nested_markdown_elements_in_formulas": 0,
+        "stray_math_delimiters": 0,
+        "mathematical_content_preserved": true,
+        "changes": "Protected GitHub math delimiters, source-line whitespace, equivalent less-than notation."
+      },
+      "typesetting_of_github_payload": {
+        "renderer": "KaTeX",
+        "version": "0.16.21",
+        "formulas": 406,
+        "errors": 0
+      },
+      "verification_scope": "Exact formula text extracted from GitHub Markdown API HTML compared against intended TeX and typeset in KaTeX; browser-side GitHub MathJax was not executed."
     }
   ]
 }

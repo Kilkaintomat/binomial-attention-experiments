@@ -1,0 +1,135 @@
+{
+  "document": "REPORT_QWEN_MATH_20261104_RU.md",
+  "date": "2026-11-04",
+  "result_snapshot_msk": "2026-11-04 14:38:13",
+  "result_snapshot_commit": "86c19b8df20c9bbae01e90f7255e2706ea35df5c",
+  "completed_runs_in_referenced_snapshot": 218,
+  "source_file_hashes_verified_against_server_snapshot": {
+    "sigmoid/attention.py": "1cda21405244deb345243fc150822165c4024bfc82dd30ffc8b2cac2f49c7ac1",
+    "sigmoid/runner.py": "82540a25073d0f17bddfb50974203ac70d5bb290a29639af2a6f115cbd9da5d4",
+    "sigmoid/data.py": "6c4414c2def708a9990a0737617ac08d3bb02b17df93f022078fd36a87487075",
+    "fixed1/attention.py": "1cda21405244deb345243fc150822165c4024bfc82dd30ffc8b2cac2f49c7ac1",
+    "fixed1/runner.py": "c05dfd9193f679c324bb10cac1d593c0f5ed4e58bb86e419319650629eab2792",
+    "fixed1/data.py": "6c4414c2def708a9990a0737617ac08d3bb02b17df93f022078fd36a87487075",
+    "mlp/attention.py": "1cda21405244deb345243fc150822165c4024bfc82dd30ffc8b2cac2f49c7ac1",
+    "mlp/runner.py": "73e05f1559cc8cd8be1049cd806399fdc02bfb5700827675cbe3dd1896202eb4",
+    "mlp/data.py": "6c4414c2def708a9990a0737617ac08d3bb02b17df93f022078fd36a87487075"
+  },
+  "coefficients_H4": [
+    {
+      "method": "binomial",
+      "coefficients": [
+        0.26666666666666666,
+        0.4,
+        0.26666666666666666,
+        0.06666666666666667
+      ],
+      "parameter": null,
+      "mean_order": 2.1333333333333333
+    },
+    {
+      "method": "geometric",
+      "coefficients": [
+        0.37122320331064024,
+        0.2747927764923126,
+        0.2034115037501206,
+        0.15057251644692649
+      ],
+      "parameter": 0.7402359929057709,
+      "mean_order": 2.133333333333333
+    },
+    {
+      "method": "exponential",
+      "coefficients": [
+        0.3250629568690207,
+        0.3324226046988635,
+        0.22663258666187766,
+        0.1158818517702381
+      ],
+      "parameter": 2.0452813688814633,
+      "mean_order": 2.1333333333333333
+    },
+    {
+      "method": "power",
+      "coefficients": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parameter": null,
+      "mean_order": 4
+    }
+  ],
+  "parameter_counts": {
+    "0.6B": {
+      "lora": 4587520,
+      "scalar": 4587524
+    },
+    "1.7B": {
+      "lora": 6422528,
+      "scalar": 6422532
+    }
+  },
+  "additional_mlp_parameters_four_layers": 2122240,
+  "toy_example": {
+    "A": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "V": [
+      "1",
+      "0",
+      "0"
+    ],
+    "states": [
+      [
+        "1",
+        "1/2",
+        "0"
+      ],
+      [
+        "1",
+        "3/4",
+        "1/4"
+      ],
+      [
+        "1",
+        "7/8",
+        "1/2"
+      ],
+      [
+        "1",
+        "15/16",
+        "11/16"
+      ]
+    ],
+    "binomial_third_token": "67/240",
+    "gated_0_1_third_token": "67/2400"
+  },
+  "scope": "Mathematical exposition of the recorded implementations; no new experiments or changes to training.",
+  "checks": {
+    "coefficient_normalization_and_matching": true,
+    "toy_example_exact_fraction_arithmetic": true,
+    "parameter_counts_match_completed_runs": true,
+    "example_result_deltas_match_csv": true,
+    "display_math_blocks": 154,
+    "inline_math_expressions": 252,
+    "latex_delimiters_and_braces_balanced": true,
+    "source_files_verified": 9,
+    "local_and_repository_links_resolve": true
+  }
+}

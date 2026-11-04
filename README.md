@@ -4,6 +4,10 @@
 
 **[Финальные результаты MLP](REPORT_MLP_FINAL_RU.md)** · **[Большой подробный отчёт на русском](REPORT_RU.md)** · **[Все таблицы запусков](docs/EXPERIMENT_TABLES_RU.md)** · **[Исходная серия CSV](results/tables/results.csv)**
 
+**Математика Qwen-эксперимента — учебный разбор, 4 ноября 2026:** [отчёт с формулами](REPORT_QWEN_MATH_20261104_RU.md).
+От исходного decoder-блока Qwen и LoRA до Binomial, Geometric, Exponential, Power, всех гейтов, T=2 и внутреннего MLP.
+Пошагово разобраны замены в архитектуре, матрица сравнений, loss и optimizer, KV/transport-cache, EM/F1 и парные дельты; приведены числовые примеры и схема блока.
+
 **Qwen3, результаты завершённых обучений — 4 ноября 2026:** [подробный отчёт](REPORT_QWEN_RESULTS_20261104_RU.md).
 Завершены 218 обучений по 500 шагов: 36 смешанных, 72 раздельных, 48 с sigmoid-гейтами, 48 с фиксированным gate=1 и 14 из 36 MLP/контрольных прогонов.
 Таблицы построены по моделям и датасетам, attention — в столбцах; в каждой ячейке результат / Δ к соответствующему baseline.
@@ -164,4 +168,5 @@ python -m transport_reasoning evaluate \
 Архивный аудит заново проверил 570 000 сохранённых test-предсказаний и повторил inference на 960 примерах из checkpoints. Эти исходные массивы и веса не опубликованы; публичная проверка сверяет скаляры evaluation JSON, конфигурации, hashes, validation-кривые, выбор best checkpoint и агрегаты. [Результат проверки публичного снимка](results/metadata/publication_validation.json) описывает этот более узкий объём проверки.
 
 MLP final для binomial/exponential завершён. Нерешённые пункты — OOD Maze, dense controls, parameter-matched и equal-wall-time controls, MLP final для других фильтров, полная Sudoku symmetry/uniqueness certification — перечислены в отчёте. Успешная техническая проверка не означает завершения всего исходного плана.
+
 
